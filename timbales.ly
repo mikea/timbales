@@ -147,12 +147,36 @@
         \footnote #'(-1 . 1) "Neck of the bell" cb4 4 \footnote #'(-1 . 1) "Mouth of the bell" 8-+  8-+ r cb | r cb cb r cb-+ cb-+ r cb \bar "||"
     }}
     \new DrumVoice { \voiceTwo  \drummode {
-        r4. timl4. timl4 | r4. timl4. timl4 \bar "||"
+        r4 r8 timl8 r4 timl8 r8 | r4 r8 timl8 r4 timl8 r8 \bar "||"
     }}
 
     \new RhythmicStaff \with {
     } {
-        r4 c c r | c4. c8 r4. c8 \bar "||"
+        r4 c c r | c4. c8 r4 r8 c8 \bar "||"
+    }
+>>
+
+%% 6/8
+
+\new DrumStaff \with {
+    drumStyleTable = #timbales-style
+    \override StaffSymbol.line-count = #2
+} <<
+    \new DrumVoice { \voiceOne \drummode { 
+      \sectionLabel "Mozambique"
+      \time 6/8
+      cb4 cb4 cb8 cb8 | r8 cb8 r8 cb8 r8 cb8 \bar "||"
+      cb4 cb4 cb8 cb8 | r8 cb8 r8 cb8 r8 cb8 \bar "||"
+    }}
+    \new DrumVoice { \voiceTwo  \drummode {
+      timl4 r4 r4 | ssl4 r4 r4 \bar "||"
+      r4 timl4 timh4 | r4 timl4 timh4 \bar "||"
+    }}
+
+    \new RhythmicStaff \with {
+    } {
+      c4 c4 r8 c8 | r8 c8 r8 c8 r4 \bar "||"
+      c4 c4 r8 c8 | r8 c8 r8 c8 r4 \bar "||"
     }
 >>
 
@@ -164,6 +188,7 @@
     \override StaffSymbol.line-count = #2
 } <<
     \new DrumVoice { \voiceOne \drummode { 
+      % \sectionLabel "Mozambique"
     }}
     \new DrumVoice { \voiceTwo  \drummode {
     }}
