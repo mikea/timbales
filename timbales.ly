@@ -163,7 +163,7 @@
     \override StaffSymbol.line-count = #2
 } <<
     \new DrumVoice { \voiceOne \drummode { 
-      \sectionLabel "Mozambique"
+      \sectionLabel "6/8"
       \time 6/8
       cb4 cb4 cb8 cb8 | r8 cb8 r8 cb8 r8 cb8 \bar "||"
       cb4 cb4 cb8 cb8 | r8 cb8 r8 cb8 r8 cb8 \bar "||"
@@ -180,6 +180,26 @@
     }
 >>
 
+
+%% Cha-cha-cha
+
+\new DrumStaff \with {
+    drumStyleTable = #timbales-style
+    \override StaffSymbol.line-count = #2
+} <<
+    \new DrumVoice { \voiceOne \drummode { 
+      \sectionLabel "Cha-cha-cha"
+      \time 4/4
+      cb4 4 4 4 | cb4 4 4 4 \bar "||"
+      cb4 4 4 4 | cb4 4 4 4 \bar "||"
+      cb4 4 4 4 | cb4 4 4 4 \bar "||"
+    }}
+    \new DrumVoice { \voiceTwo  \drummode {
+      r4 timl4-+ r4 timl4-o | r4 timl4-+ r4 timl4-o \bar "||"
+      r4. timl8-+ r4 timl8-o timl8-o | r4. timl8-+ r4 timl8-o timl8-o \bar "||"
+      r4 timl8-+ timl8-+ r4 timl8-o timl8-+ | r4 timl8-+ timl8-+ r4 timl8-o timl8-+ \bar "||"
+    }}
+>>
 
 %% Template
 
