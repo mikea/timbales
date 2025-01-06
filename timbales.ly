@@ -18,9 +18,9 @@
   } }
   \new DrumVoice { \voiceTwo  \drummode {
     % paila 3/2
-    r4 timl-+ r4 timl | r4 timl-+ r4 timl \bar "||"
+    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o \bar "||"
     % paila 2/3
-    r4 timl-+ r4 timl | r4 timl-+ r4 timl \bar "||"
+    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o \bar "||"
   }}
 
 \new RhythmicStaff \with {
@@ -89,6 +89,7 @@
 }
 >>
 
+%% Mambo bell
 
 \new DrumStaff \with {
     drumStyleTable = #timbales-style
@@ -100,8 +101,8 @@
     cb4-> cb-> cb8 cb cb cb-> | r8 cb cb cb cb4-> cb8 cb \bar "||"
   } }
   \new DrumVoice { \voiceTwo  \drummode {
-    r4 timl-+ r4 timl | r4 timl-+ r4 timl \bar "||"
-    r4 timl-+ r4 timl | r4 timl-+ r4 timl \bar "||"
+    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o \bar "||"
+    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o \bar "||"
   }}
 
 \new RhythmicStaff \with {
@@ -144,7 +145,7 @@
 } <<
     \new DrumVoice { \voiceOne \drummode { 
         \sectionLabel "Mozambique"
-        \footnote #'(-1 . 1) "Neck of the bell" cb4 4 \footnote #'(-1 . 1) "Mouth of the bell" 8-+  8-+ r cb | r cb cb r cb-+ cb-+ r cb \bar "||"
+        \footnote #'(-1 . 1) "Neck of the bell" cb4-+ 4-+ \footnote #'(-1 . 1) "Mouth of the bell" 8-o  8-o r cb-+ | r cb-+ cb-+ r cb8-o cb8-o r cb-+ \bar "||"
     }}
     \new DrumVoice { \voiceTwo  \drummode {
         r4 r8 timl8 r4 timl8 r8 | r4 r8 timl8 r4 timl8 r8 \bar "||"
@@ -165,16 +166,19 @@
     \new DrumVoice { \voiceOne \drummode { 
       \sectionLabel "6/8"
       \time 6/8
-      cb4 cb4 cb8 cb8 | r8 cb8 r8 cb8 r8 cb8 \bar "||"
-      cb4 cb4 cb8 cb8 | r8 cb8 r8 cb8 r8 cb8 \bar "||"
+      cb4-> cb4-> cb4-> | cb8 cb8-> r8 cb8-> r8 cb8 \bar "||"
+      cb4-> cb4-> cb8-> cb8 | r8 cb8-> r8 cb8-> r8 cb8 \bar "||"
+      cb4-> cb4-> cb8-> cb8 | r8 cb8-> r8 cb8-> r8 cb8 \bar "||"
     }}
     \new DrumVoice { \voiceTwo  \drummode {
+      timl4.-o timl4.-+ | timl4.-o timl4.-+ \bar "||"
       timl4 r4 r4 | ssl4 r4 r4 \bar "||"
       r4 timl4 timh4 | r4 timl4 timh4 \bar "||"
     }}
 
     \new RhythmicStaff \with {
     } {
+      c4 c4 r8 c8 | r8 c8 r8 c8 r4 \bar "||"
       c4 c4 r8 c8 | r8 c8 r8 c8 r4 \bar "||"
       c4 c4 r8 c8 | r8 c8 r8 c8 r4 \bar "||"
     }
