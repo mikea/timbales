@@ -1,17 +1,27 @@
 \version "2.24.2"
 
+\paper {
+    indent = 0
+}
+
+date = #(strftime "%Y-%m-%d" (localtime (current-time)))
+
 \header {
   title = "Basic Patterns"
+  tagline = \markup { \date "https://github.com/mikea/timbales" }
 }
 
 %% Cascara 
 
 \new DrumStaff \with {
-    instrumentName = "Timbales"
+    % instrumentName = "Timbales"
     drumStyleTable = #timbales-style
     \override StaffSymbol.line-count = #2
 } <<
   \new DrumVoice { \voiceOne \drummode { 
+    % lilypond varies stem length otherwise, which looks ugly
+    \override Stem.details.beamed-lengths = #'(4) 
+
     \sectionLabel "Paila (Cascara)"
     \bar ".|:" 
     ssh4-> ssh8 ssh-> r ssh-> r ssh | ssh4-> ssh-> ssh8 ssh-> r ssh 
@@ -27,12 +37,12 @@
   }}
 
 \new RhythmicStaff \with {
-  instrumentName = "Clave"
+  % instrumentName = "Clave"
 } {
     % 3-2
-    c4. c8 r4 c4 r4 c c r |
+    c4. c4. c4 r4 c c r |
     % 2-3
-    r4 c c r c4. c8 r4 c4 |
+    r4 c c r c4. c4. c4 |
 }
 >>
 
@@ -51,8 +61,8 @@
     \bar ":|."
   } }
   \new DrumVoice { \voiceTwo  \drummode {
-    ssl4. ssl8 r4 ssl4 | r4 ssl ssl r |
-    r4 ssl ssl r | ssl4. ssl8 r4 ssl4 |
+    ssl4. ssl4. ssl4 | r4 ssl ssl r |
+    r4 ssl ssl r | ssl4. ssl4. ssl4 |
   }}
 >>
 
@@ -72,8 +82,8 @@
     \bar ":|."
   } }
   \new DrumVoice { \voiceTwo  \drummode {
-    ssl4. ssl8 r4. ssl8 | r4 ssl ssl r |
-    r4 ssl ssl r | ssl4. ssl8 r4. ssl8 |
+    ssl4. ssl2 ssl8 | r4 ssl ssl r |
+    r4 ssl ssl r | ssl4. ssl2 ssl8 |
   }}
 >>
 
@@ -95,9 +105,9 @@
 \new RhythmicStaff \with {
 } {
     % 3-2
-    c4. c8 r4 c4 r4 c c r |
+    c4. c4. c4 r4 c c r |
     % 2-3
-    r4 c c r c4. c8 r4 c4 |
+    r4 c c r c4. c4. c4 |
 }
 >>
 
@@ -123,9 +133,9 @@
 \new RhythmicStaff \with {
 } {
     % 3-2
-    c4. c8 r4 c4 | r4 c c r |
+    c4. c4. c4 | r4 c c r |
     % 2-3
-    r4 c c r | c4. c8 r4 c4 |
+    r4 c c r | c4. c4. c4 |
 }
 >>
 
@@ -146,9 +156,9 @@
     \new RhythmicStaff \with {
     } {
         % 3-2
-        c4. c8 r4 c4 | r4 c c r | c4. c8 r4 c4 \bar "||"
+        c4. c4. c4 | r4 c c r | c4. c4. c4 \bar "||"
         % 2-3
-        r4 c c r | c4. c8 r4 c4 | r4 c c r\bar "||"
+        r4 c c r | c4. c4. c4 | r4 c c r\bar "||"
     }
 >>
 
