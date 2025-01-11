@@ -30,51 +30,27 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ":..:"
         \break
 
-        cb4-> cb4-> cb4-> cb4-> | cb4-> cb8 cb8 cb4-> cb4-> |
-        \bar ":..:"
-        cb4-> cb4-> cb4-> cb4-> | cb4-> cb8 cb8-> r8 cb8-> r8 cb8 |
-        \bar ":..:"
+        cb8 cb8 cb4-> cb8 cb8 cb8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
+        cb4-> cb8 cb8 cb8 cb8 cb8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
         \break
-
-        cb4-> cb4-> cb4-> cb8 cb8 | cb4-> cb8 cb8 cb4-> cb4-> |
-        \bar ":..:"
-        cb4-> cb4-> cb4-> cb8 cb8 | cb4-> cb8 cb8 cb4-> cb8 cb8 |
-        \bar ":..:"
+        cb4-> cb4-> cb8 cb8-> r8 cb8-> | r8 cb8 cb8 cb8-> r8 cb8-> r8 cb8 | \bar ":..:"
+        cb4-> cb4-> cb8 cb8-> r8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
         \break
-
-        cb4-> cb4-> cb4-> cb8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 |
-        \bar ":..:"
-        cb4-> cb4-> cb8 cb8 cb8 cb8 | cb4-> cb8 cb8 cb4-> cb8 cb8 |
-        \bar ":..:"
+        cb4-> cb4-> cb8 cb8-> r8 cb8 | cb4-> cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
+        cb4-> cb4-> cb8 cb8 cb8 cb8 | cb4-> cb8 cb8-> r8 cb8 cb8 cb8 | \bar ":..:"
         \break
-
-        cb4-> cb4-> cb8 cb8 cb8 cb8 | cb4-> cb8 cb8-> r8 cb8 cb8 cb8 |
-        \bar ":..:"
-        cb4-> cb4-> cb8 cb8-> r8 cb8 | cb4-> cb8 cb8 cb4-> cb8 cb8 |
-        \bar ":..:"
+        cb4-> cb4-> cb8 cb8 cb8 cb8 | cb4-> cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
+        cb4-> cb4-> cb4-> cb8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
         \break
-
-        cb4-> cb4-> cb8 cb8-> r8 cb8 | cb4-> cb8 cb8-> r8 cb8-> r8 cb8 |
-        \bar ":..:"
-        cb4-> cb4-> cb8 cb8-> r8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 |
-        \bar ":..:"
+        cb4-> cb4-> cb4-> cb8 cb8 | cb4-> cb8 cb8 cb4-> cb8 cb8 | \bar ":..:"
+        cb4-> cb4-> cb4-> cb8 cb8 | cb4-> cb8 cb8 cb4-> cb4-> | \bar ":..:"
         \break
-
-        cb4-> cb4-> cb8 cb8-> r8 cb8-> | r8 cb8 cb8 cb8-> r8 cb8-> r8 cb8 |
-        \bar ":..:"
-        cb4-> cb4-> cb8 cb8-> r8 cb8-> | r8 cb8 cb8 cb8-> r8 cb8-> r8 cb8 |
-        \bar ":..:"
-        \break
-
-        cb4-> cb8 cb8 cb8 cb8 cb8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 |
-        \bar ":..:"
-        cb8 cb8 cb4-> cb8 cb8 cb8 cb8-> | r8 cb8 cb8 cb8 cb4-> cb8 cb8 |
-        \break
+        cb4-> cb4-> cb4-> cb4-> | cb4-> cb8 cb8-> r8 cb8-> r8 cb8 | \bar ":..:"
+        cb4-> cb4-> cb4-> cb4-> | cb4-> cb8 cb8 cb4-> cb4-> | \bar ":..:"
+        
         \bar ":|."
     }}
     \new DrumVoice { \voiceTwo  \drummode {
-        r4 ssl ssl r | ssl4. ssl4. ssl4 |
-        r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
