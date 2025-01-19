@@ -96,17 +96,23 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   \new DrumVoice { \voiceOne \drummode { 
     \sectionLabel "Double Cascara"
     \bar ".|:" 
-    ssh8-> ssl ssh ssh-> ssl ssh-> ssl ssh | ssh-> ssl ssh-> ssl ssh ssh-> ssl ssh |
-    \bar ":..:"
     ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
+    \bar ":..:"
+    ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh16 ssl16 |
+    \bar ":..:"
+    \break
+    ssh8-> ssl16 ssh16 ssl8-> ssh ssl ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
+    \bar ":..:"
+    ssh8-> ssl16 ssh16 ssl8-> ssh ssl ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh16 ssl16 |
     \bar ":|."
   }}
 
 \new RhythmicStaff \with {
 } {
-    % 3-2
-    c4. c4. c4 r4 c c r |
     % 2-3
+    r4 c c r c4. c4. c4 |
+    r4 c c r c4. c4. c4 |
+    r4 c c r c4. c4. c4 |
     r4 c c r c4. c4. c4 |
 }
 >>
