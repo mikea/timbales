@@ -84,7 +84,8 @@ graceRepeat =
   If @var{note} is a chord the first written note of it is used.
   If @var{chord-repeat?} is specified the whole chord is repeated during 
   @code{GraceMusic}"
-  #{ 
+  #{
+    % \acciaccatura 
     \slashedGrace {  $(grace-from-main-note chord-repeat? how-much note) }
     $note 
   #})
