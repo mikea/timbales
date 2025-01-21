@@ -1,12 +1,6 @@
 \version "2.24.2"
 
-\paper {
-    indent = 0
-    ragged-bottom = ##t
-}
-
-\include "common/flam.ly"
-\include "common/style.ly"
+\include "common/all.ly"
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
@@ -18,13 +12,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % one drum
 
-\new DrumStaff \with {
-    % instrumentName = "Timbales"
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-    \override TextScript.font-size = #-6
-    \override TextScript.font-family = #'sans
-} \newDrumVoice \drummode { 
+\newTimbalesStaff \newDrumVoice \drummode { 
     \bar ".|:"
 
     r8 timl16_"R" 16_"L" 8_"R" 8_"L" r8 timl16_"R" 16_"L" 8_"R" 8_"L" | \bar ":..:"
@@ -50,13 +38,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % both timbales
 
-\new DrumStaff \with {
-    % instrumentName = "Timbales"
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-    \override TextScript.font-size = #-6
-    \override TextScript.font-family = #'sans
-} \newDrumVoice \drummode { 
+\newTimbalesStaff \newDrumVoice \drummode { 
     \bar ".|:"
 
     r8 timl16_"R" 16_"L" 8_"R" 8_"L" r8 timh16_"R" 16_"L" 8_"R" 8_"L" | \bar ":..:"
@@ -84,13 +66,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % 2 bars
 
-\new DrumStaff \with {
-    % instrumentName = "Timbales"
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-    \override TextScript.font-size = #-6
-    \override TextScript.font-family = #'sans
-} \newDrumVoice \drummode { 
+\newTimbalesStaff \newDrumVoice \drummode { 
     \sectionLabel "2-3 clave"
     \bar ".|:"
 
@@ -146,13 +122,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % 1 bar triplets
 
-\new DrumStaff \with {
-    % instrumentName = "Timbales"
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-    \override TextScript.font-size = #-6
-    \override TextScript.font-family = #'sans
-} \newDrumVoice \drummode { 
+\newTimbalesStaff \newDrumVoice \drummode { 
     \bar ".|:"
 
     \tuplet 3/2 { timl8_"R" timl8_"L" timl8_"R" } 
@@ -237,13 +207,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % 2 bar triplets
 
-\new DrumStaff \with {
-    % instrumentName = "Timbales"
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-    \override TextScript.font-size = #-6
-    \override TextScript.font-family = #'sans
-} \newDrumVoice \drummode { 
+\newTimbalesStaff \newDrumVoice \drummode { 
     \sectionLabel "2-3 clave"
     \bar ".|:"
 

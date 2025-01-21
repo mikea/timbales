@@ -19,3 +19,21 @@ newDrumVoice = #(define-music-function
     } { #music }
   #})
 
+newTimbalesStaff = #(define-music-function
+  (music)
+  (ly:music?)
+  #{
+    \new DrumStaff \with {
+        % instrumentName = "Timbales"
+        drumStyleTable = #timbales-style
+        \override StaffSymbol.line-count = #2
+        \override TextScript.font-size = #-6
+        \override TextScript.font-family = #'sans
+    } { #music }
+  #})
+
+
+\paper {
+    indent = 0
+    ragged-bottom = ##t
+}

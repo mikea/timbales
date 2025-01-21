@@ -87,7 +87,7 @@ graceRepeat =
   #{
     % \acciaccatura 
     \slurDown
-    \slashedGrace {  $(grace-from-main-note chord-repeat? how-much note) }
+    \acciaccatura {  $(grace-from-main-note chord-repeat? how-much note) }
     \slurNeutral
     $note 
   #})
