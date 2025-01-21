@@ -86,7 +86,9 @@ graceRepeat =
   @code{GraceMusic}"
   #{
     % \acciaccatura 
+    \slurDown
     \slashedGrace {  $(grace-from-main-note chord-repeat? how-much note) }
+    \slurNeutral
     $note 
   #})
   
