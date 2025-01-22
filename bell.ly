@@ -1,8 +1,6 @@
 \version "2.24.2"
 
-\paper {
-    indent = 0
-}
+\include "common/all.ly"
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
@@ -19,7 +17,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     drumStyleTable = #timbales-style
     \override StaffSymbol.line-count = #2
 } <<
-    \new DrumVoice { \voiceOne \drummode { 
+    \drumVoiceOne \drummode { 
         \sectionLabel "2-3"
         \bar ".|:"
         % cascara
@@ -49,8 +47,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         cb4-> cb4-> cb4-> cb4-> | cb4-> cb8 cb8 cb4-> cb4-> | \bar ":..:"
         
         \bar ":|."
-    }}
-    \new DrumVoice { \voiceTwo  \drummode {
+    }
+    \drumVoiceTwo \drummode {
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
@@ -65,5 +63,5 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
         r4 ssl ssl r | ssl4. ssl4. ssl4 |
-    }}
+    }
 >>
