@@ -33,6 +33,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 % two bars
 
 \newTimbalesStaff \drumVoiceOne \drummode { 
+    \sectionLabel "2-3 clave"
+
     timh4_"R"^> timl8_"L" timl8_"R" timl4_"L" timh4_"R"^> | 
     timl8_"L" timl8_"R" timl4_"L" \tuplet 3/2 { cb8_"R" cb8_"L" cb8_"R" } cb4_"L" | \bar "||" 
 
