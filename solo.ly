@@ -12,7 +12,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % one drum
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     \bar ".|:"
 
     r8 timl16_"R" 16_"L" 8_"R" 8_"L" r8 timl16_"R" 16_"L" 8_"R" 8_"L" | \bar ":..:"
@@ -38,7 +38,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % both timbales
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     \bar ".|:"
 
     r8 timl16_"R" 16_"L" 8_"R" 8_"L" r8 timh16_"R" 16_"L" 8_"R" 8_"L" | \bar ":..:"
@@ -66,7 +66,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % 2 bars
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     \sectionLabel "2-3 clave"
     \bar ".|:"
 
@@ -122,7 +122,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % 1 bar triplets
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     \bar ".|:"
 
     \tuplet 3/2 { timl8_"R" timl8_"L" timl8_"R" } 
@@ -207,7 +207,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % 2 bar triplets
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     \sectionLabel "2-3 clave"
     \bar ".|:"
 

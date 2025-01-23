@@ -13,7 +13,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 
 \newTimbalesStaff <<
-    \drumVoiceOne \drummode { 
+    \newDrumVoiceOne \drummode { 
         \sectionLabel "2-3 clave"
         \bar ".|:"
 

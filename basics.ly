@@ -1,8 +1,6 @@
 \version "2.24.2"
 
-\paper {
-    indent = 0
-}
+\include "common/all.ly"
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
@@ -13,12 +11,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 %% Cascara 
 
-\new DrumStaff \with {
-    % instrumentName = "Timbales"
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-} <<
-  \new DrumVoice { \voiceOne \drummode { 
+\newTimbalesStaff <<
+  \newDrumVoiceOne \drummode { 
     % lilypond varies stem length otherwise, which looks ugly
     \override Stem.details.beamed-lengths = #'(4) 
 
@@ -28,13 +22,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":..:"
     ssh4-> ssh-> ssh8 ssh-> r ssh | ssh4-> ssh8 ssh-> r ssh-> r ssh 
     \bar ":|."
-  } }
-  \new DrumVoice { \voiceTwo  \drummode {
+  } 
+  \newDrumVoiceTwo \drummode {
     % paila 3/2
-    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o |
+    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
     % paila 2/3
-    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o |
-  }}
+    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
+  }
 
 \new RhythmicStaff \with {
   % instrumentName = "Clave"
@@ -132,8 +126,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":|."
   } }
   \new DrumVoice { \voiceTwo  \drummode {
-    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o |
-    r4 timl-+ r4 timl4-o | r4 timl-+ r4 timl4-o |
+    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
+    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
   }}
 
 \new RhythmicStaff \with {
@@ -177,7 +171,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \new DrumVoice { \voiceOne \drummode { 
         \sectionLabel "Mozambique"
         \bar ".|:" 
-        \footnote #'(-1 . 1) "+ - neck, o - mouth of the bell" cb4-+ 4-+ 8-o  8-o r cb-+ | r cb-+ cb-+ r cb8-o cb8-o r cb-+ |
+        \footnote #'(-1 . 1) "+ - neck, o - mouth of the bell" cb4_+ 4_+ 8_O  8_O r cb_+ | r cb_+ cb_+ r cb8_O cb8_O r cb_+ |
         \bar ":|."
     }}
     \new DrumVoice { \voiceTwo  \drummode {
@@ -186,7 +180,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
     \new RhythmicStaff \with {
     } {
-        r4 c c r | c4. c8 r4 r8 c8 |
+        \bar ".|:" 
+
+        r4 c c r | c4. c8 r4 r8 c8 | \bar ":..:"
+
+        \bar ":|."
     }
 >>
 
@@ -208,7 +206,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|."
     }}
     \new DrumVoice { \voiceTwo  \drummode {
-      timl4.-o timl4.-+ | timl4.-o timl4.-+ |
+      timl4._O timl4._+ | timl4._O timl4._+ |
       timl4 r4 r4 | ssl4 r4 r4 |
       r4 timl4 timh4 | r4 timl4 timh4 |
     }}
@@ -224,11 +222,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 %% Cha-cha-cha
 
-\new DrumStaff \with {
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-} <<
-    \new DrumVoice { \voiceOne \drummode { 
+\newTimbalesStaff <<
+    \newDrumVoiceOne \drummode { 
       \sectionLabel "Cha-cha-cha"
       \time 4/4
       \bar ".|:" 
@@ -238,27 +233,43 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":..:"
       cb4 4 4 4 | cb4 4 4 4 |
       \bar ":|."
-    }}
-    \new DrumVoice { \voiceTwo  \drummode {
-      r4 timl4-+ r4 timl4-o | r4 timl4-+ r4 timl4-o |
-      r4. timl8-+ r4 timl8-o timl8-o | r4. timl8-+ r4 timl8-o timl8-o |
-      r4 timl8-+ timl8-+ r4 timl8-o timl8-+ | r4 timl8-+ timl8-+ r4 timl8-o timl8-+ |
-    }}
->>
-
-%% Template
-
-\new DrumStaff \with {
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-} <<
-    \new DrumVoice { \voiceOne \drummode { 
-      % \sectionLabel "Mozambique"
-    }}
-    \new DrumVoice { \voiceTwo  \drummode {
-    }}
-
-    \new RhythmicStaff \with {
-    } {
+    }
+    \newDrumVoiceTwo \drummode {
+      r4 timl4_+ r4 timl4_O | r4 timl4_+ r4 timl4_O |
+      r4. timl8_+ r4 timl8_O timl8_O | r4. timl8_+ r4 timl8_O timl8_O |
+      r4 timl8_+ timl8_+ r4 timl8_O timl8_+ | r4 timl8_+ timl8_+ r4 timl8_O timl8_+ |
     }
 >>
+
+% LH
+
+\newTimbalesStaff {
+  \newDrumVoiceTwo \drummode { 
+    \sectionLabel "LH Patterns"
+
+    \bar ".|:" 
+
+    r4 timl4_+ r4      timl4_O | r4 timl4_+ r4 timl4_O | \bar ":..:"
+    r4 timl4_+ r4      timl8_O timl8_O | r4 timl4_+ r4 timl8_O timl8_O | \bar ":..:"
+    \break
+    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl8_+ timl8_+ r4 timl8_O timl8_O | \bar ":..:"
+    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r4 timl8_O timl8_O | \bar ":..:"
+    \break
+    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r8 timl8_O r8 timl8_O | \bar ":..:"
+    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl8_+ timl8_+ r8 timl8_O r8 timl8_O | \bar ":..:"
+    \break
+    r4 timl4_+ r4      timl8_O timl8_O | r4 timl4_+ r8 timl8_O r8 timl8_O | \bar ":..:"
+    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
+    \break
+    r8 timl8_+ timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
+    r8 timl8_+ timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl8_+ timl8_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
+    \break
+    r8 timl8_+ r8 timl8_+ r8 timl8_O r8 timl8_O | r8 timl8_+ timl4_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
+    r4. timl8_+ r4      timl4_O | r4. timl8_+ r4 timl4_O | \bar ":..:"
+    \break
+    r4 timl4_O r4      timl4_+ | r4 timl4_O r4 timl4_+ | \bar ":..:"
+    r4. timl8_O r4      timl4_+ | r4. timl8_O r4 timl4_+ | \bar ":..:"
+
+    \bar ":|."
+  }
+}

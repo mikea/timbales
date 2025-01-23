@@ -12,7 +12,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % one bar
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     r2 r8 timh8_"R" timh4_"L" | \bar "||"
     r2 r8 timh8_"R"^> timl4_"L" | \bar "||"
     r4 timh8_"L" timh8_"R" r8 timh8_"R" timh4_"L" | \bar "||"
@@ -32,7 +32,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 % two bars
 
-\newTimbalesStaff \drumVoiceOne \drummode { 
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
     \sectionLabel "2-3 clave"
 
     timh4_"R"^> timl8_"L" timl8_"R" timl4_"L" timh4_"R"^> | 

@@ -1,4 +1,4 @@
-drumVoiceOne = #(define-music-function
+newDrumVoiceOne = #(define-music-function
   (music)
   (ly:music?)
   #{
@@ -19,7 +19,7 @@ drumVoiceOne = #(define-music-function
     } { #music }
   #})
 
-drumVoiceTwo = #(define-music-function
+newDrumVoiceTwo = #(define-music-function
   (music)
   (ly:music?)
   #{
