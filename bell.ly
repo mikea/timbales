@@ -9,9 +9,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   tagline = \markup { \date "https://github.com/mikea/timbales" }
 }
 
-%% 2-3
-
-
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
         \sectionLabel "2-3 clave"

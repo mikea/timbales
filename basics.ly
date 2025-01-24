@@ -228,16 +228,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \time 4/4
       \bar ".|:" 
       cb4 4 4 4 | cb4 4 4 4 |
-      \bar ":..:"
-      cb4 4 4 4 | cb4 4 4 4 |
-      \bar ":..:"
-      cb4 4 4 4 | cb4 4 4 4 |
       \bar ":|."
     }
     \newDrumVoiceTwo \drummode {
       r4 timl4_+ r4 timl4_O | r4 timl4_+ r4 timl4_O |
-      r4. timl8_+ r4 timl8_O timl8_O | r4. timl8_+ r4 timl8_O timl8_O |
-      r4 timl8_+ timl8_+ r4 timl8_O timl8_+ | r4 timl8_+ timl8_+ r4 timl8_O timl8_+ |
+      
     }
 >>
 
