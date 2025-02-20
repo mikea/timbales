@@ -106,3 +106,8 @@ ruff =
 #(define-music-function (music)(ly:music?)
   "Return @var{music} preceded by 3 grace-notes"
   #{ \graceRepeat #3 $music #})
+
+rruff =
+#(define-music-function (music)(ly:music?)
+  "Return @var{music} preceded by 4 grace-notes"
+  #{ \graceRepeat #4 $music #})
