@@ -1,5 +1,4 @@
 \version "2.24.2"
-
 \include "common/all.ly"
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
