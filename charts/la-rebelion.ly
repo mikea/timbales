@@ -1,12 +1,13 @@
 \version "2.24.2"
-\include "common/all.ly"
+\include "charts/common.ly"
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "La Rebelion"
   composer = "Joe Arroyo"
-  poet = "Percussion"
+  subsubtitle = "(Salsa)"
+  instrument = "Timbales"
   meter = "2-3 clave"
   tagline = \markup { "La Rebelion - https://github.com/mikea/timbales - " \date }
 }
@@ -21,19 +22,21 @@ sect = #(define-music-function (text title) (string? string?)
   #}
 )
 
-\score {
-    \drums {
+\newTimbalesStaff <<
+    \newDrumVoiceOne \drummode { 
         \override Score.BarNumber.break-visibility = ##(#f #t #t)
 
         % intro
         \bar "[|:" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \textMark "Piano"
+        r1 | r1 | r1 | r1 |
+        
         \bar ":|][|:" 
 
         \break
         \repeat segno 2 {
-
           \rbar        
+          \textMark "bell"
           \repeat volta 2 {
             \comp #4 | \comp #4 | \comp #4 | \comp #4 |
             \comp #4 | \comp #4 |
@@ -46,23 +49,29 @@ sect = #(define-music-function (text title) (string? string?)
                 }
             }
           }
-            \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+          
+          \break
+          \rbar
+
+          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
 
           % A
-          \sect "A" ""
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-          \comp #4 | \comp #4 | \comp #4 |
+          \sect "A" "cascara"
+          \comp #4 | \comp #4 | r8 cb4 r8 cb4 r8 cb8 | \comp #4 |
+          \comp #4 | \comp #4 | r8 cb8 cb8 cb4 cb4 cb8 | \comp #4 |
+          \break
+          \comp #4 | \comp #4 | r8 cb4 r8 cb4 r8 cb8 | \comp #4 |
+          \comp #4 | \comp #4 | r8 cb8 cb8 cb4 cb8 timh4:16~ |
           \bar "||" 
 
           % B
-          \sect "B" ""
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+          \sect "B" "bell"
+          timh^4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
           \comp #4 | \comp #4 | \comp #4 | \comp #4 |
           \comp #4 | \comp #4 | 
-          \bar "||" 
+          \bar "||"
+          \break
           
           \comp #4 | \comp #4 | \comp #4 | \comp #4 |
           \comp #4 | \comp #4 | 
@@ -71,28 +80,32 @@ sect = #(define-music-function (text title) (string? string?)
           \alternative {
             \volta 1 {
               \comp #4 | \comp #4 |
-              \bar "||" 
+
+              \bar "[|:-||"
 
               % C
-              \sect "C" ""
-              \bar "[|:"
+              \sect "C" "Mona"
               \comp #4 | \comp #4 | \comp #4 | \comp #4 |
               \bar ":|]"
             }
 
             \volta 2 \volta #'() {
+                \section
+                \sectionLabel "Out"
             }
           }
         }
 
         \break
         \rbar
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        timh4^> timh4^> \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
         \bar "||" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \sectionLabel "Coro"
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4
 
         \break
+        \rbar
         \sectionLabel "Coro (open)"
         \bar "[|:"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
@@ -103,6 +116,7 @@ sect = #(define-music-function (text title) (string? string?)
         \bar ":|][|:"
 
         \break
+        \rbar
         \sectionLabel "Piano (open)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
@@ -112,9 +126,12 @@ sect = #(define-music-function (text title) (string? string?)
         \bar ":|][|:"
 
         \break
+        \rbar
         \sectionLabel "Coda (on cue)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+
+        \fine
     }
-}
+>>

@@ -6,9 +6,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "Lazaro y su Microfono"
-  subsubtitle = "(Cha-Cha-Cha)"
   composer = "Mayito Fernandez"
-  poet = "Timbales"
+  subsubtitle = "(Cha-Cha-Cha)"
+  instrument = "Timbales"
   tagline = \markup { "Lazaro y su Microfono - https://github.com/mikea/timbales - " \date }
 }
 
@@ -44,7 +44,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
         \sect "E" "Piano Solo"
-        \bar "[|:" 
+        \bar "[|:-||" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]" 
         \comp #4 | cb16 cb16 cb16 cb16 cb4 cb16 cb16 cb16 cb16 cb4 |
@@ -54,7 +54,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
         \sect "G" "Coro/Pregon"
-        \bar "[|:" 
+        \bar "[|:-||" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
         \bar ":|][|:" 
@@ -68,7 +68,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
         \sect "J" "(open)"
-        \bar "[|:" 
+        \bar "[|:-||" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
@@ -77,7 +77,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "K" "(on cue)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \bar "[|:" 
+        \bar "[|:-||" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]" 
         \comp #4 | timh8 timh8 r8 timh4 timh8 timh4 | r4 r8 timh8 timh4 r8 timh16 timh16 | timh4 r2. |

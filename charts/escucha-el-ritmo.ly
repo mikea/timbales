@@ -1,5 +1,4 @@
 \version "2.24.2"
-\include "common/all.ly"
 \include "charts/common.ly"
 
 date = #(strftime "%Y-%m-%d" (localtime (current-time)))
@@ -8,8 +7,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   title = "Escucha el Ritmo"
   subsubtitle = "(Cha-Cha-Cha)"
   composer = "Spanish Harlem Orchetra"
-  poet = "Timbales"
-  meter = "2-3 clave"
+  instrument = "Timbales"
   tagline = \markup { "Escucha el Ritmo - https://github.com/mikea/timbales - " \date }
 }
 
@@ -26,69 +24,72 @@ sect = #(define-music-function (text) (string?)
         \override Score.BarNumber.break-visibility = ##(#f #t #t)
 
         % intro
-        \comp #4 | \comp #4 |
+        timl4 timl8 timh8 r8 timl8 timl8 timh8 | r4 r8 timl8 timh8 timh8 r4 |
         \bar "||"
 
         \sectionLabel "Piano"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        r2 r2 | r2 r2 | r2 r2 | r2. timh4:16 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
 
         \sect "Trumpet"
         \bar "[|:-|"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ ^"2nd time" |
         \bar ":|][|:" 
 
         \sect "Coro & Horn Solo (open)"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \bar ":|]"
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ ^"2nd time" |
 
-        \sect "Coro (open)"
         \bar ":|][|:" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+
+        \sect "Coro/Pregon (open)"
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \sectionLabel "on cue"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \sectionLabel "Last Coro (on cue)"
+        \comp #4 | \comp #4 | \comp #4 | r2 r8 timl8 timl8 timh8 |
         \bar "||"
-        \comp #4 | \comp #4 |
+        timl8 timl8 timh4 r2 | r8 timl4 timl8 r4 timh8 timh8 |
 
         \sect "Piano (open)"
         \bar "[|:-|"
+        \textMark "cascara"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
         \sectionLabel "on cue"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \rs \rs \rs timh4^> | r8 timh4 timh8 r4 timh8 timh8 |
         \bar "||"
 
 
         \sect "Mambo"
         \bar "[|:-|"
+        \textMark "bell"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \comp #4 | \comp #4 |
+        \break
+        r4 r8 timl8 r4 r8 timh8  | r8 timh4 timh8 r4 \tuplet 3/2 { cb8 cb8 cb8 }  |
         \bar "[|:-|"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        cb4 r4 r2 | r1 | r8 cb8 cb4 r2 | r2 r8 cb8 cb4 |
         \bar ":|][|:" 
 
-        \sect "Perc Solo (open)"
+        \sect "Perc Solo / Coro (open)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:" 
 
         \sect "Mona"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ ^"2nd time" |
         \bar ":|][|:" 
 
-        \sect "Coro (open)"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \sect "Coro / Pregon (open)"
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:" 
 
         \sect "Coda"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
 
-        \comp #4 | \comp #4 | 
+        cb8 cb8 cb4 r2 | r8 cb8 r4 r4 cb8^> cb8^> | 
         
         \fine
     }
