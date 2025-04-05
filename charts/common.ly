@@ -11,6 +11,7 @@ rbar = { \set Score.currentBarNumber = 1 }
     \override CenteredBarNumberLineSpanner.direction = #DOWN
     \override JumpScript.font-size = #3
     \override JumpScript.font-series = #'bold
+    \override Rest.staff-position = #0
   }
 }
 

@@ -40,13 +40,22 @@ newDrumVoiceTwo = #(define-music-function
     } { #music }
   #})
 
+#(define mytimbales `(
+        (losidestick cross #f -1)
+        (lotimbale () #f -1)
+        (cowbell triangle #f 2)
+        (hisidestick cross #f 1)
+        (hitimbale () #f 1)
+        (crashcymbal xcircle #f 3)
+))
+
 newTimbalesStaff = #(define-music-function
   (music)
   (ly:music?)
   #{
     \new DrumStaff \with {
         % instrumentName = "Timbales"
-        drumStyleTable = #timbales-style
+        drumStyleTable = #(alist->hash-table mytimbales)
         \override StaffSymbol.line-count = #2
         \override TextScript.font-size = #-6
         \override TextScript.font-family = #'sans
