@@ -21,7 +21,7 @@ sect = #(define-music-function (text) (string?)
 
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
-        \override Score.BarNumber.break-visibility = ##(#f #t #t)
+        \tempo 4 = 133
 
         % intro
         timl4 timl8 timh8 r8 timl8 timl8 timh8 | r4 r8 timl8 <<timl8 timh8>> <<timl8 timh8>> r4 |

@@ -12,6 +12,7 @@ rbar = { \set Score.currentBarNumber = 1 }
     \override JumpScript.font-size = #3
     \override JumpScript.font-series = #'bold
     \override Rest.staff-position = #0
+    \override BarNumber.break-visibility = ##(#f #t #t)
   }
 }
 
