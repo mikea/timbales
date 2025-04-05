@@ -13,6 +13,10 @@ Contents:
 Charts (transcriptions):
 - [Escucha el ritmo](pdf/escucha-el-ritmo.pdf)
 - [Fuego en el 23](pdf/fuego-en-el-23.pdf)
+- [La rebelion](pdf/la-rebelion.pdf)
+- [Lazaro y su microfono](pdf/lazaro-y-su-microfono.pdf)
+
+
 
 
 
