@@ -11,7 +11,8 @@ Contents:
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
 
 Charts (transcriptions):
-- [Escucha el ritmo)[pdf/escucha-el-ritmo.pdf)
+- [Escucha el ritmo](pdf/escucha-el-ritmo.pdf)
+- [Fuego en el 23](pdf/fuego-en-el-23.pdf)
 
 
 
