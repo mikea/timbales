@@ -8,3 +8,8 @@ Contents:
 - [Bell Patterns](pdf/bell.pdf)
 - [Fills/Breaks](pdf/fills.pdf)
 - [Solo Concepts](pdf/solo.pdf)
+- [Cha-cha-cha](pdf/cha-cha-cha.pdf)
+
+Charts (transcriptions):
+
+
