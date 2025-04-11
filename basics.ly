@@ -6,6 +6,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "Basic Patterns"
+  instrument = "Timbales"
   tagline = \markup { \date "https://github.com/mikea/timbales" }
 }
 

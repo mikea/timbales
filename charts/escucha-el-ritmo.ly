@@ -60,7 +60,7 @@ sect = #(define-music-function (text) (string?)
         \sect "Coro/Pregon (open)"
         timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \sectionLabel "last coro (on cue)"
+        \sectionLabel "last coro (on cue)" \rbar
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar "||"
         <<timl8 cb8>> <<timl8 cb8>> <<timl4 cb4>> r2 | r8 <<timl4 cb4>> <<timl8 cb8>> r4 \drag timh8 cymc8~ |
@@ -70,7 +70,7 @@ sect = #(define-music-function (text) (string?)
         \textMark "cascara"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \sectionLabel "on cue"
+        \sectionLabel "on cue" \rbar
         \comp #4 | \comp #4 | \rs \rs \rs r8 timh8^> | r8 <<timl4 cb4>> <<timl8 cb8>> r4 \drag timh8 cymc8~ |
         \bar "||"
 
@@ -80,10 +80,13 @@ sect = #(define-music-function (text) (string?)
         \textMark "bell"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:" 
+        \rbar
         \comp #4 | \comp #4 | \rs \rs \drag timh8 cymc8 r4 | \comp #4 |
         \bar ":|]"
         \break
+        \rbar
         r8 <<timl8 cb8>> <<timl8 cb8>> <<timl8 cb8>> r8 <<timl8 cb8>> <<timl8 cb8>> <<timl8 cb8>>  | r8 <<timl4 cb4>> <<timl8 cb8>> r2
+        \rbar
         \bar "[|:-|"
         cymc4 r4 r2 | r8 cb8 cb8 timl8  cb8 cb8 timl8 cb8 | timl8 cb8 cb4 r2 | r8 cb8 cb8 timl8  cb8 cb8 timl16 cb8 cb16 |
         \bar ":|][|:" 
@@ -103,7 +106,7 @@ sect = #(define-music-function (text) (string?)
         \sect "Coda"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-
+        \rbar
         cb8 cb8 cb4 r2 | r8 cb8 r4 r4 cb8^> cb8^> | 
         
         \fine

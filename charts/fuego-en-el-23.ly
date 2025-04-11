@@ -32,7 +32,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         % B
         \sect "B" "3-2 cascara"
-        timl4^> \rs \rs \rs | \comp #4 | \rs r8 cymc8 \rs r8 cymc8 | \comp #4 |
+        timh4^> \rs \rs \rs | \comp #4 | \rs r8 cymc8 \rs r8 cymc8 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \drag timh4 r8 timh8^> r4 timh4:16~ |
         \bar "||" 
@@ -40,14 +40,14 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         % C
         \sect "C" "2-3 cascara"
-        timl4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \rs r8 timh8^> r4 timl4:16~ | 
+        \comp #4 | \rs r8 timh8^> r4 timh4:16~ | 
         \bar "||" 
 
         % D
         \sect "D" ""
-        timl4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | 
         \bar "||" 
         \sectionLabel "Coro"
@@ -81,7 +81,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         % H
         \sect "H" "Coro"
-        timl4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar "||" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
@@ -164,7 +164,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         % out
         \break
         \rbar
-        \sectionLabel "Out"
+        \sectionLabel "Coda"
         \textMark "cascara"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \rs \rs \rs cymc4 | \comp #4 | \rs \rs \rs cymc4 |

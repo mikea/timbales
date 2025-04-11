@@ -12,8 +12,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   tagline = \markup { "La Rebelion - https://github.com/mikea/timbales - " \date }
 }
 
-rbar = { \set Score.currentBarNumber = 1 }
-
 sect = #(define-music-function (text title) (string? string?)
   #{
     \rbar
@@ -24,7 +22,7 @@ sect = #(define-music-function (text title) (string? string?)
 
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
-        \override Score.BarNumber.break-visibility = ##(#f #t #t)
+        \tempo 4 = 210
 
         % intro
         \bar "[|:" 
@@ -45,7 +43,7 @@ sect = #(define-music-function (text title) (string? string?)
               \volta 1 { | \comp #4 | \comp #4 | }
               \volta 2 { 
                 { \set Score.currentBarNumber = 7 }
-                | r8 timh4^> r8 timh4^> r8 timh8^> | \comp #4 | 
+                | r8 <<cb4 timl4>> r8 <<cb4 timl4>> r8 <<cb8 timl8>> | \comp #4 | 
                 }
             }
           }
@@ -54,15 +52,15 @@ sect = #(define-music-function (text title) (string? string?)
           \rbar
 
           \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-
+          \bar "||"
 
           % A
           \sect "A" "cascara"
-          \comp #4 | \comp #4 | r8 cb4 r8 cb4 r8 cb8 | \comp #4 |
-          \comp #4 | \comp #4 | r8 cb8 cb8 cb4 cb4 cb8 | \comp #4 |
+          \comp #4 | \comp #4 | r8 <<cb4 timl4>> r8 <<cb4 timl4>> r8 <<cb8 timl8>> | \comp #4 |
+          \comp #4 | \comp #4 | r8 <<cb8 timl8>> <<cb8 timl8>> <<cb4 timl4>> <<cb4 timl4>> <<cb8 timl8>> | \comp #4 |
           \break
-          \comp #4 | \comp #4 | r8 cb4 r8 cb4 r8 cb8 | \comp #4 |
-          \comp #4 | \comp #4 | r8 cb8 cb8 cb4 cb8 timh4:16~ |
+          \comp #4 | \comp #4 | r8 <<cb4 timl4>> r8 <<cb4 timl4>> r8 <<cb8 timl8>> | \comp #4 |
+          \comp #4 | \comp #4 | \textMark "clave breaks" r8 <<cb8 timl8>> <<cb8 timl8>> <<cb4 timl4>> <<cb8 timl8>> timh4:16~ |
           \bar "||" 
 
           % B
@@ -98,7 +96,7 @@ sect = #(define-music-function (text title) (string? string?)
 
         \break
         \rbar
-        timh4^> timh4^> \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
+        <<timl4 timh4^> >> <<timl4 timh4^> >> \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
         \bar "||" 
         \sectionLabel "Coro"
         timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
@@ -107,11 +105,11 @@ sect = #(define-music-function (text title) (string? string?)
         \break
         \rbar
         \sectionLabel "Coro (open)"
-        \bar "[|:"
+        \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
 
-        \sectionLabel "Trumpet (open)"
+        \sectionLabel "Trumpet (open)" \rbar
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
 
@@ -121,7 +119,7 @@ sect = #(define-music-function (text title) (string? string?)
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
 
-        \sectionLabel "Coro (open)"
+        \sectionLabel "Coro (open)" \rbar
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
 
@@ -130,6 +128,7 @@ sect = #(define-music-function (text title) (string? string?)
         \sectionLabel "Coda (on cue)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
+        \rbar
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
         \fine
