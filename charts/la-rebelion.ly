@@ -43,15 +43,13 @@ sect = #(define-music-function (text title) (string? string?)
               \volta 1 { | \comp #4 | \comp #4 | }
               \volta 2 { 
                 { \set Score.currentBarNumber = 7 }
-                | r8 <<cb4 timl4>> r8 <<cb4 timl4>> r8 <<cb8 timl8>> | \comp #4 | 
+                | r8 <<cb4 timl4>> r8 <<cb4 timl4>> r8 <<cb8 timl8>> | r1 | 
                 }
             }
           }
           
-          \break
-          \rbar
-
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+          \bar "||"
+          r1 | r1 | r1 | r1 |
           \bar "||"
 
           % A
@@ -96,7 +94,7 @@ sect = #(define-music-function (text title) (string? string?)
 
         \break
         \rbar
-        <<timl4 timh4^> >> <<timl4 timh4^> >> \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
+        <<timl4 timh4^> >> <<timl4 timh4^> >> r2 | r1 | r1 | r2 r4 timh4:16~ |
         \bar "||" 
         \sectionLabel "Coro"
         timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
