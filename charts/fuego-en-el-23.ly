@@ -108,7 +108,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         % J
         \sect "J" "Bass Solo"
         \textMark "cascara"
-        r1 | r1 | r4 r8 timh8^> r4 timh4:16~ |
+        r1 | r1 | r1 | r4 r8 timh8^> r4 timh4:16~ |
         \bar "||" 
 
         % K
