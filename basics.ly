@@ -14,9 +14,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \newTimbalesStaff <<
   \newDrumVoiceOne \drummode { 
-    % lilypond varies stem length otherwise, which looks ugly
-    \override Stem.details.beamed-lengths = #'(4) 
-
     \sectionLabel "Paila (Cascara)"
     \bar ".|:" 
     ssh4-> ssh8 ssh-> r ssh-> r ssh | ssh4-> ssh-> ssh8 ssh-> r ssh 
@@ -26,9 +23,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   } 
   \newDrumVoiceTwo \drummode {
     % paila 3/2
-    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
+    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
     % paila 2/3
-    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
+    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
   }
 
 \new RhythmicStaff \with {
@@ -127,8 +124,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":|."
   } }
   \new DrumVoice { \voiceTwo  \drummode {
-    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
-    r4 timl_+ r4 timl4_O | r4 timl_+ r4 timl4_O |
+    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
+    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
   }}
 
 \new RhythmicStaff \with {
@@ -172,7 +169,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \new DrumVoice { \voiceOne \drummode { 
         \sectionLabel "Mozambique"
         \bar ".|:" 
-        \footnote #'(-1 . 1) "+ - neck, o - mouth of the bell" cb4_+ 4_+ 8_O  8_O r cb_+ | r cb_+ cb_+ r cb8_O cb8_O r cb_+ |
+        \footnote #'(-1 . 1) "+ - neck, o - mouth of the bell" cb4_+ 4_+ 8  8 r cb_+ | r cb_+ cb_+ r cb8 cb8 r cb_+ |
         \bar ":|."
     }}
     \new DrumVoice { \voiceTwo  \drummode {
@@ -207,7 +204,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|."
     }}
     \new DrumVoice { \voiceTwo  \drummode {
-      timl4._O timl4._+ | timl4._O timl4._+ |
+      timl4. \ghost timl4. | timl4. \ghost timl4. |
       timl4 r4 r4 | ssl4 r4 r4 |
       r4 timl4 timh4 | r4 timl4 timh4 |
     }}
@@ -224,48 +221,56 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 %% Cha-cha-cha
 
 \newTimbalesStaff <<
-    \newDrumVoiceOne \drummode { 
       \sectionLabel "Cha-cha-cha"
       \time 4/4
+    \newDrumVoiceOne \drummode { 
+      \bar ".|:" 
+      cb4 4 4 4 | cb4 4 4 4 |
+      \bar ":|."
       \bar ".|:" 
       cb4 4 4 4 | cb4 4 4 4 |
       \bar ":|."
     }
     \newDrumVoiceTwo \drummode {
-      r4 timl4_+ r4 timl4_O | r4 timl4_+ r4 timl4_O |
-      
+      r4 \ghost timl4 r4 timl4 | r4 \ghost timl4 r4 timl4 |      
+      r4 r8 \ghost timl8 r4 timl8 timl8 | r4 r8 \ghost timl8 r4 timl8 timl8 |      
     }
 >>
 
-% LH
+% Bomba
 
-\newTimbalesStaff {
-  \newDrumVoiceTwo \drummode { 
-    \sectionLabel "LH Patterns"
+\newTimbalesStaff <<
+    \sectionLabel "Bomba (Puerto Rico)"
+    \time 4/4
 
-    \bar ".|:" 
+    \newDrumVoiceOne \drummode { 
+      \bar ".|:" 
+      cb8 cb r cb r cb cb4 | cb8 cb r cb cb cb cb4
+      \bar ":|.|:"
+      cb8 cb r cb r cb cb4 | cb8 cb r cb cb cb cb4
+      \bar ":|."
+    }
+    \newDrumVoiceTwo \drummode {
+      r4 \ghost timl4 r4 timl4 | r4 \ghost timl4 r4 timl4 |      
+      r4 \ghost timl4 r8 timl8 timl4 | r4 \ghost timl4 r8 timl8 timl4 |      
+    }
+>>
 
-    r4 timl4_+ r4      timl4_O | r4 timl4_+ r4 timl4_O | \bar ":..:"
-    r4 timl4_+ r4      timl8_O timl8_O | r4 timl4_+ r4 timl8_O timl8_O | \bar ":..:"
-    \break
-    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl8_+ timl8_+ r4 timl8_O timl8_O | \bar ":..:"
-    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r4 timl8_O timl8_O | \bar ":..:"
-    \break
-    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r8 timl8_O r8 timl8_O | \bar ":..:"
-    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl8_+ timl8_+ r8 timl8_O r8 timl8_O | \bar ":..:"
-    \break
-    r4 timl4_+ r4      timl8_O timl8_O | r4 timl4_+ r8 timl8_O r8 timl8_O | \bar ":..:"
-    r4 timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
-    \break
-    r8 timl8_+ timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl4_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
-    r8 timl8_+ timl8_+ timl8_+ r4 timl8_O timl8_O | r4 timl8_+ timl8_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
-    \break
-    r8 timl8_+ r8 timl8_+ r8 timl8_O r8 timl8_O | r8 timl8_+ timl4_+ r8 timl8_O timl8_O timl8_O | \bar ":..:"
-    r4. timl8_+ r4      timl4_O | r4. timl8_+ r4 timl4_O | \bar ":..:"
-    \break
-    r4 timl4_O r4      timl4_+ | r4 timl4_O r4 timl4_+ | \bar ":..:"
-    r4. timl8_O r4      timl4_+ | r4. timl8_O r4 timl4_+ | \bar ":..:"
+% Bomba
 
-    \bar ":|."
-  }
-}
+\newTimbalesStaff <<
+    \sectionLabel "La Raspa"
+    \time 4/4
+
+    \newDrumVoiceOne \drummode { 
+      \bar ".|:" 
+      ssh4^> r8 ssh8 ssh4^> r8 ssh8
+      \bar ":|.|:"
+      ssh4^> ssh8 ssh8 ssh4^> ssh8 ssh8
+      \bar ":|."
+    }
+    \newDrumVoiceTwo \drummode {
+      s4 \ghost timh4 s4 timl4 | 
+      s4 \ghost timh4 s4 timl4 |      
+    }
+>>

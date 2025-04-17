@@ -10,7 +10,7 @@ Contents:
 - [Solo Concepts](pdf/solo.pdf)
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
 
-Charts (transcriptions updated to match our band performance):
+Charts (own transcriptions updated to match our band performance/winds charts):
 - [Escucha el ritmo](pdf/escucha-el-ritmo.pdf)
 - [Fuego en el 23](pdf/fuego-en-el-23.pdf)
 - [La rebelion](pdf/la-rebelion.pdf)
