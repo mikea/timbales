@@ -15,6 +15,7 @@ Charts (own transcriptions updated to match our band performance/winds charts):
 - [Fuego en el 23](pdf/fuego-en-el-23.pdf)
 - [La rebelion](pdf/la-rebelion.pdf)
 - [Lazaro y su microfono](pdf/lazaro-y-su-microfono.pdf)
+- [Changuito se Boto](pdf/changuito-se-boto.pdf)
 
 ## Notes
 

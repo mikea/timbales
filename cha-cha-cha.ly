@@ -34,11 +34,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         <<ssh8 ssl8>> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 ssl8 
         <<ssh8 ssl8>> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 ssl8
         \bar ":..:"
-        ssh8^> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 \slurDown \acciaccatura {ssh8} ssl8 
-        ssh8^> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 \slurDown \acciaccatura {ssh8} ssl8 
-        | \bar ":..:"
-        ssh8^> \tuplet 3/2 { ssl16 ssh16 ssl16 } ssh8 ssl8 
-        ssh8^> \tuplet 3/2 { ssl16 ssh16 ssl16 } ssh8 ssl8 
+        <<ssh8 ssl8>> ssl16 ssl16 ssh8 ssl8 
+        <<ssh8 ssl8>> ssl16 ssl16 ssh8 ssl8
         | \bar ":..:"
     }
 >>

@@ -26,3 +26,10 @@ sect = #(define-music-function (text title) (string? string?)
     \sectionLabel \markup { \box { #text } #title }
   #}
 )
+
+sect-no-break = #(define-music-function (text title) (string? string?)
+  #{
+    \rbar
+    \sectionLabel \markup { \box { #text } #title }
+  #}
+)
