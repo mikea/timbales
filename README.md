@@ -16,6 +16,8 @@ Charts (own transcriptions updated to match our band performance/winds charts):
 - [La rebelion](pdf/la-rebelion.pdf)
 - [Lazaro y su microfono](pdf/lazaro-y-su-microfono.pdf)
 - [Changuito se Boto](pdf/changuito-se-boto.pdf)
+- [Yambeque](pdf/yambeque.pdf)
+- [Numero 6](pdf/numero-6.pdf)
 
 ## Notes
 
