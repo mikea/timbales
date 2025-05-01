@@ -12,14 +12,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   tagline = \markup { "La Rebelion - https://github.com/mikea/timbales - " \date }
 }
 
-sect = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \break
-    \sectionLabel \markup { \box { #text } #title }
-  #}
-)
-
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
         \tempo 4 = 210
@@ -58,7 +50,7 @@ sect = #(define-music-function (text title) (string? string?)
           \comp #4 | \comp #4 | r8 <<cb8 timl8>> <<cb8 timl8>> <<cb4 timl4>> <<cb4 timl4>> <<cb8 timl8>> | \comp #4 |
           \break
           \comp #4 | \comp #4 | r8 <<cb4 timl4>> r8 <<cb4 timl4>> r8 <<cb8 timl8>> | \comp #4 |
-          \comp #4 | \comp #4 | \textMark "clave breaks" r8 <<cb8 timl8>> <<cb8 timl8>> <<cb4 timl4>> <<cb8 timl8>> timh4:16~ |
+          \comp #4 | \comp #4 | \textMark "clave breaks" r8 <<cb8 timl8>> <<cb8 timl8>> <<cb4 timl4>> <<cb8 timl8>> timh4:16 |
           \bar "||" 
 
           % B
@@ -94,10 +86,10 @@ sect = #(define-music-function (text title) (string? string?)
 
         \break
         \rbar
-        <<timl4 timh4^> >> <<timl4 timh4^> >> r2 | r1 | r1 | r2 r4 timh4:16~ |
+        <<timl4 timh4^> >> <<timl4 timh4^> >> r2 | r1 | r1 | r2 r4 timh4:16 |
         \bar "||" 
         \sectionLabel "Coro"
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4
 
         \break

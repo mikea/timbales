@@ -26,7 +26,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar "||" 
 
         \sect "A" ""
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \rs \rs timh4^> timh4^> | timh4^> r2. | timh4^> r4 timh8^> timh8^> timh8^> timh8^> |
         \bar "||"
 

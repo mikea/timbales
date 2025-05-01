@@ -49,7 +49,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
           \comp 4 | \comp 4 | 
           \alternative {
             \volta 1 { \comp4 \comp4 \bar ":|]" }
-            \volta 2 { \rs \rs \rs timh4:16~ }
+            \volta 2 { \abanico-short }
           }
         }
         \rbar

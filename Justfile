@@ -11,4 +11,4 @@ _build TARGET:
     mkdir -p pdf
     lilypond -o pdf {{TARGET}}
 
-charts: (_build "charts/escucha-el-ritmo.ly") (_build "charts/fuego-en-el-23.ly") (_build "charts/la-rebelion.ly") (_build "charts/lazaro-y-su-microfono.ly")  (_build "charts/changuito-se-boto.ly") (_build "charts/yambeque.ly") (_build "charts/numero-6.ly")
+charts: (_build "charts/escucha-el-ritmo.ly") (_build "charts/fuego-en-el-23.ly") (_build "charts/la-rebelion.ly") (_build "charts/lazaro-y-su-microfono.ly")  (_build "charts/changuito-se-boto.ly") (_build "charts/yambeque.ly") (_build "charts/numero-6.ly")  (_build "charts/usted-abuso.ly")

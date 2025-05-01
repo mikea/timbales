@@ -33,3 +33,21 @@ sect-no-break = #(define-music-function (text title) (string? string?)
     \sectionLabel \markup { \box { #text } #title }
   #}
 )
+
+ssect = #(define-music-function (text) (string?)
+  #{
+    \rbar
+    \break
+    \sectionLabel \markup { #text }
+  #}
+)
+
+ssect-no-break = #(define-music-function (text) (string?)
+  #{
+    \rbar
+    \sectionLabel \markup { #text }
+  #}
+)
+
+abanico = \drummode { \rs r8 timh4.^> timh4:16 }
+abanico-short = \drummode { \rs \rs \rs timh4:16 }

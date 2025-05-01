@@ -27,27 +27,27 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        timh4^> r2 timh4:16~ | 
+        timh4^> r2 timh4:16 | 
         \bar "||" 
 
         % B
         \sect "B" "3-2 cascara"
-        timh4^> \rs \rs \rs | \comp #4 | \rs r8 cymc8 \rs r8 cymc8 | \comp #4 |
+        \comp #4 | \comp #4 | \rs r8 cymc8 \rs r8 cymc8 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \drag timh4 r8 timh8^> r4 timh4:16~ |
+        \comp #4 | \comp #4 | \drag timh4 r8 timh8^> r4 timh4:16 |
         \bar "||" 
 
 
         % C
         \sect "C" "2-3 cascara"
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \rs r8 timh8^> r4 timh4:16~ | 
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \rs r8 timh8^> r4 timh4:16 | 
         \bar "||" 
 
         % D
         \sect "D" ""
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | 
         \bar "||" 
         \sectionLabel "Coro"
@@ -69,19 +69,19 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \rs <<timl4 timh4>> r4 timh4^> |
         \sectionLabel "Coro"
         \bar "||" 
-        \rs \rs \rs \rs | \comp #4 | cb4^> cb4^> r4 cb4^> | r4 r8 timh8^> r4 timh4:16~ |
+        \rs \rs \rs \rs | \comp #4 | cb4^> cb4^> r4 cb4^> | r4 r8 timh8^> r4 timh4:16 |
         \bar "||" 
 
         % G
         \sect "G" "Horns"
         \textMark "bell"
         timh4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4  | <<timl4 timh4>> r4 r4 <<timl4 timh4>> | | r4 r8 timh8^> r4 timh4:16~ |
+        \comp #4 | \comp #4  | <<timl4 timh4>> r4 r4 <<timl4 timh4>> | | r4 r8 timh8^> r4 timh4:16 |
         \bar "||" 
 
         % H
         \sect "H" "Coro"
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar "||" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
@@ -92,37 +92,37 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar ":|]"
         \sectionLabel "Last Coro"
         \rbar
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
+        \comp #4 | \comp #4 | \comp #4 | \abanico-short |
 
         \break
         \rbar
         \sectionLabel "Mambo (4x)"
         \bar "[|:-||" 
-        timh4^> \rs \rs \rs | \comp #4 | timh4^> r4 r2 | timl4 timl8 timl8 r8 timl8 timl4 | 
+        \comp #4 | \comp #4 | timh4^> r4 r2 | timl4 timl8 timl8 r8 timl8 timl4 | 
         
         \bar ":|][|:"
         \rbar
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | cb8 cb8 cb8 cb8 r4 r4 | r4 r8 timh8^> r4 timh4:16^"1st time only" | 
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 | cb8 cb8 cb8 cb8 r4 r4 | r4 r8 timh8^> r4 timh4:16^"1st time only" | 
         \bar ":|]"
 
         % J
         \sect "J" "Bass Solo"
         \textMark "cascara"
-        r1 | r1 | r1 | r4 r8 timh8^> r4 timh4:16~ |
+        r1 | r1 | r1 | r4 r8 timh8^> r4 timh4:16 |
         \bar "||" 
 
         % K
         \sect "K" "Mona"
         \textMark "cascara"
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | <<timl4 cb4>> r4 r4 <<timl4 cb4>> | r4 r8 timh8^> r4 timh4:16~ |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | <<timl4 cb4>> r4 r4 <<timl4 cb4>> | r4 r8 timh8^> r4 timh4:16 |
         \bar "||" 
 
 
         % L
         \sect "L" "Coro"
         \textMark "bell"
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar "||" 
         \sectionLabel "Pregon"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |

@@ -21,13 +21,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         <<timl8 timh8>> <<timl8 timh8>> r4 r2 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \ruff timh8 timh8 r4 r2 | \rs \rs \ruff timh8 timh8 timh4:16~ |
+        \comp #4 | \comp #4 | \ruff timh8 timh8 r4 r2 | \rs \rs \ruff timh8 timh8 timh4:16 |
 
         % A
         \sect "A" "Coro (bell)"
         \textMark "bell"
         \bar "[|:-||"
-        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar "||"
 
@@ -36,18 +36,18 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
+        \comp #4 | \comp #4 | \comp #4 | \abanico |
         \bar ":|]"
 
         % C
         \sect "C" "Coro (bell)"
-        timh4^> \rs \rs \rs | | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16~ |
+        \comp #4 | | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \abanico-short |
 
         % D
         \sect "D" "Horns"
         \bar "[|:-||"
-        timh4^> \rs \rs \rs  | \comp #4 | \comp #4 | \textMark "fill out" \comp #4 |
+        \comp #4  | \comp #4 | \comp #4 | \textMark "fill out" \comp #4 |
 
         \bar ":|][|:" 
 
@@ -81,13 +81,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
           } 
         }
         \rbar
-        r2 timh4^> r4 | <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 timh4:16~ |
+        r2 timh4^> r4 | <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 timh4:16 |
         \bar "||"
 
         % G
         \sect "G" "Coro (campanas 2-3)"
         \textMark "bell"
-        timh4^> \rs \rs \rs | r8 timh8 8 8 8 8 <<timl4~ timh4^>~ >> | <<timl4 timh4 >> \rs \rs \rs | \rs \rs \rs timh4:16 |
+        \comp #4 | r8 timh8 8 8 8 8 <<timl4~ timh4^>~ >> | <<timl4 timh4 >> \rs \rs \rs | \abanico-short |
         \bar "[|:"
         \rbar
         \textMark "open"
@@ -108,11 +108,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         timh4 timh4^. timh4^. \tuplet 3/2 {r8 timh4^>} |
         \tuplet 3/2 {timh4^> timh8^>~} timh4 r4 timh4^>~ |
         timh4 timh4^. timh4^. r4 |
-        timh4^> timh8 timh8^> r4 timh4:16~ | \bar "||"
+        timh4^> timh8 timh8^> r4 timh4:16 | 
+        
+        \bar "||"
 
         % H
         \sect "H" "Coro (cha-cha-cha)"
-        timh4^> \rs \rs \rs  | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4  | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
 

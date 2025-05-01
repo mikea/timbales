@@ -18,6 +18,8 @@ Charts (own transcriptions updated to match our band performance/winds charts):
 - [Changuito se Boto](pdf/changuito-se-boto.pdf)
 - [Yambeque](pdf/yambeque.pdf)
 - [Numero 6](pdf/numero-6.pdf)
+- [Usted Abuso](pdf/usted-abuso.pdf)
+
 
 ## Notes
 
