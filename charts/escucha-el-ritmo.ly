@@ -25,27 +25,32 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r16 timh16 timh8  timh8 timh8   timh8^> timl8   timl8 timl8 |
 
 
-        \ssect "Trumpet"
-        \bar "[|:-|"
+        \ssect "Horns"
+        \bar "[|:-||"
 
         \repeat volta 2 {
           cymc4 \rs \rs \rs | \comp #4 | \comp #4 |
           \alternative {
-            \volta 1 { \rs \rs r8 cymc8 cymc4  |  }
-            \volta 2 { \rs \rs timh4^> timh4:32 | }
+            \volta 1 { \rs \rs r8 cymc8 cymc4  \bar ":|]" | }
+            \volta 2 { \rs \rs timh4^> timh4:32 \bar "||" | }
           }
         }
          
-        \bar ":|][|:" 
+        
 
-        \ssect "Coro & Horn Solo (open)"
+        \ssect "Coro & Horn Solo"
 
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | r8 timh8^> timh4^> timh4^> timh4^> \bar "||"
+        
+        \ssect "(open)"
+        \bar "[|:-||"
         \repeat volta 2 {
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 \bar "||"
-          \comp #4 | \comp #4 | \comp #4 |
+          \textMark "1st" \drag timl4 timh4^> r8 cb8 cb8 cb8 | 
+          cb8 cb8 cb8 cb8 cb8 timh8^> \drag timh8 timh8 | \comp #4 | 
           \alternative {
-            \volta 1 { r8 timh8^> timh4^> timh4^> timh4^> |  }
-            \volta 2 { \rs \rs timh4^> timh4:32 | }
+            \volta 1 { \comp #4 |  }
+            \volta 2 { \rs r8 timl8 timh4^> timh4:32 | }
           }
         }
 
@@ -59,12 +64,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar "||"
         <<timl8 cb8>> <<timl8 cb8>> <<timl4 cb4>> r2 | r8 <<timl4 cb4>> <<timl8 cb8>> r4 <<timl8 timh8>> <<timl8 timh8>> |
 
-        \ssect "Piano (open)"
+        \ssect "Piano (open) cascareo"
         \bar "[|:-|"
-        \textMark "cascara"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \sectionLabel "on cue (theme)" \rbar
+        \sectionLabel "on cue (melody)" \rbar
         \comp #4 | \comp #4 | \rs \rs \rs r8 timh8^> | r8 <<timl4 cb4>> <<timl8 cb8>> r4 \drag timh8 cymc8~ |
         \bar "||"
 
@@ -83,7 +87,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar "||"
         cymc4 r4 r2 | r8 cb8 cb8 timl8  cb8 cb8 timl8 cb8 | timl8 cb8 cb4 r2 | r8 cb8 cb8 timl8  cb8 cb8 timl16 cb8 cb16 |
         \bar "||"
-        cymc4 r4 r2 | r8 cb8 cb8 timl16 cb8 cb16 cb8 timl8 cb8 | timl8 cb8 cb4 r2 | r8 cb8 cb8 r4 cb8 cb4 |
+        cb4 r4 r2 | r8 cb8 cb8 timl16 cb8 cb16 cb8 timl8 cb8 | timl8 cb8 cb4 r2 | r8 cb8 cb8 r4 cb8 cb4 |
 
         \ssect "Coro / Perc Solos (open)"
         \bar "[|:-||" 

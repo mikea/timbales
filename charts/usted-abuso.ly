@@ -13,7 +13,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
-        % \tempo 4 = 175
+        \tempo 4 = 200
 
         % intro
         \textMark "cascara 2-3"
@@ -42,17 +42,18 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar "||" \rbar \break
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \abanico-short | 
+        \comp #4 | \rs \rs \rs \textMark "1st time" timh4:16 | 
 
         \bar ":|]"
 
 
         % C
         \sect "C" ""
-        <<timl4 timh4^> >> r4 r2 | r1 | r1 | r1 | r1 | r1 | r1 | r4. timh4.^> timh4:16 
+        <<timl4 timh4^> >> r4 r2 | r1 | r1 | r1 | r1 | r1 | <<timl4 cb4>> <<timl4 cb4>> r8 <<timl8 cb8>> <<timl4 cb4>> | 
+        r8 <<timl8 cb8>> <<timl8 cb8>> <<timl8 cb8>> <<timl8 cb8>> <<timl8 cb8>> <<timl4 cb4>> |
         \bar "||"
         \ssect "campanas"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \ruff timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \rs r8 cymc4 cymc4 cymc8 |
 
         \bar "[|:-||"
@@ -73,17 +74,17 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         % E
         \sect "E" "campanas"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \textMark "2nd" r8 timh8 timl4 |
         \bar ":|]"
         \ssect-no-break "cascara"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \rs\pp\< \rs \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs \rs \! |
+        \rs\pp\< \rs \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs \rs \! |
 
         \bar "||"
 
         % F
         \sect "F" ""
-        <<timl4 timh4^> >> r4 r2 | r1 | r1 | r1 | r1 | r1 | r1 | \textMark "ab." r1
+        <<timl4 timh4^> >> r4 r2 | r1 | r1 | r1 | r1 | r1 | \textMark "break" r1 |  r1
 
         \bar "||"
 
@@ -102,7 +103,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \ssect "cascara"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | <<timl4 timh4^> >> r4 r2
+        \comp #4 | \comp #4 | <<timl4 timh4^> >> r4 r2
 
         \fine
     }

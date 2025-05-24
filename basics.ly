@@ -256,7 +256,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     }
 >>
 
-% Bomba
+% La Raspa
 
 \newTimbalesStaff <<
     \sectionLabel "La Raspa"
@@ -273,4 +273,26 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       s4 \ghost timh4 s4 timl4 | 
       s4 \ghost timh4 s4 timl4 |      
     }
+>>
+
+% Bolero
+
+\newTimbalesStaff <<
+    \sectionLabel "Bolero"
+    \time 4/4
+
+    \newDrumVoiceOne \drummode { 
+      \bar ".|:" 
+      <<ssl8 ssh8>> 8 8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
+      \bar ":|.|:"
+      <<ssl8 ssh8>> ssh16 ssl16 ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
+      \bar ":|.|:"
+      <<ssl8 ssh8>> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
+      \bar ":|.|:"
+      <<ssl8 ssh8>> ssh32 ssl ssh ssl ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
+      \bar ":|.|:"
+      <<ssl8 ssh8>> ssh32 ssh ssl ssl ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
+      \bar ":|."
+    }
+    
 >>

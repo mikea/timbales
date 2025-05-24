@@ -19,6 +19,7 @@ Charts (own transcriptions updated to match our band performance/winds charts):
 - [Yambeque](pdf/yambeque.pdf)
 - [Numero 6](pdf/numero-6.pdf)
 - [Usted Abuso](pdf/usted-abuso.pdf)
+- [Como Fue](pdf/como-fue.pdf)
 
 
 ## Notes

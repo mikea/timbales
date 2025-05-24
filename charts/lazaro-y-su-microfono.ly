@@ -19,36 +19,37 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \partial 4 timh4^> |
         % intro
         \bar "[|:" 
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs \drag timh8 timh8 timh16 timh16 r8 |
+        \comp #4 | \comp #4 | \comp #4 | cb8 cb8 cb4 \ruff timh8 timh8 timh16 timh16 r8 |
         \bar "||" 
         \sectionLabel "piano"
-        \comp #4 | \comp #4 | cb8 cb8 cb8 <<timl4 timh4>> <<timl4 timh4>> <<timl8 timh8>> | r4 r8 <<timl4 timh4>> <<timl8 timh8>> timh4:16~ |
+        \comp #4 | \comp #4 | cb8 cb8 cb8 <<timl8 timh8>> r8 <<timl8 timh8>> r8 <<timl8 timh8>> | r4 r8 <<timl8 timh8>> r8 <<timl8 timh8>> timh4:16~ |
         \bar "||" 
 
         \sect "A" ""
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \rs \rs timh4^> timh4^> | timh4^> r2. | timh4^> r4 timh8^> timh8^> timh8^> timh8^> |
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | cb8 8 8 8 8 timl timh4^> |
+        \drag timl4 \rs \rs \rs | \rs \rs \drag timl4 timl4 | timl4 r2. | \ruff timh4 r4 \ruff timh8 timh8 timh8 timh8 |
         \bar "||"
 
         \sect "B" ""
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \rs \rs timh8^> timh4^> timh8^> | \rs \rs timh8^> timh4^> timh8^> | r4 r8 timh4.^> timh4:16 |
+        timl4 \rs \rs \rs | \rs \rs timl8 timl timh timh | timl8 timl^> \rs \rs \rs | cb8 8 8 8 8 timl timh4^> |
+        \drag timl4 \rs \rs \rs | \rs \rs timl8 timl8 r8 timl8 | r4 r4 r8 \ruff timh8 timh4 | timl4 r8 timh4.^> timh4:16 |
 
         \bar ":|][|:" 
 
         \repeat volta 2 {
+          % C
           \sect "C" "Coro (open)"
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+          \comp #4 | \comp #4 | \comp #4 | \rs cb8 8 8 8 8 8 |
+          \comp #4 | \comp #4 | \comp #4 | r8 cb8 cb4 r8 cb8 cb4 |
           \bar "||" 
 
           \sect "D" "Flute solo"
-          \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+          \ruff timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
           \comp #4 | \comp #4 | \comp #4 |
 
           \alternative {
-            \volta 1 { r2 r4 timh4:16 }
-            \volta 2 { r2 r4 <<timl8 timh8>> <<timl8 timh8>> }
+            \volta 1 { \abanico-short }
+            \volta 2 { \rs \rs \rs \drag timh8 8 }
           }
         }
 
@@ -66,11 +67,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "G" "Coro/Pregon"
         \bar "[|:-||" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \textMark "1st time" \ruff timh4^> \rs \rs \rs  | \comp #4 | \comp #4 | \comp #4 |
 
         \bar ":|][|:" 
 
-        \sect "H" "Coro/Flute Solo"
+        \sect-no-break "H" "Coro/Flute Solo"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]" 
 
