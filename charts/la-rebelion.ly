@@ -19,7 +19,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         % intro
         \bar "[|:" 
         \textMark "Piano"
-        r1 | r1 | r1 | r1 |
+        r1 | r1 | r1 | \textMark "2nd time" timl4 timl8 timh8 r4 timh4:16 |
         
         \bar ":|][|:" 
 

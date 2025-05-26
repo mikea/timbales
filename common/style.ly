@@ -40,6 +40,7 @@ newDrumVoiceTwo = #(define-music-function
     } { #music }
   #})
 
+
 #(define mytimbales `(
         (losidestick cross #f -1)
         (lotimbale () #f -1)
@@ -47,6 +48,8 @@ newDrumVoiceTwo = #(define-music-function
         (hisidestick cross #f 1)
         (hitimbale () #f 1)
         (crashcymbal xcircle #f 3)
+        (claves harmonic-black #f 2)
+        (lowoodblock  harmonic-black #f -2)
 ))
 
 newTimbalesStaff = #(define-music-function

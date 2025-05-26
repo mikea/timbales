@@ -14,7 +14,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \newTimbalesStaff <<
   \newDrumVoiceOne \drummode { 
-    \sectionLabel "Paila (Cascara)"
+    \sectionLabel "Cascara"
     \bar ".|:" 
     ssh4-> ssh8 ssh-> r ssh-> r ssh | ssh4-> ssh-> ssh8 ssh-> r ssh 
     \bar ":..:"
@@ -27,56 +27,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     % paila 2/3
     r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
   }
-
-\new RhythmicStaff \with {
-  % instrumentName = "Clave"
-} {
-    % 3-2
-    c4. c4. c4 r4 c c r |
-    % 2-3
-    r4 c c r c4. c4. c4 |
-}
->>
-
-%% Paila + Son Clave
-
-\new DrumStaff \with {
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-} <<
-  \new DrumVoice { \voiceOne \drummode { 
-    \sectionLabel "Paila + Son Clave"
-    \bar ".|:" 
-    cb4-> cb8 cb-> r cb-> r cb | cb4-> cb-> cb8 cb-> r cb |
-    \bar ":..:"
-    cb4-> cb-> cb8 cb-> r cb | cb4-> cb8 cb-> r cb-> r cb |
-    \bar ":|."
-  } }
-  \new DrumVoice { \voiceTwo  \drummode {
-    ssl4. ssl4. ssl4 | r4 ssl ssl r |
-    r4 ssl ssl r | ssl4. ssl4. ssl4 |
-  }}
->>
-
-
-%% Paila + Rumba Clave
-
-\new DrumStaff \with {
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-} <<
-  \new DrumVoice { \voiceOne \drummode { 
-    \sectionLabel "Paila + Rumba Clave"
-    \bar ".|:" 
-    cb4-> cb8 cb-> r cb-> r cb | cb4-> cb-> cb8 cb-> r cb |
-    \bar ":..:"
-    cb4-> cb-> cb8 cb-> r cb | cb4-> cb8 cb-> r cb-> r cb |
-    \bar ":|."
-  } }
-  \new DrumVoice { \voiceTwo  \drummode {
-    ssl4. ssl2 ssl8 | r4 ssl ssl r |
-    r4 ssl ssl r | ssl4. ssl2 ssl8 |
-  }}
 >>
 
 %% Double Cascara 
@@ -89,24 +39,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \sectionLabel "Double Cascara"
     \bar ".|:" 
     ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
-    \bar ":..:"
-    ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh16 ssl16 |
-    \bar ":..:"
-    \break
-    ssh8-> ssl16 ssh16 ssl8-> ssh ssl ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
-    \bar ":..:"
-    ssh8-> ssl16 ssh16 ssl8-> ssh ssl ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh16 ssl16 |
     \bar ":|."
   }}
-
-\new RhythmicStaff \with {
-} {
-    % 2-3
-    r4 c c r c4. c4. c4 |
-    r4 c c r c4. c4. c4 |
-    r4 c c r c4. c4. c4 |
-    r4 c c r c4. c4. c4 |
-}
 >>
 
 %% Mambo bell
@@ -127,14 +61,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
     r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
   }}
-
-\new RhythmicStaff \with {
-} {
-    % 3-2
-    c4. c4. c4 | r4 c c r |
-    % 2-3
-    r4 c c r | c4. c4. c4 |
-}
 >>
 
 %% Abanico
@@ -169,7 +95,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \new DrumVoice { \voiceOne \drummode { 
         \sectionLabel "Mozambique"
         \bar ".|:" 
-        \footnote #'(-1 . 1) "+ - neck, o - mouth of the bell" cb4_+ 4_+ 8  8 r cb_+ | r cb_+ cb_+ r cb8 cb8 r cb_+ |
+        cb4 4 8  8 r cb | r cb cb r cb8 cb8 r cb |
         \bar ":|."
     }}
     \new DrumVoice { \voiceTwo  \drummode {
@@ -179,9 +105,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \new RhythmicStaff \with {
     } {
         \bar ".|:" 
-
         r4 c c r | c4. c8 r4 r8 c8 | \bar ":..:"
-
         \bar ":|."
     }
 >>
@@ -226,8 +150,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \newDrumVoiceOne \drummode { 
       \bar ".|:" 
       cb4 4 4 4 | cb4 4 4 4 |
-      \bar ":|."
-      \bar ".|:" 
+      \bar ":|.|:"
       cb4 4 4 4 | cb4 4 4 4 |
       \bar ":|."
     }
@@ -285,13 +208,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ".|:" 
       <<ssl8 ssh8>> 8 8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
       \bar ":|.|:"
-      <<ssl8 ssh8>> ssh16 ssl16 ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
-      \bar ":|.|:"
       <<ssl8 ssh8>> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
-      \bar ":|.|:"
-      <<ssl8 ssh8>> ssh32 ssl ssh ssl ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
-      \bar ":|.|:"
-      <<ssl8 ssh8>> ssh32 ssh ssl ssl ssh8 8 <<ssl8 ssh8>> 8 <<ssl8 ssh8>> 8
       \bar ":|."
     }
     
