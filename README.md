@@ -9,6 +9,7 @@ Contents:
 - [Fills/Breaks](pdf/fills.pdf)
 - [Solo Concepts](pdf/solo.pdf)
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
+- [Cascareo](pdf/cascareo.pdf)
 
 Charts (own transcriptions updated to match our band performance/winds charts):
 - [Escucha el ritmo](pdf/escucha-el-ritmo.pdf)
