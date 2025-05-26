@@ -15,16 +15,16 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ".|:"
         <<ssh8 ssl8>> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 ssl8 
         <<ssh8 ssl8>> \tuplet 3/2 { ssh16 ssl16 ssl16 } ssh8 ssl8
-        \bar ":..:"
+        \bar ":|.|:"
         ssh8 ssl16 ssl16 ssh8 ssl8 
         ssh8 ssl16 ssl16 ssh8 ssl8
-        \bar ":..:"
+        \bar ":|.|:"
         cb8 ssl16 ssl16 cb8 ssl8 
         cb8 ssl16 ssl16 cb8 ssl8
-        \bar ":..:"
+        \bar ":|.|:"
         cb8 ssl16 ssl16 ssh8 ssl8 
         cb8 ssl16 ssl16 ssh8 ssl8
-        | \bar ":..:"
+        | \bar ":|.|:"
     }
 >>
 
@@ -49,7 +49,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 
 \newTimbalesStaff <<
-    \sectionLabel "Cascara"
+    \sectionLabel "Cascara (2-3)"
     \newDrumVoiceOne \drummode { 
         \bar ".|:" 
         ssh4-> ssh-> ssh8 ssh-> r ssh | ssh4-> ssh8 ssh-> r ssh-> r ssh 
@@ -63,10 +63,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     }
 
     \newDrumVoiceTwo \drummode {
-        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | \bar "||"
-        s4. \ghost timl8 s4 timl4 | s4. \ghost timl8 s4 timl4 | \bar "||"
-        r4 timh r4 timl4 | r4 timh r4 timl4 | \bar "||"
-        r8 \ghost timh r8 \ghost timh r4 timl8 r8 | r8 \ghost timh r2 timl4 \bar "||"
+        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
+        s4. \ghost timl8 s4 timl4 | s4. \ghost timl8 s4 timl4 | 
+        r4 timh r4 timl4 | r4 timh r4 timl4 | 
+        r8 \ghost timh r8 \ghost timh r4 timl8 r8 | r8 \ghost timh r2 timl4 
     }
 
 >>
@@ -90,19 +90,39 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 
 \newTimbalesStaff <<
-    \sectionLabel "Double Cascara"
+    \sectionLabel "Double Cascara (2-3)"
 
     \newDrumVoiceOne \drummode { 
         \bar ".|:" 
         ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
-        \bar ":..:"
+        \bar ":|.|:"
         ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh16 ssl16 |
-        \bar ":..:"
+        \bar ":|.|:"
         \break
         ssh8-> ssl16 ssh16 ssl8-> ssh ssl ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
-        \bar ":..:"
+        \bar ":|.|:"
         ssh8-> ssl16 ssl ssh8-> ssl ssh ssh-> ssl ssh | ssh-> ssl16 ssl ssh8 ssh-> ssl ssh-> ssl ssh |
         \bar ":|."
+    }
+
+>>
+
+\newTimbalesStaff <<
+    \sectionLabel "Cascara Variations (2-3)"
+    \newDrumVoiceOne \drummode { 
+        \bar ".|:" 
+        ssh4-> ssh4-> ssh4-> ssh4-> | ssh4-> ssh8 ssh-> r ssh-> r ssh |
+        \bar ":|.|:"
+        ssh4-> ssh-> ssh8 ssh-> r ssh-> | r8 ssh8 ssh8 ssh8-> r ssh-> r ssh |
+        \bar ":|.|:"
+        ssh4-> ssh-> ssh8 ssh-> r ssh | r8 ssh8 ssh8 ssh8 ssh4-> ssh8 ssh |
+        \bar ":|."
+    }
+
+    \newDrumVoiceTwo \drummode {
+        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
+        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
+        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
     }
 
 >>

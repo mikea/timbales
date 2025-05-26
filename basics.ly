@@ -10,22 +10,40 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   tagline = \markup { \date "https://github.com/mikea/timbales" }
 }
 
+%% Abanico
+
+\newTimbalesStaff <<
+    \newDrumVoiceOne \drummode { 
+        \sectionLabel "Abanico (3-2)"
+        <<cb4 timl>> r2. | r2 timh4-> timh:16~ | timh-> \rs \rs \rs \bar ".."
+        \sectionLabel "(2-3)"
+        <<cb4 timl>> r2. | r4. timh4.-> timh4:16~ | timh-> \rs \rs \rs \bar ".."
+    }
+    \newDrumVoiceTwo \drummode { 
+        % 3-2
+        wbl4. wbl4. wbl4 | s4 wbl wbl s4 | s1
+        % 2-3
+        s4 wbl wbl s4 | wbl4. wbl4. wbl4 | s1
+    }
+>>
+
 %% Cascara 
 
 \newTimbalesStaff <<
   \newDrumVoiceOne \drummode { 
-    \sectionLabel "Cascara"
+    \sectionLabel "Cascara (3-2)"
     \bar ".|:" 
     ssh4-> ssh8 ssh-> r ssh-> r ssh | ssh4-> ssh-> ssh8 ssh-> r ssh 
     \bar ":..:"
+    \sectionLabel "(2-3)"
     ssh4-> ssh-> ssh8 ssh-> r ssh | ssh4-> ssh8 ssh-> r ssh-> r ssh 
     \bar ":|."
   } 
   \newDrumVoiceTwo \drummode {
     % paila 3/2
-    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
+    s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 |
     % paila 2/3
-    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
+    s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 |
   }
 >>
 
@@ -36,8 +54,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \override StaffSymbol.line-count = #2
 } <<
   \new DrumVoice { \voiceOne \drummode { 
-    \sectionLabel "Double Cascara"
+    \sectionLabel "Double Cascara (3-2)"
     \bar ".|:" 
+    ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh | ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | 
+    \bar ":..:"
+    \sectionLabel "(2-3)"
     ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
     \bar ":|."
   }}
@@ -50,41 +71,20 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \override StaffSymbol.line-count = #2
 } <<
   \new DrumVoice { \voiceOne \drummode { 
-    \sectionLabel "Mambo Bell"
+    \sectionLabel "Mambo Bell (3-2)"
     \bar ".|:" 
     r8 cb cb cb cb4-> cb8 cb | cb4-> cb-> cb8 cb cb cb-> |
     \bar ":..:"
+    \sectionLabel "(2-3)"
     cb4-> cb-> cb8 cb cb cb-> | r8 cb cb cb cb4-> cb8 cb |
     \bar ":|."
   } }
   \new DrumVoice { \voiceTwo  \drummode {
-    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
-    r4 \ghost timl r4 timl4 | r4 \ghost timl r4 timl4 |
+    s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 |
+    s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 |
   }}
 >>
 
-%% Abanico
-
-\new DrumStaff \with {
-    drumStyleTable = #timbales-style
-    \override StaffSymbol.line-count = #2
-} <<
-    \new DrumVoice { \voiceOne \drummode { 
-        \sectionLabel "Abanico"
-        <<cb4 timl>> r r r | r r timl-> timl:16~ | timl-> r r r \bar "||"
-        <<cb4 timl>> r r r | r4. timl8-> r4 timl:16~ | timl-> r r r \bar "||"
-    }}
-    \new DrumVoice { \voiceTwo  \drummode {
-    }}
-
-    \new RhythmicStaff \with {
-    } {
-        % 3-2
-        c4. c4. c4 | r4 c c r | c4. c4. c4 \bar "||"
-        % 2-3
-        r4 c c r | c4. c4. c4 | r4 c c r\bar "||"
-    }
->>
 
 %% Mozambique
 
@@ -105,7 +105,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \new RhythmicStaff \with {
     } {
         \bar ".|:" 
-        r4 c c r | c4. c8 r4 r8 c8 | \bar ":..:"
+        r4 c c r | c4. c2 c8 | \bar ":..:"
         \bar ":|."
     }
 >>
@@ -149,14 +149,14 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \time 4/4
     \newDrumVoiceOne \drummode { 
       \bar ".|:" 
-      cb4 4 4 4 | cb4 4 4 4 |
+      cb4 4 4 4 |
       \bar ":|.|:"
-      cb4 4 4 4 | cb4 4 4 4 |
+      cb4 4 4 4 |
       \bar ":|."
     }
     \newDrumVoiceTwo \drummode {
-      r4 \ghost timl4 r4 timl4 | r4 \ghost timl4 r4 timl4 |      
-      r4 r8 \ghost timl8 r4 timl8 timl8 | r4 r8 \ghost timl8 r4 timl8 timl8 |      
+      s4 \ghost timl4 s4 timl4 |
+      s4. \ghost timl8 s4 timl8 timl8 |
     }
 >>
 

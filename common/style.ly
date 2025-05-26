@@ -42,13 +42,13 @@ newDrumVoiceTwo = #(define-music-function
 
 
 #(define mytimbales `(
-        (losidestick cross #f -1)
-        (lotimbale () #f -1)
-        (cowbell triangle #f 2)
-        (hisidestick cross #f 1)
-        (hitimbale () #f 1)
-        (crashcymbal xcircle #f 3)
-        (claves harmonic-black #f 2)
+        (losidestick  cross #f -1)
+        (lotimbale    () #f -1)
+        (cowbell      triangle #f 2)
+        (hisidestick  cross #f 1)
+        (hitimbale    () #f 1)
+        (crashcymbal  xcircle #f 3)
+        (claves       harmonic-black #f 2)
         (lowoodblock  harmonic-black #f -2)
 ))
 
