@@ -40,14 +40,42 @@ newDrumVoiceTwo = #(define-music-function
     } { #music }
   #})
 
+newDrumVoiceThree = #(define-music-function
+  (music)
+  (ly:music?)
+  #{
+    \new DrumVoice \with {
+        \voiceThree
+        % Smaller NoteHead
+        $(add-grace-property 'Voice 'NoteHead 'font-size -6)
+        % Smaller Flag
+        $(add-grace-property 'Voice 'Flag 'font-size -6)
+        % Shorter Stems for unbeamed Stems
+        $(add-grace-property 'Voice 'Stem 'length 3)
+        % Shorter Stems for beamed stems
+        $(add-grace-property 'Voice 'Stem 'details '((beamed-lengths . (2))))
+        % Beams less thick
+        $(add-grace-property 'Voice 'Beam 'beam-thickness 0.35)
+        % Beams closer together
+        $(add-grace-property 'Voice 'Beam 'length-fraction 0.7)
+    } { #music }
+  #})
+
+drumPitchNames.rbm = #'ridebellmouth
+drumPitchNames.rbn = #'ridebellneck
 
 #(define mytimbales `(
         (losidestick  cross #f -1)
         (lotimbale    () #f -1)
-        (cowbell      triangle #f 2)
         (hisidestick  cross #f 1)
         (hitimbale    () #f 1)
-        (crashcymbal  xcircle #f 3)
+        (crashcymbal  xcircle #f 5)
+
+        (cowbell       triangle #f 3)
+        (ridebell      triangle #f 5)
+        (ridebellneck  cross #f 5)
+        (ridebellmouth triangle #f 5)
+
         (claves       harmonic-black #f 2)
         (lowoodblock  harmonic-black #f -2)
 ))
