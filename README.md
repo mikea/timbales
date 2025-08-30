@@ -5,6 +5,7 @@ These are my personal notebooks for studying timbales.
 Contents:
 
 - [Basic Patterns](pdf/basics.pdf)
+- [Intros](pdf/intros.pdf)
 - [Cascareo](pdf/cascareo.pdf)
 - [Contracampana](pdf/contracampana.pdf)
 - [Bell Patterns](pdf/bell.pdf)

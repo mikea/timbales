@@ -99,3 +99,12 @@ newTimbalesStaff = #(define-music-function
     indent = 0
     ragged-bottom = ##t
 }
+
+
+\layout {
+  \context {
+    \Score
+    \omit BarNumber
+  }
+}
+
