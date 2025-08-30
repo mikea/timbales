@@ -44,3 +44,16 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     timh16_"R" timh16_"R" timh16_"L" timh16_"L" timh16_"R"^> timh16_"L"^>
     \bar ":|]" 
 }
+
+\newTimbalesStaff \newDrumVoiceOne \drummode { 
+  \bar "[|:"
+  timh16_"R" timh16_"R" timh16_"L" timh16_"L" timh16_"R"^> timh16_"R"^>
+  timh16_"L" timh16_"L" timh16_"R" timh16_"R" timh16_"L"^> timh16_"L"^>
+  timh16_"R" timh16_"R" timh16_"L" timh16_"L" timh16_"R"^> timh16_"R"^>
+  timh16_"L" timh16_"L" timh16_"R" timh16_"R" timh16_"L"^> timh16_"L"^>
+  timh16_"R" timh16_"R" timh16_"L" timh16_"L" timh16_"R"^> timh16_"R"^>
+  timh16_"L" timh16_"L" timh16_"R" timh16_"R" timh16_"L"^> timh16_"L"^>
+  timh16_"R" timh16_"R" timh16_"L" timh16_"L" timh16_"R"^> timh16_"R"^>
+  timh16_"L" timh16_"L" timh16_"R" timh16_"R" timh16_"L"^> timh16_"L"^>
+  \bar ":|]" 
+}

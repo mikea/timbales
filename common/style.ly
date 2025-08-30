@@ -69,7 +69,7 @@ drumPitchNames.rbn = #'ridebellneck
         (lotimbale    () #f -1)
         (hisidestick  cross #f 1)
         (hitimbale    () #f 1)
-        (crashcymbal  xcircle #f 5)
+        (crashcymbal  xcircle #f 3)
 
         (cowbell       triangle #f 3)
         (ridebell      triangle #f 5)
@@ -90,6 +90,7 @@ newTimbalesStaff = #(define-music-function
         \override StaffSymbol.line-count = #2
         \override TextScript.font-size = #-6
         \override TextScript.font-family = #'sans
+        % \override NoteHead.no-ledgers = ##t
     } { #music }
   #})
 

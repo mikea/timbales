@@ -13,7 +13,7 @@ Contents:
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
 - [Excercises](pdf/exercises.pdf)
 
-Charts (own transcriptions updated to match our band performance/winds charts):
+Charts from the band and my own transcriptions:
 - [Escucha el ritmo](pdf/escucha-el-ritmo.pdf)
 - [Fuego en el 23](pdf/fuego-en-el-23.pdf)
 - [La rebelion](pdf/la-rebelion.pdf)
@@ -23,7 +23,9 @@ Charts (own transcriptions updated to match our band performance/winds charts):
 - [Numero 6](pdf/numero-6.pdf)
 - [Usted Abuso](pdf/usted-abuso.pdf)
 - [Como Fue](pdf/como-fue.pdf)
-
+- [El Dominó](pdf/el-domino.pdf)
+- [Campiña](pdf/campina.pdf)
+- [Traigo La Salsa](pdf/traigo-la-salsa.pdf)
 
 ## Notes
 

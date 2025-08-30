@@ -68,7 +68,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         % Mambo
         \sect "Mambo" "cymbal cascara"
         \textMark "1st" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \comp #4 | \textMark "2nd" \abanico |
+        \comp #4 | \comp #4 | \comp #4 | \textMark "2nd" \abanico-long |
 
         \bar ":|][|:"
 
