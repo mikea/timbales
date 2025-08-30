@@ -14,6 +14,8 @@ Contents:
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
 - [Excercises](pdf/exercises.pdf)
 
+[All Parts Combined](pdf/all.pdf)
+
 Charts from the band and my own transcriptions:
 - [Escucha el ritmo](pdf/escucha-el-ritmo.pdf)
 - [Fuego en el 23](pdf/fuego-en-el-23.pdf)
