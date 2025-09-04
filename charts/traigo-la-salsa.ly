@@ -68,7 +68,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \abanico-long |
 
-        \sect "Coda" "cascara"
+        \sect "Coda" "campanas"
         \abanico-rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||" \break
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |

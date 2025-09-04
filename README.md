@@ -40,6 +40,6 @@ Random things I wish I knew before my first rehearsal:
 - Modern players seem to ignore neck/mouth bell voicing, but usually play close to the neck
   for sound consistency ("that stuff is for bongo players" as our director said)
 - Play extended fill on every first pregon (usually twice per song).
-- Play "bomba" (two hits on 4-&) before piano solo.
+- Play two hits on 4-& before piano solo.
 
 [@mikea](https://github.com/mikea)
