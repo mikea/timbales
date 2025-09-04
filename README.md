@@ -1,6 +1,8 @@
-# Timbales Notebooks
+
 
 These are my personal notebooks for studying timbales.
+
+Ping me if you are looking for a beginner timbalero in Bay Area.
 
 Contents:
 
@@ -39,3 +41,5 @@ Random things I wish I knew before my first rehearsal:
   for sound consistency ("that stuff is for bongo players" as our director said)
 - Play extended fill on every first pregon (usually twice per song).
 - Play "bomba" (two hits on 4-&) before piano solo.
+
+[@mikea](https://github.com/mikea)
