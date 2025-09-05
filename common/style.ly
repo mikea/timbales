@@ -69,12 +69,13 @@ drumPitchNames.rbn = #'ridebellneck
         (lotimbale    () #f -1)
         (hisidestick  cross #f 1)
         (hitimbale    () #f 1)
-        (crashcymbal  xcircle #f 3)
+        (crashcymbal  cross #f 3)
+        (crashcymbalb cross #f 5)
 
         (cowbell       triangle #f 3)
         (ridebell      triangle #f 5)
-        (ridebellneck  cross #f 5)
-        (ridebellmouth triangle #f 5)
+        (ridebellneck  triangle stopped 5)
+        (ridebellmouth triangle open 5)
 
         (claves       harmonic-black #f 2)
         (lowoodblock  harmonic-black #f -2)

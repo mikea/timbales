@@ -19,7 +19,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       timl4^>_"low r.s." s4 timh4^>_"high r.s." s4 |
       cb4_"mambo bell" s2. |
       rbm4_"cha-cha bell mouth" s2 rbn4_"neck" |
-      cymc4_"cymbal" s2. |
+      cymc4_"cymbal" s4 cymcb4_"cymbal" s4 |
       cl4_"clave/block" s2 wbl4_"clave/block" |
       
     }

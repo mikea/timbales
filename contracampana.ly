@@ -49,11 +49,18 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \newTimbalesStaff <<
     \sectionLabel "with cymbal"
+    \newDrumVoiceTwo \drummode { 
+      \bar ".|:" 
+      cb4 cb cb8 cb cb cb | r8 cb cb cb cb4 cb8 cb |
+      \bar ":..:"
+      cb4 cb cb8 cb cb cb | r8 cb cb cb cb4 cb8 cb |
+      \bar ":|."
+    }
     \newDrumVoiceOne \drummode { 
       \bar ".|:" 
-      cb4 <<cb cymc>> cb8 cb <<cb cymc>> cb | cymc cb cb cb <<cb4 cymc>> cb8 cb |
+      r4 <<cymcb>> r4 <<cymcb4>> | cymcb4 r4 <<cymcb4>> r4|
       \bar ":..:"
-      <<cb4 cymc>> <<cb cymc>> <<cb8 cymc>> <<cb cymc>> cb <<cb cymc>> | cymc cb <<cb cymc>> <<cb cymc>> cb8 cymc cb8 <<cb cymc>> |
+      <<cymcb4>> <<cymcb>> <<cymcb8>> <<cymcb>> r <<cymcb>> | cymcb r <<cymcb>> <<cymcb>> r8 cymcb r8 <<cymcb>> |
       \bar ":|."
     }
 >>
