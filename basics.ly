@@ -68,7 +68,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   \newDrumVoiceOne \drummode { 
     \sectionLabel "Double Cascara (3-2)"
     \bar ".|:" 
-    ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh | ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | 
+    ssh8-> ssl ssh ssh-> ssl ssh-> ssl ssh | ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | 
     \bar ":..:"
     \sectionLabel "(2-3)"
     ssh8-> ssl ssh-> ssl ssh ssh-> ssl ssh | ssh-> ssl ssh ssh-> ssl ssh-> ssl ssh |
