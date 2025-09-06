@@ -7,7 +7,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \header {
   title = "Cha-Cha-Cha"
   instrument = "Timbales"
-  tagline = \markup { "https://github.com/mikea/timbales/ - " \date  }
+  tagline = \markup { "https://mikea.github.io/timbales// - " \date  }
 }
 
 \newTimbalesStaff <<

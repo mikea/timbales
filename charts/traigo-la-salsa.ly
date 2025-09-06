@@ -8,7 +8,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   subsubtitle = "(Salsa 2-3)"
   composer = "Pete Perignon"
   instrument = "Timbales"
-  tagline = \markup { "Traigo la Salsa - https://github.com/mikea/timbales - " \date }
+  tagline = \markup { "Traigo la Salsa - https://mikea.github.io/timbales/ - " \date }
 }
 
 \newTimbalesStaff <<

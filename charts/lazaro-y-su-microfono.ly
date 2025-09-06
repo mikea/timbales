@@ -9,7 +9,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   composer = "Mayito Fernandez"
   subsubtitle = "(Cha-Cha-Cha)"
   instrument = "Timbales"
-  tagline = \markup { "Lazaro y su Microfono - https://github.com/mikea/timbales - " \date }
+  tagline = \markup { "Lazaro y su Microfono - https://mikea.github.io/timbales/ - " \date }
 }
 
 \newTimbalesStaff <<
