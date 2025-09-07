@@ -31,6 +31,7 @@ Charts from the band and my own transcriptions:
 - [El Dominó](pdf/el-domino.pdf)
 - [Campiña](pdf/campina.pdf)
 - [Traigo La Salsa](pdf/traigo-la-salsa.pdf)
+- [Pa' Curubandé Yo Voy](pdf/pa-curubande-yo-voy.pdf)
 
 ## Notes
 

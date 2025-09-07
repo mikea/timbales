@@ -40,9 +40,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | cb4 r4 cb4 r4 | r2 r4 cb4|
         cb8 cb8 cb4 r8 cb8 cb8 cb8 | r8 cb8 r8 cb8 r2 | r1 | r2 r4 cymc4 |
 
-        \sect "Pregon/Coro (x7)" "campanas"
+        \sect "Pregon/Coro" "campanas"
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "bell cue x7" |
         \bar ":|][|:"
 
         \sect "Mambo" "campanas"
