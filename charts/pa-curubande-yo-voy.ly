@@ -17,34 +17,34 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "Intro" ""
         r1 | r1 | r1 | r4 cymc r8 cymc4. | 
-        \sect-no-break "Coro" "clave 2-3"
+        \sect-no-break "Coro" "clave"
         r1 | r1 | r1 | r1 |
-        \sectionLabel "double cascara 2-3"
+        \sectionLabel "double cascara"
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \drag timh8^> timh8^> | \bar "||"
 
-        \sect "Voz" "double cascara 2-3"
+        \sect "Voz" "double cascara"
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
 
-        \sect "Coro 2" "campanas 2-3"
+        \sect "Coro 2" "campanas"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | 
         r8 cb r cb r2 | r4 r8 timl timh4 timl8 timh8 | r1 |                                       
 
-        \sect "Coro 3" "clave 2-3"
+        \sect "Coro 3" "clave"
         r1 | r1 | r1 | r1 |
-        \sectionLabel "double cascara 2-3"
+        \sectionLabel "double cascara"
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \drag timh8^> timh8^> | \bar "||"
 
-        \sect "Voz 2" "double cascara 2-3"
+        \sect "Voz 2" "double cascara"
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
 
-        \sect "Coro 4" "campanas 2-3"
+        \sect "Coro 4" "campanas"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | r8 cb r cb r2 | 
         r4 r8 timl timh4 timl8 timh8 | r1 | r8 cb16 cb16 cb4 r8 cb16 cb cb4 |
@@ -53,13 +53,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r2 r4 r8 \flam timh^> | r4 cb8 cb8 r8 cymc4. | r1 | \ruff timh4^> r8 cb8 r4 cymc4 |
         \comp #4 | \comp #4 | \comp #4 | \abanico-long~ |
 
-        \sect "Coro/Pregon" "campanas 2-3"  
+        \sect "Coro/Pregon" "campanas"  
         \bar "[|:-||"
         timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x7" |
         \bar ":|]"
 
-        \sect "Mambo" "campanas 2-3"  
+        \sect "Mambo" "campanas"  
         cymc4 \rs \rs \rs | \comp #4  | \comp #4  | \rs \rs r8 timh8 timl4 |
         cymc4 \rs \rs \rs  | \comp #4  | \rs \rs \rs r8 cb  | r8 cb r8 cb r8 cb cb4^> | 
         \break
@@ -78,13 +78,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         cymc4 \rs \rs cymc4 | \comp #4  | \textMark "2nd time" cb4 cb cb cb  | cb cb8 cb8^> r4 cb8 cymc8  | 
         \bar ":|]"
 
-        \sect "Coro 5" "clave 2-3"
+        \sect "Coro 5" "clave"
         r1 | r1 | r1 | r1 | r1 | r1 | r1 | r4 r8 timh8^> timh2:16~ | \break
-        \sectionLabel "campanas 2-3"
+        \sectionLabel "campanas"
         timh4^> \rs \rs \rs  | \comp #4  | \comp #4  | \comp #4  | 
         \comp #4  | \comp #4  | \comp #4  | r8 timh4.:16 timh8^> timh8^> r4  | 
 
-        \sect "Coro/Pregon 2" "campanas 2-3"  
+        \sect "Coro/Pregon 2" "campanas"  
         \bar "[|:-||"
         \textMark "1st time" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "3" |
