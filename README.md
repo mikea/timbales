@@ -32,6 +32,7 @@ Charts from the band and my own transcriptions:
 - [Campiña](pdf/campina.pdf)
 - [Traigo La Salsa](pdf/traigo-la-salsa.pdf)
 - [Pa' Curubandé Yo Voy](pdf/pa-curubande-yo-voy.pdf)
+- [La Tierra De La Belleza](pdf/la-tierra-de-la-belleza.pdf)
 
 ## Notes
 

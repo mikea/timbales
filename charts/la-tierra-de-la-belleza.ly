@@ -45,9 +45,33 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "Mambo" "campanas 3-2"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \textMark "2nd time" cymc4 r |
+        \bar ":|]"
+
+        \sect "Breaks" "cumbia"
+        timl4. timl4. timl4 | \rs \rs \rs \rs | timl8 timl4 timl4. timl4 | \rs \rs \rs \rs |
+        timl8 timl4 timl4. timl4 | \rs \rs \rs \rs | timl8 timl4 timl4. timl4 | \rs \rs \rs \rs |
+        timl4. timl4. timl4 | \rs \rs \rs cymc4 |
+
+        \sect "Coro/Pregon" "campanas 3-2"
+        \bar "[|:-||"
+
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 | 
         \bar ":|][|:"
 
+        \sect "Mambo 2" "campanas 3-2"
+
+        cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | 
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \textMark "out  4x" cymc4| 
+        \bar ":|][|:"
+
+        \sect "Coda" "cumbia"
+        timl8 timl4 timl4 timl8 timl4 | \rs \rs \rs \rs
+        timl8 timl4 timl4 timl8 timl4 | \rs \rs \rs \rs
+        timl8 timl4 timl4 timl8 timl4 | \rs \rs \rs \rs
+        timl8 timl4 timl4 timl8 timl4 | \rs \rs \rs \textMark "last" cymc4
+        \bar ":|]"
 
         \fine
     }
