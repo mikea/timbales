@@ -15,9 +15,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \newDrumVoiceOne \drummode { 
         \tempo 4 = 170
 
- \repeat segno 2 {
-
-        \sect "Intro" "cumbia"
+        \sect-segno "Intro" "cumbia"
         r4 r8 ssh8 r8 ssh8 cymc4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \bar "||"
@@ -41,7 +39,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \textMark "2nd time" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \textMark "2nd time" cymc4 r |
         \bar ":|][|:"
- }
+
+        \jump "D.S."
 
         \sect "Mambo" "campanas 3-2"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 |

@@ -28,6 +28,31 @@ sect = #(define-music-function (text title) (string? string?)
   #}
 )
 
+sect = #(define-music-function (text title) (string? string?)
+  #{
+    \rbar
+    \break
+    \sectionLabel \markup { \box { #text } #title }
+  #}
+)
+
+sect-coda = #(define-music-function (text title) (string? string?)
+  #{
+    \rbar
+    \break
+    \sectionLabel \markup { {\fontsize #5 \coda } \box { #text } #title }
+  #}
+)
+
+sect-segno = #(define-music-function (text title) (string? string?)
+  #{
+    \rbar
+    \break
+    \sectionLabel \markup { {\fontsize #5 \segno } \box { #text } #title }
+  #}
+)
+
+
 sect-no-break = #(define-music-function (text title) (string? string?)
   #{
     \rbar

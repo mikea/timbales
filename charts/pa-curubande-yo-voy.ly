@@ -19,8 +19,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "Intro" ""
         r1 | r1 | r1 | r4 cymc r8 cymc4. | 
 
-\repeat segno 2 {
-        \sect "Coro" "clave"
+        \sect-segno "Coro" "clave"
         r1 | r1 | r1 | r1 | \bar "||"
         \sectionLabel "double cascara"
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \drag timh8^> timh8^> | \bar "||"
@@ -36,7 +35,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | r8 cb r cb r2 |  \bar "||"
         r4 r8 timl timh4 timl8 timh8 | r1 |                                       
 
-}
+        \jump "D.S."
 
         r8 cb8  cb8 cb8  r cb8  cb8 cb8 |
         r8 cb8  r8 cb8  r4 cb8 cymc8 | \bar "||"
