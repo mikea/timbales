@@ -34,7 +34,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \textMark "2nd time" \tuplet 3/2 { timl4 timl2 } \tuplet 3/2 { timl2 timl4 } |
         \bar ":|]"
-        \textMark \markup {\bold "clave shift"} timl4 r8 timh4.^> timh4:16 |
+        \clave-shift timl4 r8 timh4.^> timh4:16 |
 
 
         \sect-segno "C" "campana 2-3 (ride 2nd time)"
@@ -57,7 +57,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" |
         \bar ":|][|:"
-        \jump "D.S. alla Coda"
+        \jump "D.S. al Coda"
 
         \sect-coda "Mona" ""
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |

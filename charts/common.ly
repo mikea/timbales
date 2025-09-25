@@ -52,6 +52,9 @@ sect-segno = #(define-music-function (text title) (string? string?)
   #}
 )
 
+big-segno = \textMark \markup {\fontsize #5 \segno}
+fine = \textMark \markup {\fontsize #5 Fine}
+big-coda = \textEndMark \markup {\fontsize #5 \coda}
 
 sect-no-break = #(define-music-function (text title) (string? string?)
   #{
@@ -78,3 +81,5 @@ ssect-no-break = #(define-music-function (text) (string?)
 abanico-long = \drummode { \rs r8 timh4.^> timh4:16~ }
 abanico-short = \drummode { \rs \rs \rs timh4:16~ }
 abanico-rs = \drummode { timh4:16^> \rs \rs \rs  }
+
+clave-shift = \textMark \markup { \bold "clave shift"}

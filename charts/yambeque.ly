@@ -31,14 +31,14 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp 4 | \comp 4 | \comp 4 | \comp 4 |
         \bar ":|]"
         \rbar \break
-        \comp 4 | \comp 4 | \comp 4 | timl4 8 8 r4 cymc4~ | \textMark "clave shift" 4 r4 r2 | 
+        \comp 4 | \comp 4 | \comp 4 | timl4 8 8 r4 cymc4~ | \clave-shift 4 r4 r2 | 
         \bar "||"
 
 
         % B
         \sect "B" "Voz (cascara 3-2)"  
         \comp 4 | \comp 4 | \comp 4 | \comp 4 |
-        r4 r8 timh16 16 8 8 timl8 timh8 | cymc4 \rs \rs \rs | \textMark "clave shift" \comp 4 | 
+        r4 r8 timh16 16 8 8 timl8 timh8 | cymc4 \rs \rs \rs | \clave-shift \comp 4 | 
         
         \bar "[|:-||"
         \ssect "cascara 2-3"
@@ -48,7 +48,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
           \comp 4 | 
           \alternative {
             \volta 1 { \comp 4 |  \comp 4 | \rs \rs r8 timh8^> timl4 }
-            \volta 2 { \set Score.currentBarNumber = 6 \drag timh4 r4 r2 | \textMark "clave shift" r4 r2 timh4:16 | }
+            \volta 2 { \set Score.currentBarNumber = 6 \drag timh4 r4 r2 | \clave-shift r4 r2 timh4:16 | }
           }
         }
 

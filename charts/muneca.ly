@@ -20,7 +20,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar "[|:-||"
         \textMark "horns" \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \textMark \markup { \bold "clave shift"} timh8 timl8 r4 r4 timh4:16 | \bar "||"
+        \clave-shift timh8 timl8 r4 r4 timh4:16 | \bar "||"
 
         \sect "A" "cascara 3-2"
         \bar "[|:-||"
@@ -33,7 +33,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||" 
         \bar ":|]" \break
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \textMark \markup { \bold "clave shift"} cb4 r8 cb8 r2 | \bar "||"
+        \clave-shift cb4 r8 cb8 r2 | \bar "||"
 
         \sect "B" "cascara 2-3"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |

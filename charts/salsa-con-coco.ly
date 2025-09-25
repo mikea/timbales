@@ -29,7 +29,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \sect "Coro" "" \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | cb4 cb8 cb8 r8 cb8 cb4 | \bar ".|" \textMark "clave shift" r1 | 
+        \comp #4 | \comp #4 | \comp #4 | cb4 cb8 cb8 r8 cb8 cb4 | \bar ".|" \clave-shift r1 | 
 
         \sect "Voz 2" "campanas 3-2"
         \bar "[|:-||"
@@ -48,7 +48,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \break
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | cb4 r4 r2 | \textMark "clave shift" r1 | \bar "||"
+        \comp #4 | cb4 r4 r2 | \clave-shift r1 | \bar "||"
 
         \sect "Pregon/Coro" "campanas 2-3"
         \bar "[|:-||"

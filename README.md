@@ -36,6 +36,9 @@ Charts from the band and my own transcriptions:
 - [La Tierra De La Belleza](pdf/la-tierra-de-la-belleza.pdf)
 - [Muñeca](pdf/muneca.pdf)
 - [Puerto Rico](pdf/puerto-rico.pdf)
+- [Cuidate Compay](pdf/cuidate-compay.pdf)
+- [Puerto Rico](pdf/puerto-rico.pdf)
+- [Boranda](pdf/boranda.pdf)
 
 In progress:
 
