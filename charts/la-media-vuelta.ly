@@ -80,7 +80,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|]"
 
       \sect "Ending" ""
-      \rs \rs \rs r8 cb8 | r8 cb8 r8 cb8 r8 cb8 r8 cb8 | \abanico-long | \bar "||"
+      \rs \rs \rs r8 cb8 | r8 cb8 r8 cb8 r8 cb8 r8 cb8 | \clave-shift \abanico-long | \bar "||"
       \sectionLabel "cascara 3-2"
       cymc4 \rs \rs \rs  | \comp #4 | \comp #4 | \comp #4 | \bar "||"
       cb4. cb4 cb4 cymc8  |       

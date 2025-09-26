@@ -39,10 +39,8 @@ Charts from the band and my own transcriptions:
 - [Cuidate Compay](pdf/cuidate-compay.pdf)
 - [Boranda](pdf/boranda.pdf)
 - [La Media Vuelta](pdf/la-media-vuelta.pdf)
-
-In progress:
-
 - [Salsa Con Coco](pdf/salsa-con-coco.pdf)
+
 
 ## Notes
 

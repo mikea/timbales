@@ -86,6 +86,8 @@ drumPitchNames.rbm = #'ridebellmouth
 drumPitchNames.rbn = #'ridebellneck
 
 #(define mytimbales `(
+        (bassdrum    () #f -3)
+
         (losidestick  cross #f -1)
         (lotimbale    () #f -1)
         (hisidestick  cross #f 1)
