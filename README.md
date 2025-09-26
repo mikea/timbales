@@ -37,8 +37,8 @@ Charts from the band and my own transcriptions:
 - [Muñeca](pdf/muneca.pdf)
 - [Puerto Rico](pdf/puerto-rico.pdf)
 - [Cuidate Compay](pdf/cuidate-compay.pdf)
-- [Puerto Rico](pdf/puerto-rico.pdf)
 - [Boranda](pdf/boranda.pdf)
+- [La Media Vuelta](pdf/la-media-vuelta.pdf)
 
 In progress:
 
