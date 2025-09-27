@@ -40,6 +40,7 @@ Charts from the band and my own transcriptions:
 - [Boranda](pdf/boranda.pdf)
 - [La Media Vuelta](pdf/la-media-vuelta.pdf)
 - [Salsa Con Coco](pdf/salsa-con-coco.pdf)
+- [Puro Veneno](pdf/puro-veneno.pdf)
 
 
 ## Notes
