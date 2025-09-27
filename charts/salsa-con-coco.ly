@@ -101,6 +101,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect-no-break "Ending" "(campanas 2-3)"
         \comp #4 | \comp #4 | cb8 cb8 cb8 cb8 cb4 cb4 | r1 | cymc2 r2 |
 
-        \fine
+        \bar "|."
     }
 >>

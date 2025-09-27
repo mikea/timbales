@@ -97,6 +97,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \rbar
         \comp #4 | timh8 timh8 r8 timh4 timh8 timh4 | r4 r8 timh8 timh4 r8 timh16 timh16 | timh4 r2. |
 
-        \fine
+        \bar "|."
     }
 >>

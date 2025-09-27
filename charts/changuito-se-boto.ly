@@ -129,6 +129,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \rbar
         \comp #4 | \rs r8 <<timl8 cb8>> <<timl4 cb4^> >>  <<timl4 cb4^> >> | r1 | \drag timh8 timh8^> r4 r2 |
 
-        \fine
+        \bar "|."
     }
 >>

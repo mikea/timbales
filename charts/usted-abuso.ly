@@ -105,6 +105,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | \comp #4 | <<timl4 timh4^> >> r4 r2
 
-        \fine
+        \bar "|."
     }
 >>

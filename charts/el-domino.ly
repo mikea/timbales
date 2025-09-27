@@ -61,6 +61,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "Coda" ""
         r1 | r1 | r2 \tuplet 3/2 { timl8 timh timl timh timl timh } | timl4 r8 timl4.^> cymc4 |
 
-        \fine
+        \bar "|."
     }
 >>

@@ -170,6 +170,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \rs \rs \rs cymc4 | \comp #4 | \rs \rs \rs cymc4 |
         ssh4 ssh4 ssh4 ssh4 | ssh4 r8 timh^8 r4 <<timl4 timh4>> |
         
-        \fine
+        \bar "|."
     }
 >>

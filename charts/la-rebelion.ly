@@ -121,6 +121,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \rbar
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
 
-        \fine
+        \bar "|."
     }
 >>

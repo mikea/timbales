@@ -76,6 +76,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         r2 r4 r8 cb8| r8 cb8 r4 r8 cb8 r8 cb8 |
 
-        \fine
+        \bar "|."
     }
 >>

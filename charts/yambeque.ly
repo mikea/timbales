@@ -109,6 +109,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \rs \rs r8 timh8 timl4 | <<timl4 timh4>> <<timl4 timh4>> <<timl4 timh4>> r4 |
         timl8 cb8 r8 timl8 cb8 r8 timl8 cb8| r8 timl8 cb8 r8 timl8 cb8 r4 | timl8 cb8 r8 timl8 cb8 r8 << timl4 cb4 >> |
 
-        \fine
+        \bar "|."
     }
 >>

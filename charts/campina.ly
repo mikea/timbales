@@ -72,8 +72,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "Coda (Trumpet)" "cascara 2-3"
         \comp #4 | \comp #4 | \textMark "last time" timh4 timh4 r8 timh8 r8 timl8 | r8 timl8 timl8 timh4.^> r4 \textEndMark "x4" |
-        \bar ":|][|:"
+        \bar ":|]"
 
-        \fine
     }
 >>

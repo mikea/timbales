@@ -59,6 +59,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \tempo 4 = 82
         r2 timh8 8 8 8 | \tuplet 3/2 {timl4 4 4} \tuplet 3/2 {cymc4 4 4} | cymc1 |
 
-        \fine
+        \bar "|."
     }
 >>

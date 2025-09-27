@@ -76,6 +76,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "Ending" ""
         \comp #4 | cb4 cb4 r4 cb4 | r2 r4 cb4 | r2 r4 cb8 cb8 |
 
-        \fine
+        \bar "|."
     }
 >>

@@ -1,7 +1,7 @@
 
 
 These are my personal notebooks for studying timbales.
-See also my [Drums Notebooks]("https://mikea.github.io/drums/).
+See also my [Drums Notebooks](https://mikea.github.io/drums/).
 
 Ping me if you are looking for a beginner timbalero in Bay Area.
 
@@ -41,6 +41,7 @@ Charts from the band and my own transcriptions:
 - [La Media Vuelta](pdf/la-media-vuelta.pdf)
 - [Salsa Con Coco](pdf/salsa-con-coco.pdf)
 - [Puro Veneno](pdf/puro-veneno.pdf)
+- [Baile Inolvidable](pdf/baile-inolvidable.pdf)
 
 
 ## Notes

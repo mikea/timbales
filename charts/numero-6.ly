@@ -112,6 +112,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sectionLabel "bell"
         \comp #4 | \comp #4 | \comp #4 | <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r2 |
 
-        \fine
+        \bar "|."
     }
 >>

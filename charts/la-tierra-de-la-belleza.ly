@@ -71,7 +71,5 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         timl8 timl4 timl4 timl8 timl4 | \rs \rs \rs \rs
         timl8 timl4 timl4 timl8 timl4 | \rs \rs \rs \textMark "last" cymc4
         \bar ":|]"
-
-        \fine
     }
 >>

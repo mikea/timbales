@@ -90,6 +90,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \rs \rs \rs cymc4 | cymc4 r cymc4 cymc |
         r4 r8 cymc8 r4 cymc4 | cymc4 cymc cymc2 | cymc8 cymc8^> r4 r2
         
-        \fine
+        \bar "|."
     }
 >>

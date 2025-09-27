@@ -83,7 +83,5 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
         \jump "D.S. al Fine"
-
-        \fine
     }
 >>
