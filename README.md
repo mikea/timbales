@@ -42,6 +42,7 @@ Charts from the band and my own transcriptions:
 - [Salsa Con Coco](pdf/salsa-con-coco.pdf)
 - [Puro Veneno](pdf/puro-veneno.pdf)
 - [Baile Inolvidable](pdf/baile-inolvidable.pdf)
+- [Carro de Fuego](pdf/carro-de-fuego.pdf)
 
 
 ## Notes
