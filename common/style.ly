@@ -102,6 +102,8 @@ drumPitchNames.rbn = #'ridebellneck
 
         (claves       harmonic-black #f 2)
         (lowoodblock  harmonic-black #f -2)
+
+        (hightom () #f 4)
 ))
 
 newTimbalesStaff = #(define-music-function
