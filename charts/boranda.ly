@@ -17,7 +17,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \partial 4 \textMark "tutti" cb4:16 \fermata | \bar "||"
       r1 \fermata \textEndMark "1,2,1,2,3,4"| \bar "||"
-      timl4^> r8 \textMark "trumpet" \ghost tomh8 r8 \ghost tomh8 r8 \ghost tomh8 |
+      timh4^> r8 \textMark "trumpet" \ghost tomh8 r8 \ghost tomh8 r8 \ghost tomh8 |
       \ghost tomh2 <<timl4. timh4.>> <<timl8 timh8>> | r8 timl8 timl cymc~ cymc2 \bar "||"
 
       \ssect "cascara 2-3"
