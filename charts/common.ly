@@ -40,7 +40,8 @@ sect-coda = #(define-music-function (text title) (string? string?)
   #{
     \rbar
     \break
-    \sectionLabel \markup { {\fontsize #5 \coda } \box { #text } #title }
+    \inline-coda
+    \sectionLabel \markup { \box { #text } #title }
   #}
 )
 
@@ -51,10 +52,6 @@ sect-segno = #(define-music-function (text title) (string? string?)
     \sectionLabel \markup { {\fontsize #5 \segno } \box { #text } #title }
   #}
 )
-
-big-segno = \textMark \markup {\fontsize #5 \segno}
-fine = \textMark \markup {\fontsize #5 Fine}
-big-coda = \textEndMark \markup {\fontsize #5 \coda}
 
 sect-no-break = #(define-music-function (text title) (string? string?)
   #{

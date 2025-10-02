@@ -20,6 +20,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r1 | r1 | r1 | r4 cymc r8 cymc4. | 
 
         \sect-segno "Coro" "clave"
+        \bar "S-||"
         r1 | r1 | r1 | r1 | \bar "||"
         \sectionLabel "double cascara"
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \drag timh8^> timh8^> | \bar "||"
@@ -33,9 +34,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "Coro 2" "campanas"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | r8 cb r cb r2 |  \bar "||"
-        r4 r8 timl timh4 timl8 timh8 | r1 |                                       
+        r4 r8 timl timh4 timl8 timh8 | r1 | \bar "||"                                      
 
-        \jump "D.S."
+        \ds \break
 
         r8 cb8  cb8 cb8  r cb8  cb8 cb8 |
         r8 cb8  r8 cb8  r4 cb8 cymc8 | \bar "||"
@@ -81,12 +82,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "Coro/Pregon 2" "campanas"  
         \bar "[|:-||"
-        \textMark "1st time" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x3" |
+        \textMark "1st time" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x7"| \bar "||"
         \bar ":|]"
-        \sect "Last Coro" ""
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        
         \comp #4 | \comp #4 | \rs \rs \rs cymc4 | cymc4 r cymc4 cymc |
         r4 r8 cymc8 r4 cymc4 | cymc4 cymc cymc2 | cymc8 cymc8^> r4 r2
         

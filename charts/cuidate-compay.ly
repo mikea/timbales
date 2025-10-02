@@ -15,8 +15,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \newDrumVoiceOne \drummode { 
         \tempo 4 = 112
 
-        cb4 r4 r2 | \bar "||"
+        cb4 r4 r2 | 
         \big-segno
+        \bar "S-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \comp #4 | r8 cb8 cb cb cb4 r4 | \tuplet 3/2 { toml4 toml4  toml4 } \tuplet 3/2 { toml4 toml4  toml4 } 
         | \tuplet 3/2 { toml4 toml4  toml4 } timh8^> timh8^> \fine timh4:16 | \bar "||"
@@ -82,6 +83,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "I" "Coro"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \jump "D.S. al Fine"
+        \ds-al-fine
     }
 >>

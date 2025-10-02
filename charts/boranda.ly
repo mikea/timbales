@@ -52,18 +52,21 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|]"
       \ssect-no-break "cascara 3-2"
       \comp #4 | \comp #4 | \comp #4 | \rs <<timl4 timh4>> <<timl4 timh4>> r4 | \bar "||" 
-      \clave-shift <<timl4.^> timh4.>> <<timl4.^> timh4.>> <<timl4^> timh4>> \big-coda |
+      \clave-shift <<timl4.^> timh4.>> <<timl4.^> timh4.>> <<timl4^> timh4>> | \bar "||" 
+  
+      \inline-coda
 
       \sect "F" "Campanas 2-3"
-      \bar "[|:-||"
+      \bar "[|:"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
       \bar ":|]"
 
       \sect-no-break "G" ""
       <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 <<timl4 timh4>> | r1 |
       \textMark "piano" r1 | r1 |
-      | r2 r4 timh4^> | <<timl4.^> timh4.>>  <<timl8^> timh8>> r2
-      \jump "D.S. al Coda"
+      | r2 r4 timh4^> | <<timl4.^> timh4.>>  <<timl8^> timh8>> r2 | \bar "||"
+      
+      \ds-al-coda
 
       \sect-coda "H" "Coro (campanas 2-3)"
       \bar "[|:-||"
