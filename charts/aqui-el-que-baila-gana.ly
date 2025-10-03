@@ -17,10 +17,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "Intro" "Percussion"
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
-        \bar ":|][|:"
-        \sectionLabel "+syn"
-        \comp #4 | \comp #4 | \textMark "fill out" \comp #4 | \rs \rs \rs \textEndMark "out" cymc4~ \textEndMark "x3" |
+        \comp #4 | \comp #4 | \textMark "fill out" \rs \startTextSpan \rs \rs \rs | \rs \rs \rs cymc4~ \stopTextSpan \textEndMark "x7" |
         \bar ":|]"
 
         \sect "A" "Horns"
@@ -28,12 +25,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 |\comp #4 |\comp #4 |\rs \rs cymc4 cymc4~ | \bar "||"
 
         \sect "B" "Verse"
+        \bar "[|:-||"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \textMark "double campanas, drums"
+        \textMark "break 1st: campanas, 2nd: piano"
         \comp #4 |\comp #4 |\comp #4 | \rs \rs cymc4 cymc4~ | \bar "||"
-        cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \textMark "piano, congas"
-        \comp #4 |\comp #4 |\comp #4 | \rs \rs cymc4 cymc4~ | \bar "||"
+        \bar ":|]"
 
         \sect "C" "Coro"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
@@ -69,9 +65,18 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ":|]"
         r1 | r2. cymc4~ | \bar "||"
 
-        \sect "I" ""
-        cymc4 \rs \rs \rs |
+        \sect "I" "Mona"
+        cymc4 r2 cymc4~ | cymc4 r2 cymc4~ | cymc4 r2 cymc4~ | cymc4 r2 cymc4~ |  \bar "||"
+        cymc4 r2 cymc4~ | cymc4. cymc4. cymc4~ | cymc4 r2 cymc4~ | cymc4. cymc4. cymc4 |  \bar "||" \break
+        r2. cymc4~ | cymc4 r2 cymc4~ | cymc4 r2 cymc4~ | cymc4 r2 cymc4~ |  \bar "||"
+        cymc4 r2 cymc4~ | cymc4. cymc4. timh4^> |
 
-        \bar "|."
+        r4 cb8 cb8 cb4 cb4 | cb8 cb8 cb4 cymc4 cymc4 | \bar "||"
+
+        \sect "J" "Coro"
+        \bar "[|:-||"
+        \rs \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "open, fade" | \bar "||"
+        \bar ":|]"
+
     }
 >>
