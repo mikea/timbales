@@ -85,13 +85,26 @@ newMelodyVoice = #(define-music-function
 drumPitchNames.rbm = #'ridebellmouth
 drumPitchNames.rbn = #'ridebellneck
 
+drumPitchNames.timlo = #'lotimbaleopen
+drumPitchNames.timlm = #'lotimbalemuffled
+
+drumPitchNames.timho = #'hitimbaleopen
+drumPitchNames.timhm = #'hitimbalemuffled
+
 #(define mytimbales `(
         (bassdrum    () #f -3)
 
         (losidestick  cross #f -1)
-        (lotimbale    () #f -1)
+        
+        (lotimbale           () #f -1)
+        (lotimbaleopen       () open -1)
+        (lotimbalemuffled    () stopped -1)
+        
+        (hitimbale           () #f 1)
+        (hitimbaleopen       () open 1)
+        (hitimbalemuffled    () stopped 1)
+
         (hisidestick  cross #f 1)
-        (hitimbale    () #f 1)
         (crashcymbal  cross #f 3)
         (crashcymbalb cross #f 5)
 

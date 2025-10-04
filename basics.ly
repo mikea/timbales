@@ -14,11 +14,24 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \newTimbalesStaff <<
     \sectionLabel "Notation"
     \newDrumVoiceOne \drummode { 
-      timl4_"low drum" s4 timh4_"high drum" s4 |
+      \cadenzaOn
+      timl4_"low timbal" s4 
+      timlo4_"open" s4 
+      timlm4_"muffled" s4 
+      timh4_"high drum" s4 
+      timho4_"open" s4 
+      timhm4_"muffled" s4 
+      \cadenzaOff 
+      \bar "|"
       ssl4_"low shell" s4 ssh4_"high shell" s4 |
       timl4^>_"low r.s." s4 timh4^>_"high r.s." s4 |
       cb4_"mambo bell" s2. |
-      rbm4_"cha-cha bell mouth" s2 rbn4_"neck" |
+      \cadenzaOn
+      rb4_"cha-cha bell" s2
+      rbm4_"mouth" s2
+      rbn4_"neck" 
+      \cadenzaOff 
+      \bar "|"
       cymc4_"cymbal" s4 cymcb4_"cymbal" s4 |
       cl4_"clave/block" s2 wbl4_"clave/block" |
       
@@ -215,4 +228,19 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|."
     }
     
+>>
+
+% Bolero
+
+\newTimbalesStaff <<
+    \sectionLabel "Funk"
+    \time 4/4
+
+    \newDrumVoiceOne \drummode { 
+      \bar ".|:" 
+      cb4 timlm8 rb16 rb16 r16 rb16 r8 timlm8 cl16_"R" cl16_"L" |
+      cb8. timlm16 rb16 rb8 rb16 r4 timlm4 |
+      \bar ":|."
+    }
+
 >>
