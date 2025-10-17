@@ -28,19 +28,19 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \sect "A" "Coro (campanas 2-3)"
       \bar "[|:-||"
-      \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
+      \ruff timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
       \bar ":|]"
 
       \sect-no-break "B" ""
-      <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 <<timl4 timh4>> | r1 |
+      <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 <<timl4 timh4>> | r1 \bar "||"
       \textMark "piano" r1 | r1 |
-      | r2 r4 timh4^> | <<timl4.^> timh4.>>  <<timl8^> timh8>> r2 | \bar "||"
+      | r2 r4 timh4^> | <<timl4.^> timh4.>>  <<timl8^> timh8>> r8 timh8 timl4 | \bar "||"
 
       \sect-segno "C" "Sonero (cascara 2-3)"
       \bar "S.|:-||"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 |
       \bar ":|."
-      \comp #4 | \comp #4 | \clave-shift \comp #4 |
+      \comp #4 | \comp #4 \bar "||"| \clave-shift \comp #4 |
 
       \sect "D" "Piano & Bass (cascara 3-2)"
       \bar "[|:-||"
@@ -58,19 +58,19 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \sect "F" "Campanas 2-3"
       \bar "[|:"
-      \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
+      \ruff timh4^> \rs \rs \rs  | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
       \bar ":|]"
 
       \sect-no-break "G" ""
-      <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 <<timl4 timh4>> | r1 |
+      <<timl4 timh4>> <<timl8 timh8>> <<timl8 timh8>> r4 <<timl4 timh4>> | r1 \bar "||"
       \textMark "piano" r1 | r1 |
-      | r2 r4 timh4^> | <<timl4.^> timh4.>>  <<timl8^> timh8>> r2 | \bar "||"
+      | r2 r4 timh4^> | <<timl4.^> timh4.>>  <<timl8^> timh8>> r8 timh8 timl4 | \bar "||"
       
       \ds-al-coda
 
       \sect-coda "H" "Coro (campanas 2-3)"
       \bar "[|:-||"
-      \comp #4 | \comp #4 | \rs \rs \rs \textMark "1st & last" r8 cymc8~ | cymc8 cb8 cb8 cymc4 cb8 cb8 cymc8~ \textEndMark "open" |       
+      \ruff timh4^> \rs \rs \rs  | \comp #4 | \rs \rs \rs \textMark "1st & last" r8 cymc8~ | cymc8 cb8 cb8 cymc4 cb8 cb8 cymc8~ \textEndMark "open" |       
       \bar ":|][|:"
 
       \sect-no-break "I" "Piano (cascara 2-3)"

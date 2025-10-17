@@ -18,7 +18,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         cb4 r4 r2 | 
         \big-segno
         \bar "S-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | r8 cb8 cb cb cb4 r4 | \tuplet 3/2 { toml4 toml4  toml4 } \tuplet 3/2 { toml4 toml4  toml4 } 
         | \tuplet 3/2 { toml4 toml4  toml4 } timh8^> timh8^> \fine timh4:16 | \bar "||"
 
@@ -28,12 +28,12 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ":|]"
 
         \sect "B" ""
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \abanico-long | \bar "||"
 
         \sect "C" ""
         \comp #4 | \comp #4 | \comp #4 | timh16 timh r timh16 8 8 r timh^> timh4^> |
-        \comp #4 | \comp #4 | cb4 cb4 \rs \rs | r8 cb cb cb r4 timh4:16 | \break
+        \comp #4 | \comp #4 | cb4 cb4 cb8 8 8 8 | cb8 8 8 cb8^> r4 timh4:16 | \break
 
         \bar "[|:-||"
         \sectionLabel "Coro"
@@ -74,10 +74,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
-        \bar ":|][|:" \break
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \bar ":|][|:" \break
+        \textMark "Perc Solos"
+        cb4 \rs \rs \rs| \comp #4 \bar "||" cb4 cb4 \rs \rs | \comp #4 \bar "||"
+        r8 cb8 cb8 cb8 \rs \rs | \comp #4 \bar "||" cb4 cb4 cb4 cb4 | \comp #4 \bar "||"
+        \textEndMark "open"
         \bar ":|][|:"
 
         \sect "I" "Coro"

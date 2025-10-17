@@ -47,7 +47,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect-segno "C" "(campanas 2-3)"
         \bar "S-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 |
+        \comp #4 | \comp #4 | \comp #4 | \textMark "fill" \rs \startTextSpan \rs \rs \rs \stopTextSpan |
 
         \sect "D" "Coro/Solo (campanas 2-3)"
         \bar "[|:-||"
@@ -73,8 +73,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \rs r8 \ghost cymc4. \rs \textEndMark "x6" |
         \bar ":|][|:"
 
-        \sect "Coro/Pregon" ""
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" | \bar "||"
+        \sect "G" "Coro/Pregon"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x6" | \bar "||"
         \bar ":|][|:"
 
         \sect "Ending" ""
