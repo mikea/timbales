@@ -61,9 +61,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
       \bar ":|]"
 
-      \sect "E" ""
-      \tuplet 3/2 {timl4 cb4 cb4} \tuplet 3/2 {timl4 cb4 cb4} | \tuplet 3/2 {timl4 cb4 cb4} <<timl4 cb4>> r4 |
-      | r4. <<timl4. timh4.>> r4 | | r1 | r4. timh4.^> timh4:16 |
+      \sect "J" ""
+      \tuplet 3/2 {timl4 cb4 cb4} \tuplet 3/2 {timl4 cb4 cb4} | \tuplet 3/2 {timl4 cb4 cb4} <<timl4 cb4>> r4 | r1 |
+      | r4. <<timl4. timh4.>> r4 | r1 | r4. timh4.^> timh4:16 |
 
       \sect "K" "Trumpet Solo (campana 2-3)"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |

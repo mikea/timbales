@@ -46,6 +46,7 @@ Charts from the band and my own transcriptions:
 - [Aque El Que Baila Gana](pdf/aqui-el-que-baila-gana.pdf)
 - [Disco Azúcar](pdf/disco-azucar.pdf)
 - [Palo Pa' Rumba](pdf/palo-pa-rumba.pdf)
+- [Tirandote Flores II](pdf/tirandote-flores-2.pdf)
 
 ## Notes
 
