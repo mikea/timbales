@@ -73,8 +73,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \ruff timh4^> \rs \rs \rs  | \comp #4 | \rs \rs \rs \textMark "1st & last" r8 cymc8~ | cymc8 cb8 cb8 cymc4 cb8 cb8 cymc8~ \textEndMark "open" |       
       \bar ":|][|:"
 
-      \sect-no-break "I" "Piano (cascara 2-3)"
-      \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" | 
+      \sect "I" "Piano (cascara 2-3)"
+      \comp #4 | 
+      \comp #4 | \comp #4 | \comp #4 
+      \textEndMark \markup { \italic "out: gracias por escucharme y nos vemos despues" } | 
 
       \bar ":|][|:"
 

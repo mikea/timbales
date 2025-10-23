@@ -45,6 +45,7 @@ Charts from the band and my own transcriptions:
 - [Carro de Fuego](pdf/carro-de-fuego.pdf)
 - [Aque El Que Baila Gana](pdf/aqui-el-que-baila-gana.pdf)
 - [Disco Azúcar](pdf/disco-azucar.pdf)
+- [Palo Pa' Rumba](pdf/palo-pa-rumba.pdf)
 
 ## Notes
 
