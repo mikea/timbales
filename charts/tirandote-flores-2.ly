@@ -15,7 +15,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \newDrumVoiceOne \drummode { 
       \tempo 4 = 120
 
-      \partial 4 \drag timh4^> | \bar "||"
+      \partial 4 \ruff timh4^> | \bar "||"
       \sect-no-break "Intro" "(campana 2-3)"
 
       \comp #4 | \comp #4 | \comp #4 | \comp #4  |\bar "||"
@@ -43,7 +43,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \sect "E" "Coro/Pregon (campana 2-3)"
       \bar "[|:-||"
-      \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \textMark "out" <<timl8 timh>> <<timl8 timh>> \textEndMark "x6" | \bar "||"
+      \textMark "in" \ruff timh4^> \rs \rs \rs | | \comp #4 | \comp #4 | \rs \rs \rs \textMark "out" <<timl8 timh>> <<timl8 timh>> \textEndMark "x6" | \bar "||"
       \bar ":|][|:"
 
       \sect "F" "Piano Solo, open (cascara 2-3)"
@@ -75,7 +75,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar "||" \textMark "Ending (campana 2-3)" \comp #4 | \comp #4 | 
       \comp #4 | \comp #4 |  \break
       \bar "||" \comp #4 | \comp #4 |
-      \rs \rs \tuplet 3/2 { timh4 timh4 timh4 } | <<cb4 timl>> r8 <<cb8 timl>> r8 <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> |
+      \rs \rs \tuplet 3/2 { timh4 timh4 timh4 } | <<timh4 timl>> r8 <<timh8 timl>> r8 <<timh8 timl>> <<timh8 timl>> <<timh8 timl>> |
 
       \bar "|."
     }
