@@ -39,10 +39,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \clave-break
       \ds
 
-      \bar "||" \clave-shift <<timh4 timl4>> r8 <<timh8^> timl8>> r2 | \bar "||"
+      \bar "||" \clave-shift \drag timh4.^> timl4. r4 | \bar "||"
 
       \sect "E" ""
-      r1 | r4. <<timh8^> timl8>> r2 | r1 | r4. timh4.^> timh4:16 |
+      \textMark \markup { \italic "si somos guerrerors de palo pa' rumba" }
+      r1 | r4. timh4.^>  r4 | r1 | \drag timh4.^> timl4. timh4^> |
 
       \sect "F" "Instr & Vocal solos (campana 2-3)"
       \bar "[|:-||"

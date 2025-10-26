@@ -146,4 +146,3 @@ newTimbalesStaff = #(define-music-function
     \omit BarNumber
   }
 }
-
