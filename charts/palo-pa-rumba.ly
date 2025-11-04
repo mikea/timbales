@@ -18,30 +18,29 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \sect "Intro" "(cascara 2-3)"
       \bar "[|:-||"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
-      % \bar "S.|:-||"
       \bar ":|][|:"
-      \break
       \textMark \markup {\fontsize #5 \segno Horns (cascara 2-3)}
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x5" |
       \bar ":|]"
-      \clave-shift \rs \rs r8 timh8 timl4 |
+      \clave-shift \rs \rs \rs \rs | \bar "||"
 
       \sect "A" "(cascara 3-2)"
-      \bar "[|:-||"
-      \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
-
-      \bar ":|][|:"
+      \comp #4 | \comp #4 | \rs \rs \rs cymc4 | \comp #4 | \bar "||"
+      \comp #4 | \comp #4 | \rs \rs \rs timh4^>~ | \tuplet 3/2 { timh4 timl4 timl4 } timh4^> \rs | \bar "||"
+      \break
+      \comp #4 | \comp #4 | \rs \rs r8 cymc r8 cymc | \comp #4 | \bar "||"
+      \comp #4 | \comp #4 | \comp #4 | r8 timl timl4 timh8 timh r8 cymc8 | \bar "||"
 
       \sect "B" "(cascara 3-2)"
-      \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x5" |
+         \bar "[|:-||"
+   \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x5" |
       \bar ":|]"
+      \big-coda \clave-shift \comp #4 | \bar "||"
+      \ds-al-coda
 
-      \clave-break
-      \ds
+      \bar "||" \inline-coda \clave-shift \drag timh4.^> timl4. r4 | \bar "||"
 
-      \bar "||" \clave-shift \drag timh4.^> timl4. r4 | \bar "||"
-
-      \sect "E" ""
+      \sect "E" "(2-3)"
       \textMark \markup { \italic "si somos guerrerors de palo pa' rumba" }
       r1 | r4. timh4.^>  r4 | r1 | \drag timh4.^> timl4. timh4^> |
 
@@ -63,10 +62,12 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|]"
 
       \sect "J" ""
-      \tuplet 3/2 {timl4 cb4 cb4} \tuplet 3/2 {timl4 cb4 cb4} | \tuplet 3/2 {timl4 cb4 cb4} <<timl4 cb4>> r4 | r1 |
-      | r4. <<timl4. timh4.>> r4 | r1 | r4. timh4.^> timh4:16 |
+      \tuplet 3/2 {timl4 cb4 cb4} \tuplet 3/2 {timl4 cb4 cb4} | \tuplet 3/2 {timl4 cb4 cb4} <<timl4 cb4>> r4 | \bar "||"
+      \textMark \markup { \italic "si somos guerrerors de palo pa' rumba" }
+      r1 | r4. timh4.^> r4 | r1 | \drag timh4.^> timl4. timh4^> |
 
       \sect "K" "Trumpet Solo (campana 2-3)"
+      \bar "[|:-||"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
       \bar ":|][|:"
 
@@ -78,7 +79,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" |
       \bar ":|][|:"
 
-      \sect "N" "Vocals (campana 2-3)"
+      \sect-no-break "N" "Vocals (campana 2-3)"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" |
       \bar ":|]"
       \rs \rs \rs r8 \textMark "pn" \ghost tomh8  | \comp #4 |
@@ -88,7 +89,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \comp #4 | \comp #4 | \rs \rs \rs r8 \textMark "pn" \ghost tomh8  | \comp #4 | \textEndMark "x2" |
       \bar ":|]"
       \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||" \break
-      \comp #4 | \rs \rs \rs r8 cb8 | cb8 cb8 r4 r8 cb8 cb8 cb8 | r4. cb8 cb8 cb8 r4 \fermata | \bar "||" 
+      \comp #4 | \rs \rs \rs r8 timl8 | cb8 cb8 r4 r8 timl8 cb8 cb8 | r4. timl8 cb8 cb8 r4 \fermata | \bar "||" 
       \textMark "tutti" cb2:16 \fermata \tuplet 3/2 { cb4 cb4 cb4 } |
 
       

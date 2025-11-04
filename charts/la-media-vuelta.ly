@@ -14,7 +14,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
       \tempo 4 = 200
-      \partial 4. timh8 timl8 timh8 |
+      \partial 4. timh8 timl4 | \bar "||"
       \sectionLabel "cascara 3-2"
 
       \comp #4 | \comp #4 | \comp #4 | \comp #4  | \bar "||"
@@ -58,10 +58,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \sect "G" "Horns"
       cymc4 \rs \rs \rs | \comp #4 | \rs \rs \tuplet 3/2 { timh8 8 8 } \tuplet 3/2 { timh8 8 8 } | timh4.^> timh4.^> timh4:16  |       
 
-      \sect "Mambo" ""
+      \sect "Mambo" "campanas 2-3"
       \bar "[|:-||"
-      \textMark "fill through" r1 | r1 | r1 | r1  | \bar "||"      
-      \sectionLabel "campanas 2-3" cymc4 \rs \rs r8 cymc8~ | cymc4 r8 timh8 timh8 timh4 cymc8| 
+      r1 | r1 | r1 | r2 r4 timh4:16  | \bar "||"      
+      cymc4 \rs \rs r8 cymc8~ | cymc4 r8 timh8 timh8 timh4 cymc8| 
       r8 cymc8 cymc4 cymc8 cymc4 cymc8 | r8 cymc8 r8 cymc8 \rs \rs  |       
       \bar ":|]"
       timh4 cymc4 r8 timh8 r8 timh8 | <<timh4. timl4.>> cb4. timh4:16 | 
@@ -79,14 +79,16 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" |       
       \bar ":|]"
 
+
       \sect "Ending" ""
-      \rs \rs \rs r8 cb8 | r8 cb8 r8 cb8 r8 cb8 r8 cb8 | \clave-shift \abanico-long | \bar "||"
+      \rs \rs \rs r8 cb8 | r8 cb8 r8 cb8 r8 cb8 r8 cb8 | \bar "||" \clave-shift \abanico-long | \bar "||"
       \sectionLabel "cascara 3-2"
       cymc4 \rs \rs \rs  | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+      \break
       cb4. cb4 cb4 cymc8  |       
-      r1 | 
+      \comp #4 | 
       \sectionLabel "Coro"
-      r1| r1| 
+      \comp #4 | \comp #4 | \bar "||"
       r8 cb4 cb4. cb8 cymc8 |       
 
       \bar "|."

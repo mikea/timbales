@@ -15,7 +15,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \newDrumVoiceOne \drummode { 
         \tempo 4 = 112
 
-        cb4 r4 r2 | 
+        \drag timh^> r4 r2 | 
         \big-segno
         \bar "S-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
@@ -33,7 +33,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "C" ""
         \comp #4 | \comp #4 | \comp #4 | timh16 timh r timh16 8 8 r timh^> timh4^> |
-        \comp #4 | \comp #4 | cb4 cb4 cb8 8 8 8 | cb8 8 8 cb8^> r4 timh4:16 | \break
+        \comp #4 | \comp #4 | <<cb4 timl>> <<cb4 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> | <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8^> timl>> r4 timh4:16 | \break
 
         \bar "[|:-||"
         \sectionLabel "Coro"
@@ -58,7 +58,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "F" "piano solo (cascareo)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" |
         \bar ":|]"
-        \comp #4 | \comp #4 | \comp #4 | r2 r4 timl16 16 16 16 | \bar "||" \break
+        \comp #4 | \comp #4 | \comp #4 | r2 r4 timl16 16 16 16 | \bar "||" \break      
         timl4 \flam timh4^> \flam timh4^> r4 | 
         r8 timl 8 8 \flam timh4^> timl8 \flam timh4^> |
         r8 timl 8 8 \flam timh4^> timl8 \flam timh4^> |
@@ -78,8 +78,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|][|:" \break
         \textMark "Perc Solos"
-        cb4 \rs \rs \rs| \comp #4 \bar "||" cb4 cb4 \rs \rs | \comp #4 \bar "||"
-        r8 cb8 cb8 cb8 \rs \rs | \comp #4 \bar "||" cb4 cb4 cb4 cb4 | \comp #4 \bar "||"
+        <<timl4 timh>> \rs \rs \rs| \comp #4 \bar "||" <<timl4 timh>> <<timl4 timh>> \rs \rs | \comp #4 \bar "||"
+        r8 <<timl8 timh>> <<timl8 timh>> <<timl8 timh>> \rs \rs | \comp #4 \bar "||" <<timl4 timh>> <<timl4 timh>> <<timl4 timh>> <<timl4 timh>> | \comp #4 \bar "||"
         \textEndMark "open"
         \bar ":|][|:"
 

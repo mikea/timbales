@@ -55,7 +55,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 |
         \bar ":|]"
         \comp #4 | \textMark "piano" r8 \startTextSpan
-        ssh8 ssh ssh ssh4 \stopTextSpan r4 |
+        tomh8 tomh tomh tomh4 r4 \stopTextSpan |
 
         cb8 8 4 timh8 8 4  | timl8 8 4 r4 timh4:16 |
 

@@ -55,7 +55,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar ":|]"
 
       \sect "H" "Horns (campana 2-3)"
-      \comp #4 | \comp #4 | \rs \rs \rs timl4 | cb16 cb8 cb16 cb8 cb8 r8 <<cb8^> timl>> <<cb4^> timl>> | \bar "||"
+      \comp #4 | \comp #4 | \rs \rs \rs timl4 | cb16_"R" cb8_"L" cb16_"R" cb8_"L" cb8_"R" r8 <<cb8^> timl>> <<cb4^> timl>> | \bar "||"
 
       \sect-no-break "I" "Horns (campana 2-3)"
       \bar "[|:-||"
