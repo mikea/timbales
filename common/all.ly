@@ -3,3 +3,4 @@
 \include "slash.ly"
 \include "ghost.ly"
 \include "repeats.ly"
+\include "percent.ly"

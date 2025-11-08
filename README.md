@@ -47,6 +47,7 @@ Charts from the band and my own transcriptions:
 - [Disco Azúcar](pdf/disco-azucar.pdf)
 - [Palo Pa' Rumba](pdf/palo-pa-rumba.pdf)
 - [Tirandote Flores II](pdf/tirandote-flores-2.pdf)
+- [El Cuarto De Tula](pdf/el-cuarto-de-tula.pdf)
 
 ## Notes
 

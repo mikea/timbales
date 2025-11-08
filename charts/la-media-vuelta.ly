@@ -26,13 +26,18 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \bar "[|:-||"
       \comp #4 | \comp #4 | \comp #4 | \comp #4  | \bar "||"
       \comp #4 | \comp #4 | \comp #4 | \textMark "2nd time" r8 timh8 timh8 cymc8 \rs \rs | \bar "||" \break
-      \bar ":|]"
+
+      \bar ":|][|:"
 
       \sect "B" "Voz (cascara 3-2)"
-      \comp #4 | \comp #4 | \comp #4 | \rs \rs cymc2  | \bar "||"
-      \comp #4 | \comp #4 | \comp #4 | r4 r8 timh8 timh8 cymc8 r4 | \bar "||"
-      \comp #4 | \comp #4 | \comp #4 | \comp #4  | \bar "||"
-      \comp #4 | \comp #4 | \comp #4 | \rs \rs timh8 timh8 r8 timh8  | \bar "||"
+\repeat volta 2 {
+      \comp #4 | \comp #4 | \comp #4 | \rs \rs \textMark "1st" cymc2  | \bar "||"
+      \comp #4 | \comp #4 | \comp #4 | 
+      \alternative {
+        \volta 1 { r4 r8 timh8 timh8 cymc8 r4 | \bar ":|]" }
+        \volta 2 { \rs \rs timh8 timh8 r8 timh8 | \bar "||" }
+      }
+}      
 
       \sect "C" "Voz (cascara 3-2)"
       cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4  | \bar "||"
@@ -60,7 +65,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \sect "Mambo" "campanas 2-3"
       \bar "[|:-||"
-      r1 | r1 | r1 | r2 r4 timh4:16  | \bar "||"      
+      \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16  | \bar "||"      
       cymc4 \rs \rs r8 cymc8~ | cymc4 r8 timh8 timh8 timh4 cymc8| 
       r8 cymc8 cymc4 cymc8 cymc4 cymc8 | r8 cymc8 r8 cymc8 \rs \rs  |       
       \bar ":|]"

@@ -13,7 +13,7 @@ rbreak = { \rbar \break }
     \override JumpScript.font-size = #3
     \override JumpScript.font-series = #'bold
     \override Rest.staff-position = #0
-    % \override BarNumber.break-visibility = ##(#f #t #t)
+    \override BarNumber.break-visibility = ##(#f #f #f)
     \override SegnoMark.font-size = #5
     \override CodaMark.font-size = #5
   }

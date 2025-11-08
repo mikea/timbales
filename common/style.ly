@@ -143,6 +143,6 @@ newTimbalesStaff = #(define-music-function
 \layout {
   \context {
     \Score
-    \omit BarNumber
+    % \omit BarNumber
   }
 }
