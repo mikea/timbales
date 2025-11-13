@@ -5,12 +5,12 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "El Cuarto De Tula"
-  subsubtitle = "(Cubano)"
+  subsubtitle = "(Son 2-3)"
   composer = "Sergio González Siaba"
   arranger = "perf. Steve Forss"
   opus = "https://youtu.be/FziwJMvfp3c"
   instrument = "Timbales"
-  tagline = \markup { "Title - https://mikea.github.io/timbales/ - " \date }
+  tagline = \markup { "El Cuarto De Tula - https://mikea.github.io/timbales/ - " \date }
 }
 
 makePercent =
@@ -77,7 +77,7 @@ makePercent =
         timh4^> \rs \rs \rs| \makePercent { s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 | s1 } | \rs r8 timh8^> r8 timh8^> timh4^> | \bar "."
 
-        \sect "B" "Coro 1 (campana 2-3)"
+        \sect "B" "Coro 1 (mozambique 2-3)"
 
         \override Score.BarNumber.break-visibility = ##(#f #f #t)
 
@@ -100,14 +100,14 @@ makePercent =
         \break
 
         \textMark "Coro 3"
-        <<cymc4 timh>> \rs \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
+        cymc4 \rs \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 | s1 } | \rs \rs \rs timh4^> | \bar "."
 
         \textMark "Sax Solo 3"
         \makePercent { s1 | s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 | s1 | s1 } | \bar "."
 
-        \sect "C" "Sax Solo (campana 2-3)"
+        \sect "C" "Sax Solo"
 
         \override Score.BarNumber.break-visibility = ##(#f #f #t)
         
@@ -129,7 +129,7 @@ makePercent =
         \makePercent { s1 | s1 | s1 } | \rs r8 timh8^> timh4^> timh8^> timh8^> | \bar "."
 
         % 33
-        timh4^> <<cymc4 timh>> \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
+        timh4^> cymc4 \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 | s1 | s1 } | \bar "."
 
         \break
@@ -185,7 +185,7 @@ makePercent =
         % 9
         \makePercent { s1 | s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 } | 
-        \rs <<cymc4 timh>> cb4 <<cymc4 timh>> | cb4 <<cymc4 timh>> timh8 timh8 timh8^> timh8^> | \bar "."
+        \rs cymc4 cb4 cymc4 | cb4 cymc4 timh8 timh8 timh8^> timh8^> | \bar "."
 
         % 17
         <<timh4^> cymc>> \rs \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."

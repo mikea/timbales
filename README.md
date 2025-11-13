@@ -48,6 +48,7 @@ Charts from the band and my own transcriptions:
 - [Palo Pa' Rumba](pdf/palo-pa-rumba.pdf)
 - [Tirandote Flores II](pdf/tirandote-flores-2.pdf)
 - [El Cuarto De Tula](pdf/el-cuarto-de-tula.pdf)
+- [Baila Este Son](pdf/baila-este-son.pdf)
 
 ## Notes
 
