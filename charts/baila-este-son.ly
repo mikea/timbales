@@ -16,11 +16,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \tempo 4 = 205
 
         \sectionLabel "montuno 2-3"
-        r1 | r1 |r1 | r4 r8 <<timh8 timl>> r2 \bar "||"
+        r1 | r1 |r1 | r4 r8 <<timh8 timl>> r4 timh4:16~ \bar "||"
         
         \sectionLabel "campana 2-3"
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
+        timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
         \bar ":|]"
 
         \break

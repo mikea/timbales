@@ -8,11 +8,10 @@ Ping me if you are looking for a beginner timbalero in Bay Area.
 Contents:
 
 - [Basic Patterns](pdf/basics.pdf)
-- [Intros](pdf/intros.pdf)
 - [Cascareo](pdf/cascareo.pdf)
 - [Contracampana](pdf/contracampana.pdf)
 - [Bell Patterns](pdf/bell.pdf)
-- [Fills/Breaks](pdf/fills.pdf)
+- [Intros/Fills/Breaks](pdf/fills.pdf)
 - [Solo Concepts](pdf/solo.pdf)
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
 - [Excercises](pdf/exercises.pdf)

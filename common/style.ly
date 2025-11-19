@@ -143,6 +143,8 @@ newTimbalesStaff = #(define-music-function
 \layout {
   \context {
     \Score
+    \override BarNumber.break-visibility = ##(#f #f #f)
+
     % \omit BarNumber
   }
 }
