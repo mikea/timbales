@@ -13,7 +13,6 @@ notes:
     find . -maxdepth 1 -type f -name "*.ly" -exec just _build {} \;
     gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=pdf/all.pdf \
         pdf/basics.pdf \
-        pdf/intros.pdf \
         pdf/cascareo.pdf \
         pdf/contracampana.pdf \
         pdf/cha-cha-cha.pdf \

@@ -134,12 +134,6 @@ newTimbalesStaff = #(define-music-function
   #})
 
 
-\paper {
-    indent = 0
-    ragged-bottom = ##t
-}
-
-
 \layout {
   \context {
     \Score
