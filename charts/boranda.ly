@@ -13,7 +13,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
-        \tempo 4 = 180
+      \tempo 4 = 180
 
       \partial 4 \textMark "tutti" cb4:16 \fermata | \bar "||"
       r1 \fermata \textEndMark "1,2,1,2,3,4"| \bar "||"
