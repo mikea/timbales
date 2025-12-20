@@ -17,8 +17,8 @@
 %% If @var{print-chord?} is set @code{#f}, the first written note is taken.
 %% The Number of repeats is set by @var{lngth}
 %% Only notes are returned. Other stuff like @code{Script}, @code{Fingering} 
-%% is thrown away.
-#(define (grace-from-main-note print-chord? lngth music)
+%% is thrown away. Articulations can be preserved or cleared.
+#(define (grace-from-main-note print-chord? remove-articulations? lngth music)
   (let* ((elts (ly:music-property music 'elements))
          (has-duration? 
            (lambda (x) (ly:duration? (ly:music-property x 'duration))))
@@ -30,14 +30,16 @@
                     ((music-is-of-type? music 'event-chord)
                      (first (event-chord-notes music)))
                     (else music)))
-         ;; Set duration of note, clear 'articulations.
+         ;; Set duration of note, optionally clear 'articulations.
          (note (map-some-music
                   (lambda (m)
                     (and (has-duration? m)
                          (begin
                            (set! (ly:music-property m 'duration)
                                  (ly:make-duration (if (> lngth 1) 4 3) 0 1 1))
-                           (set! (ly:music-property m 'articulations) '())
+                           (if remove-articulations?
+                               (set! (ly:music-property m 'articulations) '())
+                               #f)
                            m)))
                   (ly:music-deep-copy mus)))
          (next-note (ly:music-deep-copy note))
@@ -77,17 +79,19 @@
             )))
 
 graceRepeat =
-#(define-music-function (chord-repeat? how-much note) 
-  ((boolean? #f) integer? ly:music?)
+#(define-music-function (chord-repeat? remove-articulations? how-much note) 
+  ((boolean? #f) (boolean? #t) integer? ly:music?)
   "Return @var{note} preceded by repeated and beamed grace-notes. The number of
   grace-notes is specified by @var{how-much}.
   If @var{note} is a chord the first written note of it is used.
   If @var{chord-repeat?} is specified the whole chord is repeated during 
-  @code{GraceMusic}"
+  @code{GraceMusic}. 
+  If @var{remove-articulations?} is @code{#t} the grace
+  notes have articulations removed."
   #{
     % \acciaccatura 
     \slurDown
-    \acciaccatura {  $(grace-from-main-note chord-repeat? how-much note) }
+    \acciaccatura {  $(grace-from-main-note chord-repeat? remove-articulations? how-much note) }
     \slurNeutral
     $note 
   #})
@@ -95,19 +99,25 @@ graceRepeat =
 flam = 
 #(define-music-function (music)(ly:music?)
   "Return @var{music} preceded by 1 grace-note"
-  #{ \graceRepeat #1 $music #})
+  #{ \graceRepeat ##f ##t #1 $music #})
 
 drag =
 #(define-music-function (music)(ly:music?)
   "Return @var{music} preceded by 2 grace-notes"
-  #{ \graceRepeat 2 $music #})
+  #{ \graceRepeat ##f ##t 2 $music #})
 
 ruff =
 #(define-music-function (music)(ly:music?)
   "Return @var{music} preceded by 3 grace-notes"
-  #{ \graceRepeat #3 $music #})
+  #{ \graceRepeat ##f ##t #3 $music #})
 
 rruff =
 #(define-music-function (music)(ly:music?)
   "Return @var{music} preceded by 4 grace-notes"
-  #{ \graceRepeat #4 $music #})
+  #{ \graceRepeat ##f ##t #4 $music #})
+
+
+flam-art = 
+#(define-music-function (music)(ly:music?)
+  "Return @var{music} preceded by 1 grace note with original articulation"
+  #{ \graceRepeat ##f ##f #1 $music #})

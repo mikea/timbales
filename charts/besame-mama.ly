@@ -77,7 +77,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         cymc4 cymc4 \rs r8 cymc8~| cymc4 \rs \rs \rs | cymc4 \rs \rs \rs | \comp #4  | \bar "||"
 
         \sect "H" "Horns (ride + campana)"
-        \bar "[|:-||"
+
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | cb8 cb8 cb4 r8 timh8^> timh16^> timh8.:32~ | \bar "||"
 

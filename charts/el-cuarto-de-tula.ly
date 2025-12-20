@@ -100,7 +100,7 @@ makePercent =
         \break
 
         \textMark "Coro 3"
-        cymc4 \rs \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
+cymc4 \rs \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 | s1 } | \rs \rs \rs timh4^> | \bar "."
 
         \textMark "Sax Solo 3"
@@ -129,7 +129,7 @@ makePercent =
         \makePercent { s1 | s1 | s1 } | \rs r8 timh8^> timh4^> timh8^> timh8^> | \bar "."
 
         % 33
-        timh4^> cymc4 \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
+        timh4^>cymc4 \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 | s1 | s1 } | \bar "."
 
         \break
@@ -185,7 +185,7 @@ makePercent =
         % 9
         \makePercent { s1 | s1 | s1 | s1 } | \bar "."
         \makePercent { s1 | s1 } | 
-        \rs cymc4 cb4 cymc4 | cb4 cymc4 timh8 timh8 timh8^> timh8^> | \bar "."
+        \rscymc4 cb4cymc4 | cb4cymc4 timh8 timh8 timh8^> timh8^> | \bar "."
 
         % 17
         <<timh4^> cymc>> \rs \rs \rs | \makePercent { s1 | s1 | s1 } | \bar "."
