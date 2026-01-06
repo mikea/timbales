@@ -45,6 +45,14 @@ sect-coda = #(define-music-function (text title) (string? string?)
   #}
 )
 
+sect-coda-no-break = #(define-music-function (text title) (string? string?)
+  #{
+    \rbar
+    \inline-coda
+    \sectionLabel \markup { \box { #text } #title }
+  #}
+)
+
 sect-segno = #(define-music-function (text title) (string? string?)
   #{
     \rbar

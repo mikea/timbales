@@ -40,6 +40,11 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \textMark "12" \rs \rs \rs timh4:16~ | timh8^> <<timh8 cymc>> r4 r4 timh4:16 \bar ".."
       \textMark "13" \flam timh8^> timl timl \flam timh^> r8 timh4.:16~ | timh4^> \rs \rs \rs \bar ".."
       \textMark "14" \rs r8 timh8^> timh2:16~ | timh8^> timh8^> timh16^> timh16^> r8 \rs \rs \bar ".."
+      \break
+      \textMark "15" \drag timh8_"L" timh8_"R" timl8_"L" <<cymc4. timh>> timh4:16~ | timh4^> timh8^> timl8 r2 | \bar ".."
+      \textMark "16" \rs \rs r8 timh8^> timh4:32~ | timh4^> \rs \rs \rs | \bar ".."
+      \textMark "17" \rs \rs r8 timh8^> timh16^> timh8.:32~ | timh4^> \rs \rs \rs | \bar ".."
+      
   }
 }
 
@@ -49,12 +54,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   }
 
   \newTimbalesStaff \newDrumVoiceOne \drummode { 
-      \textMark "1" timh2:16~ timh8 timh r4 | \rs \rs \rs \rs | \bar ".."
+      \textMark "1" timh2:16~ timh8 timh r4 | \bar ".."
       \textMark "2" timh2:16~ timh8^> \flam timh8^> r8 timl | <<timh4 cymc>> \rs \rs \rs \bar ".."
       \textMark "3" timh4:16~ timh16 timh timh8 timh timl timl timh | r8 timh8^> timh8^> timl r timl r <<cymc timh>> \bar ".."
       \break
       \textMark "4" timh2:16~ \tuplet 3/2 {timh4 timh4 timh4}  | r8 \flam timh8^> r4 \rs \rs \bar ".."
       \textMark "5" timh4:16~ timh8^> timl8 \tuplet 3/2 {\flam timh4^> timl4 \flam timh4^>} | r8 timh8^> timh4^> r8 timl4 timh8 \bar ".."
+      \textMark "6" r4 timh4:16~ timh8^> timh8^> timh4^> | \bar ".."
   }
 
 }
@@ -136,6 +142,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \textMark "16" timh4:16~ timh16 timh timh8 timh timl r timh | <<timh4 cymc>> \rs \rs \rs \bar ".."
       \textMark "17" \rs \rs r8 timh16 timh16 timh16^> timh16^> timh8^> | r8 <<timh4. cymc>> \rs \rs \bar ".."
+      \textMark "18" \rs \rs \tuplet 3/2 { timh8 8 8 } \tuplet 3/2 { timh8 8 8 }  | timh4.^> <<cb4. timl>> \drag timh4^> | \bar ".."
 
     }
 }
@@ -166,8 +173,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
       \textMark "10" <<timl4 cb4>>  <<timl4 cb4>> r8 <<timl8 cb8>> <<timl4 cb4>> | <<timl4 cb4>> r8 <<timl8 cb8>> <<timl4 cb4>> <<timl4 cb4>> | \bar ".." 
       \textMark "11" r2 cb16_"R" cb16_"L" cb16_"R" cb16_"L" cb16_"R" cb16_"L" cb16_"R" cb16_"L" | \bar ".."
-      \break
       \textMark "12" \rs cymc4 cb4 cymc4 | cb4 cymc4 timh8 timh8 timh8^> timh8^> | <<timh4 cymc4^> >> \rs \rs \rs | \bar ".."
+      \break
       \textMark "13" \rs \rs cb16 cb16 cb16 cb16 cb8 cb8 | r8 timl timl timh r timh^> <<cymc4 timh>> \bar ".."
+      \textMark "14" r8 cymc8~ cymc8 cb8 cb8 cb8 cb16 cb16 cb8 | cymc4 \rs \rs \rs | \bar ".."
 }
 }

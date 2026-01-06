@@ -11,6 +11,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   tagline = \markup { "Timbalero - https://mikea.github.io/timbales/ - " \date }
 }
 
+\paper {
+  page-count = 2
+}
+
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
         \tempo 4 = 220
@@ -39,9 +43,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "C" "Voz (cascara 2-3)"
     
+    \autoLineBreaksOff
     \repeat volta 2 {
         \bar "[|:-||"
-        \comp #4 | \drag timh8 timh8 timl8 <<cymc4. timh>> \rs | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \drag timh8_"L" timh8 timl8 <<cymc4. timh>> \rs | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | 
         \alternative {
           \volta 1 { \comp #4 |  \comp #4 | \bar ":|]" }
@@ -49,20 +54,18 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         }
     }
         r8 <<cb8 timl>> <<cb4 timl>> <<cb4 timl>> <<cb4 timl>> | 
-        
-        \drag timh8 timh8 timl8 <<cymc4. timh>> timh4:16~ | \bar "||"
+        \drag timh8_"L" timh8 timl8 <<cymc4. timh>> timh4:16~ | \bar "||"
+    \autoLineBreaksOn
 
         \sect "D" "Coro/Pregon (campana 2-3)"
-        timh4^> timh8^> timl8 \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        timh4^>_"R" timh8^>_"R" timl8 \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \textMark "horns"
         \comp #4 | \comp #4 | 
         \rs \rs \tuplet 3/2 { timh8 8 8 } \tuplet 3/2 { timh8 8 8 }  | timh4.^> <<cb4. timl>> \drag timh4^> | \bar "||"
         \break
         \bar "[|:-||"
-        \textMark "coro"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \textMark "pregon"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x3" | \bar "||"
+        \textMark "coro/pregon"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x6" | \bar "||"
         \bar ":|]"
         \sectionLabel "coro"
         \comp #4 | \comp #4 | 
@@ -109,20 +112,38 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
             \drag timh4. <<cb8 timh>> <<cb4 timl>> <<cb8 timh>> <<cb8 timl>> | r8 <<cb8 timh>> <<cb4 timl>> <<cb8 timh>> <<cb8 timl>> r8 <<cb8 timh>> \bar "||" }
         }
     }
-        \clave-shift <<cb4. timl>> timh8^> r4 timh4:16 |
+        \clave-shift <<cb4. timl>> timh8^> r4 timh4:16~  |
 
         \sect "H" "Coro/Pregon (campana 2-3)"
+    \autoLineBreaksOff
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x6" | \bar "||"
+        \textMark "in" timh4^> \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar ":|]"
+
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+
+    
+        \textMark "2nd pregon" \comp #4 | \comp #4 | 
+        \once \override TupletBracket.staff-padding = #4
+        \tuplet 3/2 { \flam-art timh4^> \flam-art timh4^> \flam-art timh4^> }
+        \once \override TupletBracket.staff-padding = #4
+        \tuplet 3/2 { \flam-art timh4^> \flam-art timh4^> \flam-art timh4^> } |
+        r2 \drag timh8^>_"L" timh8^> timh8 timh8  | \bar "||"
+        \break
+
+        \bar "[|:-||"
+        \textMark "in" timl4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \bar ":|]"
         
-        \comp #4 | \comp #4 | \clave-shift \comp #4 | 
+        \comp #4 | \comp #4 | \bar"||" \clave-shift \comp #4 | 
 
         \ds-al-coda
+    \autoLineBreaksOn
 
         \sect-coda "I" "(campana 3-2)"
+        \bar "[|:-||"
         \drag timh4^> r4 r4 \drag timh4^> | r2 \drag timh4^> r4 |
-        \drag timh4^> r4 r4 \drag timh4^> | r2 \drag timh4^> r4 |
+        \bar ":|]"
         \tuplet 3/2 { <<cb4 timh4>> <<cb4 timh4>> r4 } \tuplet 3/2 { <<cb4 timl>> <<cb4 timl>> r4 } |
         \tuplet 3/2 { <<cb4 timh4>> <<cb4 timh4>> r4 }  \tuplet 3/2 { <<cb4 timl4>> r4 <<cb4 timl>> }  |
         <<cymc4 timh>> r4 r2 | 
@@ -135,10 +156,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \override Score.BarNumber.break-visibility = ##(#f #f #t)
 
         % 1
-        r2 timh4^> r4 | r8 timh8^> r4 r4 r8 timh8^>  | r2 timl4 r4 | r8 timh8^> r4 r2 | 
+        r2 timh4^>_"R" r4 | r8 timh8^>_"R" r4 r4 r8 timh8^>_"R"  | r2 timl4_"L" r4 | r8 timh8^>_"R" r4 r2 | 
         % 5
-        \tuplet 3/2 { timl4 timl4 timl4 } \tuplet 3/2 { timl4 timl4 timl4 } | r8 timh8^> r4 r2 | 
-        \drag timh8^> timh8^> timh8^> timh8^> timl4 timl8 timl8  | r8 timh8^> r4 timl8 timl8 r8 timl8 | 
+        \tuplet 3/2 { timl4_"R" timl4 timl4 } \tuplet 3/2 { timl4 timl4 timl4 } | r8 timh8^>_"R" r4 r2 | 
+        \drag timh8^>_"L" timh8^> timh8^> timh8^> timl4_"L" timl8 timl8  | r8 timh8^>_"R" r4 timl8 timl8 r8 timl8 | 
         % 9
         r8 timl8 timl4 timh8^> timh8^> r8 timh8^> | r8 timh8^> timh4^> r8 timl8 r8 timl8 | 
         r8 timh8^> timh4^> r8 timl8 r8 timl8 | r8 timh8^> timh4^> r8 timl8 r8 timh8^> | 
@@ -166,7 +187,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         timh4^> timh4^> timh8^> timh8^> r8 timh8^> | r8 timl8 r8 timh8^> timl4 timl8 timh8^>  | 
         % 41
         r8 timh8^> timl4 timh8^> timl8 r8 timh8^> | timl4 timh8^> timl8 r8 timh8^> r8 timl8 | 
-        r8 timh8^> timl4 timh8^> timl8 r4 | \drag timh8^> timh8^> timh8^> timh8^> \tuplet 3/2 { timl4 4 4 } | 
+        r8 timh8^> timl4 timh8^> timl8 r4 | 
+        \override TupletBracket.staff-padding = #4
+        \drag timh8^> timh8^> timh8^> timh8^> \tuplet 3/2 { timl4 4 4 } | 
         % 45
         \tuplet 3/2 { timl4 4 4 } \tuplet 3/2 { \flam-art timh4^> timl4 4 } | 
         \tuplet 3/2 { \flam-art timh4^> timl4 4 } \tuplet 3/2 { \flam-art timh4^> timl4 4 } | 

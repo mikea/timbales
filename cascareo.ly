@@ -22,8 +22,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         cb8 ssl16 ssl16 cb8 ssl8 
         cb8 ssl16 ssl16 cb8 ssl8
         \bar ":|.|:"
-        cb8 ssl16 ssl16 ssh8 ssl8 
-        cb8 ssl16 ssl16 ssh8 ssl8
+        rbm8 ssl16 ssl16 rbn8 ssl8 
+        rbm8 ssl16 ssl16 rbn8 ssl8
         | \bar ":|.|:"
     }
 >>
@@ -65,8 +65,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \newDrumVoiceTwo \drummode {
         s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
         s4. \ghost timl8 s4 timl4 | s4. \ghost timl8 s4 timl4 | 
-        r4 timh r4 timl4 | r4 timh r4 timl4 | 
-        r8 \ghost timh r8 \ghost timh r4 timl8 r8 | r8 \ghost timh r2 timl4 
+        s4 timh s4 timl4 | s4 timh s4 timl4 | 
+        s8 \ghost timh s8 \ghost timh s4 timl8 s8 | s8 \ghost timh s2 timl4 
     }
 
 >>
@@ -118,11 +118,4 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         ssh4-> ssh-> ssh8 ssh-> r ssh | r8 ssh8 ssh8 ssh8 ssh4-> ssh8 ssh |
         \bar ":|."
     }
-
-    \newDrumVoiceTwo \drummode {
-        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
-        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
-        s4 \ghost timl s4 timl4 | s4 \ghost timl s4 timl4 | 
-    }
-
 >>
