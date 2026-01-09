@@ -32,21 +32,21 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "A" "Voz (cascara 3-2)"
         \bar "[|:-||"
         \rs r8 cymc8 \rs \rs | \comp #4 | r8 timl8 r8 cymc8 \rs \rs  | \comp #4 | \bar "||"
-        r8 timl8 r8 cymc8 \rs \rs  | \comp #4 | r8 timh^> r8 timh^> r8 timh^> r8 timh^> | timh4^> r4 \rs \rs | \bar "||"
+        r8 timl8 r8 cymc8 \rs \rs  | \comp #4 | r8 timh^> r8 timh^> r8 timh^> r8 timh^> | timh4^> \rs \rs \only-last timh4^> | \bar "||"
         \bar ":|][|:"
 
         \sect "B" "Voz (cascara 3-2)"
     \autoLineBreaksOff
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \bar ":|][|:"
-        \textMark \markup {\italic "1st time only" } timh8 timl timh cymc4. \rs | \comp #4 | \comp #4 | \comp #4 |
+        r8 \only-first \drag timh timl cymc4. \rs | \comp #4 | \comp #4 | \comp #4 |
         \bar ":|]"
-        \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \rs \rs \rs timh4^> | \bar "||"
     \autoLineBreaksOn
 
         \sect "C" "Voz (cascara 3-2)"
         \bar "[|:-||"
-        \textMark \markup {\italic "1st time only" } timh8 timl timh cymc4. \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
+        r8 \only-first \drag timh timl cymc4. \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" |
         \bar ":|]"
         \rs \rs \rs r8 timh8^> |
         timh4^> r4 r4 timh4:16~ |
@@ -69,7 +69,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect-no-break "E" "Pregon/Coro x 4 (campana 2-3)"
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \textMark "out" timh4:16 |
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \only-last timh4:16 |
 
         \bar ":|][|:"
 
@@ -99,7 +99,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "H" "Mambo 2 (ride 2-3)"
         \bar "[|:-||"
-        \textMark "in" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
+        \repeat-text "1,3" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
         \bar ":|]" 
 
         \bar ":|][|:"
@@ -117,24 +117,36 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect-no-break "I" "Pregon/Coro (campana 2-3)"
         \bar "[|:-||"
-        \textMark "in" cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
+        \only-first cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs \only-last timh4:16 \textEndMark "x4" | \bar "||"
 
         \bar ":|][|:"
 
-        \sect "J" "Solos/Coro (ride 2-3)"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" | \bar "||"
+        \sect "J" "Mona,Solos,Mona (ride 2-3)"
+        \ghost cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs \ghost timh4:16 \textEndMark "open" | \bar "||"
 
         \bar ":|][|:"
 
         \sect-no-break"K" "Pregon/Coro (campana 2-3)"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
-        \bar ":|]"
+    \repeat volta 4 {
+        \comp #4 | \comp #4 |
+        \alternative {
+            \volta 1,2,3 { \comp #4 | \comp #4 | \bar ":|]" }
+            \volta 4 { \rs \rs \rs timh4^> | r8 cymc8 r8 cymc8 r8 cymc8 r8 cymc8 }
+        }
+    }
 
-        \sect "L" "todo"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | 
+        \sect "L" "(cascara 2-3)"
+        \bar "[|:-||"
+    \repeat volta 2 {
+        \only-first cymc4 \rs \rs \rs | \comp #4 | 
+        \alternative {
+            \volta 1 { \comp #4 | \comp #4 | \bar ":|]" }
+            \volta 2 { \comp #4 | \rs \rs \rs timh4^> | r8 cymc8 r8 cymc8 r8 cymc8 r8 cymc8 | \bar "||" }
+        }
+        
+    }
+        cymc4 8 8 r cymc r cymc | r cymc r cymc r cymc r cymc | 
+        \textMark "fill" r1 | cymc4 cymc4~ cymc2 |
 
         \bar ".."
     }

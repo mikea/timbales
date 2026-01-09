@@ -23,3 +23,12 @@ ds-al-fine = \inline-text \markup { D.S. al Fine }
 ds = \inline-text \markup { D.S. }
 
 inline-coda = \inline-text \markup \lower #1.33 {\fontsize #5 \coda}
+
+repeat-text = #(define-music-function (text) (string?)
+  #{
+    \textMark \markup { \italic #text }
+  #}
+)
+
+only-first = \repeat-text "1st"
+only-last = \repeat-text "last"
