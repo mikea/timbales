@@ -20,6 +20,8 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Vale Mas Un Guaguanco](pdf/vale-mas-un-guaguanco.pdf)
+- [Pa'Lante Otra Vez](pdf/pa-lante-otra-vez.pdf)
 - [Timbalero](pdf/timbalero.pdf)
 - [Bésame mamá](pdf/besame-mama.pdf)
 - [Baila Este Son](pdf/baila-este-son.pdf)
