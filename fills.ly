@@ -144,6 +144,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       \textMark "17" \rs \rs r8 timh16 timh16 timh16^> timh16^> timh8^> | r8 <<timh4. cymc>> \rs \rs \bar ".."
       \textMark "18" \rs \rs \tuplet 3/2 { timh8 8 8 } \tuplet 3/2 { timh8 8 8 }  | timh4.^> <<cb4. timl>> \drag timh4^> | \bar ".."
 
+      \textMark "19" \rs \rs \tuplet 3/2 { timh8 8 8 } \tuplet 3/2 { timh8 8 8 }  | timh8 <<cymc4. timh>> \rs \rs | \bar ".."
+
     }
 }
 

@@ -18,9 +18,11 @@ inline-text = #(define-music-function (parser location m) (markup?)
 
   #})
 
+dc-al-coda = \inline-text \markup { D.C. al Coda }
 ds-al-coda = \inline-text \markup { D.S. al Coda }
 ds-al-fine = \inline-text \markup { D.S. al Fine }
 ds = \inline-text \markup { D.S. }
+dc = \inline-text \markup { D.C. }
 
 inline-coda = \inline-text \markup \lower #1.33 {\fontsize #5 \coda}
 

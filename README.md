@@ -20,6 +20,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [1983](pdf/1983.pdf)
 - [Vale Mas Un Guaguanco](pdf/vale-mas-un-guaguanco.pdf)
 - [Pa'Lante Otra Vez](pdf/pa-lante-otra-vez.pdf)
 - [Timbalero](pdf/timbalero.pdf)

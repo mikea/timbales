@@ -18,7 +18,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sectionLabel "(cascara 3-2)"
     \repeat volta 4 {    
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | 
         \alternative {
             \volta 1,2,3 { \comp #4 |  \bar ":|]" }
