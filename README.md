@@ -20,6 +20,8 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Puerto Rico](pdf/puerto-rico.pdf)
+- [Buscando Guayaba](pdf/buscando-guayaba.pdf)
 - [1983](pdf/1983.pdf)
 - [Vale Mas Un Guaguanco](pdf/vale-mas-un-guaguanco.pdf)
 - [Pa'Lante Otra Vez](pdf/pa-lante-otra-vez.pdf)

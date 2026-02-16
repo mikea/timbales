@@ -34,3 +34,4 @@ repeat-text = #(define-music-function (text) (string?)
 
 only-first = \repeat-text "1st"
 only-last = \repeat-text "last"
+only-second = \repeat-text "2nd"
