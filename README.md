@@ -20,6 +20,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Dile A Catalina](pdf/dile-a-catalina.pdf)
 - [Buscando Guayaba](pdf/buscando-guayaba.pdf)
 - [1983](pdf/1983.pdf)
 - [Vale Mas Un Guaguanco](pdf/vale-mas-un-guaguanco.pdf)

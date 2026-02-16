@@ -36,7 +36,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ":|][|:"
 
         \sect "B" "Voz (cascara 3-2)"
-        \autoLineBreaksOff
+    \autoLineBreaksOff
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \bar ":|][|:"
         r8 \only-first \drag timh timl cymc4. \rs | \comp #4 | \comp #4 | \comp #4 |
