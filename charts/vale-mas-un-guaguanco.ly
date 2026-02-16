@@ -16,12 +16,12 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \tempo 4 = 184
 
         \sectionLabel "(cascara 3-2)"
-    \repeat volta 4 {    
+    \repeat volta 2 {    
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | 
         \alternative {
-            \volta 1,2,3 { \comp #4 |  \bar ":|]" }
-            \volta 4 { 
+            \volta 1 { \comp #4 |  \bar ":|]" }
+            \volta 2 { 
                 \rs \rs \tuplet 3/2 {r8 timl timl} \tuplet 3/2 {timl timl timl}
             }
         }
