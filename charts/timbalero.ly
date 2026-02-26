@@ -84,10 +84,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \bar "[|:-||"
         \drag timh4^> timh8^> timh8^> r8 timh8^> r8 timh8^> | r8 timh8^> timh4^> timh8^> timh8^> r8 timh8^> | 
-        \comp #4 | \comp #4 |
+        \comp #4 | \only-second r8 timl8 timl8 timl8 \rs \rs |
         \bar ":|][|:"
         \drag timh4.^> timh8^> timh4^> timh4^> | r8 timh8^> timh4^> timh4.^> timh8^> | 
-        timh4^> \rs \rs \rs | \comp #4 | \bar "||"
+        timh4^> \rs \rs \rs | \only-first timl4 4 8 8 \rs | \bar "||"
         \bar ":|][|:"
         \break
         \tuplet 3/2 { \drag timh4^> timh4^> r4 } \tuplet 3/2 { timh4^> r4 timh4^> } | 

@@ -20,6 +20,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Nací Moreno](pdf/naci-moreno.pdf)
 - [Dile A Catalina](pdf/dile-a-catalina.pdf)
 - [Buscando Guayaba](pdf/buscando-guayaba.pdf)
 - [1983](pdf/1983.pdf)
