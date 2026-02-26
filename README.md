@@ -69,4 +69,4 @@ Random things I wish I knew before my first rehearsal:
 - Play extended fill on every first pregon (usually twice per song).
 - Play two hits on 4-& before piano solo.
 
-[@mikea](https://github.com/mikea)
+[@mikea](https://mikea.github.io/)
