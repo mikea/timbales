@@ -14,6 +14,7 @@ Contents:
 - [Intros/Fills/Breaks](pdf/fills.pdf)
 - [Solo Concepts](pdf/solo.pdf)
 - [Cha-cha-cha](pdf/cha-cha-cha.pdf)
+- [Cumbia](pdf/cumbia.pdf)
 - [Excercises](pdf/exercises.pdf)
 
 [All Parts Combined](pdf/all.pdf)

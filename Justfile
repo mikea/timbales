@@ -16,6 +16,7 @@ notes:
         pdf/cascareo.pdf \
         pdf/contracampana.pdf \
         pdf/cha-cha-cha.pdf \
+        pdf/cumbia.pdf \
         pdf/bell.pdf \
         pdf/fills.pdf \
         pdf/solo.pdf \
