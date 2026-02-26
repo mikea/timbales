@@ -31,6 +31,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \newTimbalesStaff <<
     \newDrumVoiceOne \drummode { 
         \sectionLabel "Fills"
+        \rs r8 timh16_L timh16_L timh8_"R" timh8_"L" timh4^>_"R" | \bar "||"
         \rs r8 timh16_L timh16_L timh8_"R" timl8_L timl4_"R" | <<cymc4 timh4^> >> \rs \rs \rs \bar "||"
+        \rs \rs \rs r8 timh16_L timh16_L | timh4_"R" timh4_"R" r8 timl8_L timl4_"R" | \bar "||"
     }
 >>
