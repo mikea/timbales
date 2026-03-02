@@ -21,7 +21,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r8 timh8 timh cymc r8 timl8 timl cymc | r8 timl8 timl cymc r8 timl8 timl cymc  | r8 timl8 timl cymc r8 timl8 timl cymc   |  
         r8 cymc8 r8 cymc8~ cymc2 | \bar "||"
         timl8 timl8 timl8 timl8 timl8 timl8 timl8 timl8 | 
-        timl8 timl8 timl4 r4 timh4^> | \bar "||"
+        timl8 timl8 timl4 r8 timh8 timl4 | \bar "||"
     \autoLineBreaksOn
 
         \sect-segno "A" "Coro/Trumpet (cascara 2-3)"
@@ -30,7 +30,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ":|]" 
         \comp #4 |  \rs r8 timh4.^> r4 |
         timl8 timl8 timl8 timl8 timl8 timl8 timl8 timl8 | 
-        timl8 timl8 timl4 r4 timh4^> | \bar "||"
+        timl8 timl8 timl4 r8 timh8 timl4 | \bar "||"
 
         \big-coda
         \ds-al-coda
@@ -39,7 +39,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4  | \bar "||"
         \comp #4 | \comp #4 |
         timl8 timl8 timl8 timl8 timl8 timl8 timl8 timl8 | 
-        timl8 timl8 timl4 r4 timh4^> | \bar "||"
+        timl8 timl8 timl4 r8 timh8 timl4 | \bar "||"
 
         \sect "D" "Coro/Pregon (campana 2-3)"
         \bar "[|:-||"
@@ -64,16 +64,22 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r1 | timl4. timh4. timl4 | \comp #4 | \comp #4 |
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
-        \bar ":|]"
 
-        \sect "K" "Coro/Pregon (campana 2-3)"
-        r1 | timl4. timh4. timl4 | \comp #4 | \comp #4 |
-        \bar "[|:-||"
+        \bar ":|][|:"
+
+        \sect "G" "Coro/Horns (campana 2-3)"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
+
+        \bar ":|][|:"
+
+        \sect "H" "Piano Solo (cascara 2-3)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" | \bar "||"
+
+        \sect "L" "Coro/Pregon (campana 2-3)"
+        \bar ":|][|:"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "on cue" | \bar "||"
         \bar ":|]"
 
-        \sect "L" "Coro/Pregon (cascara 2-3)"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \rs \rs r8 timl8 timl cymc | 
         r8 timh8 timh cymc r8 timl8 timl cymc | r8 timl8 timl cymc r8 timl8 timl cymc  | r8 timl8 timl cymc r8 timl8 timl cymc   |  
         r8 cymc8 r8 cymc8~ cymc2 |

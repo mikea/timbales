@@ -75,7 +75,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" |
         \bar ":|]"
         
-        \comp #4 | <<cb4. timl>>  <<cb4. timl>> <<cb4 timl>> | r2 r4 timh4^> |
+        <<cb4. timl>>  <<cb4. timl>> <<cb4 timl>> | r2 r4 timh4^> |
 
         \sect "Ending" "(cascara 3-2)"
 
