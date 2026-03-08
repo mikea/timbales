@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Miserable](pdf/miserable.pdf)
 - [Ché Ché Colé](pdf/che-che-cole.pdf)
 - [Nací Moreno](pdf/naci-moreno.pdf)
 - [Dile A Catalina](pdf/dile-a-catalina.pdf)
