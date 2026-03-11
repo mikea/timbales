@@ -27,16 +27,16 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x3" | \bar "||"
         \bar ":|]"
         \break
-        \comp #4 | \comp #4 | cymc4 cymc4 cymc8 cymc8 r4 | r4 cymc8 cymc8~ cymc4 \rs | \bar "||"
+        \comp #4 | \comp #4 | cymc4 cymc4 cymc8 cymc8 r4 | r8 cymc8 cymc4 \rs \rs | \bar "||"
         \comp #4 | \comp #4 | cymc4 r4 r8 cymc8 cymc4 | r4 r8 cymc8~ cymc4 \rs | \bar "||"
         
         \sect "B" "Voz (cascara 2-3)"
-        \rs \rs \rs r8 \ghost cymc8 | \comp #4 | \rs \rs \rs r8 cymc8 | \comp #4 \bar "||"
-        \comp #4 | cymc2 cymc2| \rs \rs \rs r8 \ghost cymc8 | \comp #4  | \bar "||"
+        \rs \rs \rs \rs | \comp #4 | \rs \rs \rs r8 cymc8 | \comp #4 \bar "||"
+        \comp #4 | cymc2 cymc2| \rs \rs \rs \rs | \comp #4  | \bar "||"
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \bar ":|]"
-        \comp #4 | \comp #4 | cymc4 cymc4 cymc8 cymc8 r4 | r4 cymc8 cymc8~ cymc4 \rs | \bar "||"
+        \comp #4 | \comp #4 | cymc4 cymc4 cymc8 cymc8 r4 | r8 cymc8 cymc4 \rs \rs | \bar "||"
         \comp #4 | \comp #4 | cymc4 r4 r8 cymc8 cymc4 | r4 r8 cymc8~ cymc4 \rs | \bar "||"
         \comp #4 | \comp #4 | \rs \rs \rs r8 cymc8  | \comp #4 | \bar "||"
 
@@ -84,7 +84,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "Ending" "(cascara 2-3)"
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4  | \bar "||"
-        \bar ":|][|:"
+        \bar ":|]"
          <<cb4 timl>> <<cb4 timl>> r8  <<cb8 timl>> <<cb4 timl>> |
         \bar ".."
     }
