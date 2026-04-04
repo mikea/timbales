@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Lamento Borincano](pdf/lamento-borincano.pdf)
 - [Miserable](pdf/miserable.pdf)
 - [Ché Ché Colé](pdf/che-che-cole.pdf)
 - [Nací Moreno](pdf/naci-moreno.pdf)
@@ -70,5 +71,9 @@ Random things I wish I knew before my first rehearsal:
   for sound consistency ("that stuff is for bongo players" as our director said)
 - Play extended fill on every first pregon (usually twice per song).
 - Play two hits on 4-& before piano solo.
+
+## Source Code
+
+Lilypond source code for all charts is available [here](https://github.com/mikea/timbales).
 
 [@mikea](https://mikea.github.io/)
