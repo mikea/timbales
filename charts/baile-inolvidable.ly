@@ -25,7 +25,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
        
         \ssect-no-break "(cascara 2-3)"
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs r8 timh8 timl4  | \bar "||"
+        \comp #4 | \comp #4 | \rs \rs r8 timh8 timl8 <<cb8 timl>> | r8 <<cb8 timl>> <<cb4 timl>> r8 timh8 timl4  | \bar "||"
        
         \sect "A" "Voz (cascara 2-3)" 
         \bar "[|:-||"
