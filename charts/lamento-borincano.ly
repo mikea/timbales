@@ -33,24 +33,24 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "C" "Voz (cascara 3-2)" 
     \repeat volta 2 {
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \rs \rs r8 cymc4. | \rs \rs r8 cymc4. | \bar "||"
+        \rs \rs r8 cymc4. | \rs r8 cymc8 r8 cymc8 \rs | \bar "||"
 
         \sect-no-break "D" "Voz (cascara 3-2)" 
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \alternative {
             \volta 1 { \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar ":|]"  } 
-            \volta 2 { \comp #4 | \comp #4 | \clave-shift \comp #4 | } 
+            \volta 2 { \comp #4 | \comp #4 | \clave-shift \drag timh4 r8 <<cb8 timh>> r8 <<cb8 timh>> <<cb4 timh>> | } 
         }
     }
 
-        \sect "E" "Trbs (campana 2-3)" 
-        \bar "[|:-||"
+        \sect "E" "Trbs (ride 2-3)" 
+        \comp #4 | \comp #4 | \comp #4 | \rs r8 <<cb8 timh>> r8 <<cb8 timh>> <<cb4 timh>> | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \bar ":|][|:"
 
-        \sect-no-break "F" "Coro/Pregon (campana 2-3)" 
+        \sect "F" "Coro/Pregon (campana 2-3)" 
+        \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" | \bar "||"
         \bar ":|]"
         \comp #4 | \comp #4 | 
