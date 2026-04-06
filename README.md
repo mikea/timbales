@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Babaila](pdf/babaila.pdf)
 - [Lamento Borincano](pdf/lamento-borincano.pdf)
 - [Miserable](pdf/miserable.pdf)
 - [Ché Ché Colé](pdf/che-che-cole.pdf)
