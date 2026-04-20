@@ -62,8 +62,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "E" "Coro 8/Pregon 4 (campanas 3-2)" 
     \autoLineBreaksOff
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x9" | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x9 " | \bar "||"
         \bar ":|]"         
+        \textMark " Last Coro"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
          \comp #4 | \comp #4 | 
         \drag timh4 r8 <<cb8 timh>> <<cb4 timl>> <<cb4 timh>>| r8 <<cb8 timh>> <<cb4 timl>> <<cb4 timh>> r4 |\bar "||"
