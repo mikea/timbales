@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Lo Tuyo y Lo Mio](pdf/lo-tuyo-y-lo-mio.pdf)
 - [Babaila](pdf/babaila.pdf)
 - [Lamento Borincano](pdf/lamento-borincano.pdf)
 - [Miserable](pdf/miserable.pdf)
