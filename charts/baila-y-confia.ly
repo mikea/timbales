@@ -26,15 +26,15 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "A" "Voz (cascara 2-3)" 
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | r8 \only-last timl8 cymc2 \rs | \bar "||"
+        \comp #4 | \comp #4 | \rs \rs \rs \only-last r8 \drag timh8 | r8 timl8 cymc2 \rs | \bar "||"
         \textEndMark "x4"
         \bar ":|]"
 
         \sect "B" "(cascara 2-3)" 
-        cymc4. cymc4. \rs | r8 cymc8 cymc4^. r2 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        cymc4. cymc4. r4 | r8 cymc8 cymc4^. r2 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \rs cymc2 \rs | \bar "||"
         \break
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \drag timh4 timh8 timh | \bar "||"
         \comp #4 | \comp #4 | <<timh4 timl>> <<timh4 timl>> <<timh2 timl>> | \ghost cymc2 \ghost cymc2 | \bar "||"
 
         \sect "C" "Pregon/Choro (1 - cascara, 2-4 campanas 2-3)" 
@@ -62,42 +62,46 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | 
     \alternative {    
         \volta 1 { \comp #4 | \rs r8 cymc4 r8 \rs | \bar ":|]" }
-        \volta 1 { r8 <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>>| <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> | \bar "||" }
+        \volta 2 { r8 <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>>| <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> | \bar "||" }
     }   
 }
 
         \sect "F" "Mambo 2 (campanas 2-3)" 
-        cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar "[|:-||"
+        \only-first cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar ":|][|:"
+        r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | \bar "||"
+        \bar ":|]"
 
         \sect "G" "Break" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \drag timh4 r4 cymc2 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \drag timh4 timl4 <<cb8 timl>> <<cb8 timh>> <<cb8 timl>> <<cb8 timh>> | \bar "||"
 
         \sect "H" "Guitar Solo (campanas 2-3)" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar "[|:-||"
+        \only-first cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar ":|][|:"
+        r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | \bar "||"
+        \bar ":|]"
 
-        \sect "I" "()" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \sect "I" "Break" 
+        \drag timh4 r4 cymc2 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \drag timh4 timl4 <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> <<cb8 timl>> | \bar "||"
 
-        \sect "J" "()" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \sect "J" "Trumpet Solo (campanas 2-3)" 
+        \bar "[|:-||"
+        \only-first cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar ":|][|:"
+        r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | \bar "||"
+        \bar ":|]"
 
-        \sect "K" "()" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \sect "K" "Choro (campanas 2-3)" 
+        \bar "[|:-||"
+        \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x3" | \bar "||"
+        \bar ":|]"
+        r8 cymc4 cymc4 r8 \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \tuplet 3/2 { timl4 timh4 timl4 } \tuplet 3/2 { timl4 timh4 timl4 } | 
+        timl4 r8 cb16 cb16 cb8 cb8 cymc4^. | \bar "||"
 
         \bar "|."
 
