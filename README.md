@@ -21,6 +21,8 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Baila y Confía](pdf/baila-y-confia.pdf)
+- [Bailando Asi](pdf/bailando-asi.pdf)
 - [La Novela](pdf/la-novela.pdf)
 - [Lo Tuyo y Lo Mio](pdf/lo-tuyo-y-lo-mio.pdf)
 - [Babaila](pdf/babaila.pdf)
