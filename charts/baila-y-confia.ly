@@ -30,10 +30,9 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \textEndMark "x4"
         \bar ":|]"
 
-        \sect "B" "(cascara 2-3)" 
+        \sect-no-break "B" "(cascara 2-3)" 
         cymc4. cymc4. r4 | r8 cymc8 cymc4^. r2 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \rs cymc2 \rs | \bar "||"
-        \break
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \drag timh4 timh8 timh | \bar "||"
         \comp #4 | \comp #4 | <<timh4 timl>> <<timh4 timl>> <<timh2 timl>> | \ghost cymc2 \ghost cymc2 | \bar "||"
 
@@ -93,10 +92,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \only-first cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \bar ":|][|:"
         r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | \bar "||"
-        \bar ":|]"
+        \bar ":|][|:"
 
         \sect "K" "Choro (campanas 2-3)" 
-        \bar "[|:-||"
+\autoLineBreaksOff
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x3" | \bar "||"
         \bar ":|]"
         r8 cymc4 cymc4 r8 \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
