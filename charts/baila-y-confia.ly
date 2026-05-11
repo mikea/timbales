@@ -25,11 +25,14 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         cymc4 \rs \rs \rs | \comp #4 | 
 
         \sect "A" "Voz (cascara 2-3)" 
+\repeat volta 4 {
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \rs \rs \rs \only-last r8 \drag timh8 | r8 timl8 cymc2 \rs | \bar "||"
-        \textEndMark "x4"
-        \bar ":|]"
-
+        \comp #4 | \comp #4 |
+    \alternative {    
+        \volta 1,2,3 { \comp #4  | \comp #4 | \bar ":|]" }
+        \volta 4 { | \rs \rs \rs \only-last r8 \drag timh8 | r8 timl8 cymc2 \rs | \bar "||" }
+    }
+}
         \sect-no-break "B" "(cascara 2-3)" 
         cymc4. cymc4. r4 | r8 cymc8 cymc4^. r2 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \rs cymc2 \rs | \bar "||"
