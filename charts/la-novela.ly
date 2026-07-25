@@ -5,7 +5,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
 \header {
   title = "La Novela"
-  subsubtitle = "(2-3 Rumba Clava)"
+  subsubtitle = "(2-3 Rumba Clave)"
   composer = "Maraca"
   instrument = "Timbales"
   tagline = \markup { "La Novela - https://mikea.github.io/timbales/ - " \date }

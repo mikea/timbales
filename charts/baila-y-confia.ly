@@ -39,7 +39,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \rs \rs \drag timh4 timh8 timh | \bar "||"
         \comp #4 | \comp #4 | <<timh4 timl>> <<timh4 timl>> <<timh2 timl>> | \ghost cymc2 \ghost cymc2 | \bar "||"
 
-        \sect "C" "Pregon/Choro (1 - cascara, 2-4 campanas 2-3)" 
+        \sect "C" "Pregon/Coro (1 - cascara, 2-4 campanas 2-3)" 
 \repeat volta 4 {
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
@@ -97,7 +97,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | r8 cymc8 cymc4 r8 cymc8 cymc4 | \comp #4 | \bar "||"
         \bar ":|][|:"
 
-        \sect "K" "Choro (campanas 2-3)" 
+        \sect "K" "Coro (campanas 2-3)" 
 \autoLineBreaksOff
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x3" | \bar "||"
         \bar ":|]"

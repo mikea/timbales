@@ -91,6 +91,8 @@ drumPitchNames.timlm = #'lotimbalemuffled
 drumPitchNames.timho = #'hitimbaleopen
 drumPitchNames.timhm = #'hitimbalemuffled
 
+% https://github.com/lilypond/lilypond/blob/8b27342781c38475a70df6e324dcdc1e57757041/ly/drumpitch-init.ly#L228
+
 #(define mytimbales `(
         (bassdrum    () #f -3)
 
