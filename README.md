@@ -21,6 +21,8 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [¡Quieren Salsa!](pdf/quieren-salsa.pdf)
+- [Niche Mode](pdf/niche-mode.pdf)
 - [Baila y Confía](pdf/baila-y-confia.pdf)
 - [Bailando Asi](pdf/bailando-asi.pdf)
 - [La Novela](pdf/la-novela.pdf)

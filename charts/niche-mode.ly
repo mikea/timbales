@@ -8,7 +8,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   subsubtitle = "(Salsa)"
   composer = "Grupo Niche"
   instrument = "Timbales"
-  tagline = \markup { "Grupo Niche - https://mikea.github.io/timbales/ - " \date }
+  tagline = \markup { "Niche Mode - https://mikea.github.io/timbales/ - " \date }
 }
 
 \newTimbalesStaff <<
