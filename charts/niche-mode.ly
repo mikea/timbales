@@ -39,9 +39,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \rs \rs \rs r8 cymc8~ | cymc4 r8 cymc8~ cymc4 r8 cymc8 | \comp #4 | \comp #4 | \bar "||"
         \break
-        \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \bar ":|]" 
+        \rs \rs r8 cymc8 r8 cymc8 |  cymc4^> \rs \rs \rs | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \rs \rs \tuplet 3/2 { timh16_"R" timh16_"R" timh16_"L" } timh8^>_"R" r4    | 
 
         \sect "D" "Voz (cascara 3-2)" 
