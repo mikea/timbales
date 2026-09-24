@@ -20,7 +20,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \textEndMark "(x3 on record)"
         \bar ":|]"
-        cb4 r8 cb8 cb4 r8 cb8 | \tuplet 3/2 { cb4 cb4 cb4 } cb4 timh4^>  | \bar "||"
+        cb4 r8 cb8 cb4 r8 cb8 | \tuplet 3/2 { cb4 cb4 cb4 } cb4 r4  | \bar "||"
 
         \sect "A" "(cascareo)" 
         \bar "[|:-||"
