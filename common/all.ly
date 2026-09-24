@@ -5,3 +5,5 @@
 \include "ghost.ly"
 \include "repeats.ly"
 \include "percent.ly"
+\include "sect.ly"
+\include "salsa.ly"

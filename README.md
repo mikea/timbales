@@ -21,6 +21,8 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Huracan](pdf/huracan.pdf)
+- [A La Hora Que Me Llamen Voy](pdf/a-la-hora-que-me-llamen-voy.pdf)
 - [¡Quieren Salsa!](pdf/quieren-salsa.pdf)
 - [Niche Mode](pdf/niche-mode.pdf)
 - [Baila y Confía](pdf/baila-y-confia.pdf)

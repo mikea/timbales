@@ -1,9 +1,5 @@
 \include "common/all.ly"
 
-rbar = { \set Score.currentBarNumber = 1 }
-
-rbreak = { \rbar \break }
-
 \layout {
   \context {
     \Score
@@ -18,74 +14,3 @@ rbreak = { \rbar \break }
     \override CodaMark.font-size = #5
   }
 }
-
-
-sect = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \break
-    \sectionLabel \markup { \box { #text } #title }
-  #}
-)
-
-sect = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \break
-    \sectionLabel \markup { \box { #text } #title }
-  #}
-)
-
-sect-coda = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \break
-    \inline-coda
-    \sectionLabel \markup { \box { #text } #title }
-  #}
-)
-
-sect-coda-no-break = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \inline-coda
-    \sectionLabel \markup { \box { #text } #title }
-  #}
-)
-
-sect-segno = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \break
-    \sectionLabel \markup { {\fontsize #5 \segno } \box { #text } #title }
-  #}
-)
-
-sect-no-break = #(define-music-function (text title) (string? string?)
-  #{
-    \rbar
-    \sectionLabel \markup { \box { #text } #title }
-  #}
-)
-
-ssect = #(define-music-function (text) (string?)
-  #{
-    \rbar
-    \break
-    \sectionLabel \markup { #text }
-  #}
-)
-
-ssect-no-break = #(define-music-function (text) (string?)
-  #{
-    \rbar
-    \sectionLabel \markup { #text }
-  #}
-)
-
-abanico-long = \drummode { \rs r8 timh4.^> timh4:16~ }
-abanico-short = \drummode { \rs \rs \rs timh4:16~ }
-abanico-rs = \drummode { timh4:16^> \rs \rs \rs  }
-
-clave-shift = \textMark \markup { \bold "clave shift"}
-clave-break = \textMark \markup { \bold "clave break"}
