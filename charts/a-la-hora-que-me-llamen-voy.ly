@@ -16,7 +16,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \tempo 4 = 200
         
         \bar "[|:-||"
-        \textMark "1 - piano, 2 - guiro"
+        \textMark "1 piano, 2 guiro, 3 bongo"
         r1 | r1 | r1 | r1 | \bar "||"
         \textEndMark "x3"
         \bar ":|]"
@@ -35,27 +35,27 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \break
-        \comp #4 | \comp #4 | \rs \rs \rs r8 <<cymc8 timh8>> | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \rs \rs \rs r8 <<cymc8 timh8>> | r8 <<cymc8 timh8>> \rs \rs \rs | \bar "||"
         \comp #4 | \comp #4 |
         \alternative {
-            \volta 1,2 { | <<cb4 timl>> r4 <<cb4 timl>> r4 | r2 r4 timl4 | \bar ":|]"}
+            \volta 1,2 { | <<cb4 timl>> r4 <<cb4 timl>> r4 | r2 \drag timh8 timh timl4 | \bar ":|]"}
             \volta 3 { | <<cb8 timl>> <<cb8 timl>> <<cb4 timl>> <<cb4 timl>> r4 | r2 r4 cymc4~ | \bar "||"}
         }
     }
 
         \sect "C" "(campanas)" 
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | r8 cymc8 \rs \rs \rs | \bar "||"
-        r8 cymc8 \rs \rs \rs | \comp #4 | \comp #4 | \drag timh8 timh8 timh8 <<cymc4. timh>> <<cymc4 timh>> | \bar "||"
+        r8 cymc8 \rs \rs \rs | \comp #4 | \comp #4 | \drag timh8 timh8 timh8 <<cymc8~ timh>> <<cymc4 timh>> <<cymc4 timh>> | \bar "||"
         \comp #4 | \comp #4 | \rs \rs <<cymc4 timh>> \rs  | \comp #4 | \bar "||"
 
         \sect "Coro/Pregon" "(campanas)" 
         \bar "[|:-||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs r8 \only-last timh8 timh4 | \bar "||"
         \textEndMark "x8"
         \bar ":|]"
 
         \sect "Mambo" "piano + clave + congas" 
-        r1 | r1 | r1 | r1 | \bar "||"
+        \ruff timl4 r4 r2 | r1 | r1 | r1 | \bar "||"
         r1 | r1 | r1 | r1 | \bar "||"
 
         \sect "D" "(campanas)" 
@@ -73,20 +73,20 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \textEndMark "x6"
 
-        \sect "Mona" "" 
+        \sect "Mona" "(campanas)" 
         \bar ":|][|:"
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | timh8 timh8 <<cymc4 timh>> \rs \rs | \comp #4 | \bar "||"
         \bar ":|]"
-        \comp #4 | \comp #4 | \rs \rs \rs r8 cymc8 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \textMark "Coro (aqui, aqui)" \rs \rs \rs r8 cymc8 | \comp #4 | \bar "||"
 
-        \sect "Coro/Pregon" "" 
+        \sect "Pregon/Coro" "(campanas)" 
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \textEndMark "x8"
         \bar ":|]"
 
-        \sect-no-break "Coda" "" 
+        \sect-no-break "Coda" "(plato)" 
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \break
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
