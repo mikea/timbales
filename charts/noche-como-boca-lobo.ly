@@ -48,20 +48,22 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
             \volta 3,4 { \comp#4 | \bar ":|]" }
         }
     }
-        \sect "D" "Voz (cascara 2-3)" 
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs timh4:16 | \bar "||"
+        \sect-no-break "D" "Voz (cascara 2-3)" 
+    \bar ":|][|:"
+        \comp #4 | \comp #4 | \comp #4 | \rs \rs \rs \only-last timh4:16 | \bar "||"
+    \bar ":|]"
 
         \sect "E" "Horns (campana 2-3)"
         \comp #4 | \comp #4 | \rs \rs \rs r8 cb8 | cb4 cb4 r8 cb8 r8 cb8 | \bar "||"
-        \break
     \bar "[|:-||"
-        \sectionLabel "Pregon/Coro"
+        \sectionLabel "Pregon/Coro (campana 2-3)"
         \only-first cb4 cb4 \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "piano cue" | \bar "||"
     \bar ":|]"
-        r4 timl r4 timl | r8 timl r8 timl r2 | <<cb4 timh>> <<cb4 timh>> <<cb4 timh>> <<cb4 timh>> | <<cb4 timl>> <<cb4 timl>> <<cb4 timl>> <<cb4 timl>>| \bar "||"
+        r4 timl r4 timl | r8 timl r8 timl r2 |
+        \break
+         <<cb4 timh>> <<cb4 timh>> <<cb4 timh>> <<cb4 timh>> | <<cb4 timl>> <<cb4 timl>> <<cb4 timl>> <<cb4 timl>>| \bar "||"
 
-        \sect "Perc Break" "(mozambique)"
+        \sect-no-break "Perc Break" "(mozambique)"
     \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
     \bar ":|]"
@@ -97,7 +99,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         r8 cymc8 \rs \rs \rs| r8 cymc8 \rs \rs \rs | r8 cymc8 \rs \rs \rs | r8 cymc8 \rs \rs \rs | \bar "||"
         \break
         \rs \rs \rs r8 cymc8~ | cymc4 r8 cymc8~ cymc4 r8 cymc8 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | r8 cymc8 r8 cymc8~ cymc4 r8 cymc8 | r8 cymc8~ cymc4 r8 cymc8 r8 cymc8 |
+        \comp #4 | \comp #4 | r8 cymc8 r8 cymc8~ cymc4 r8 cymc8 | r8 cymc8~ cymc4 r8 cymc8 r8 cymc8 | \bar "||"
         \comp #4 | \rs \rs \rs r8 timh16 timh16 | timl4 r4 r2 |
 
 

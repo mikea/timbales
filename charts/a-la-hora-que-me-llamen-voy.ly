@@ -55,15 +55,17 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \bar ":|]"
 
         \sect "Mambo" "piano + clave + congas" 
-        \ruff timl4 r4 r2 | r1 | r1 | r1 | \bar "||"
-        r1 | r1 | r1 | r1 | \bar "||"
+        \bar ":|][|:"
+        \only-first \ruff timl4 r4 r2 | r1 | r1 | r1 | \bar "||"
+        \bar ":|][|:"
 
-        \sect "D" "(campanas)" 
-        cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \sect-no-break "D" "(campanas)" 
+        \bar ":|][|:"
+        \only-first cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \bar ":|][|:"
 
         \sect "E" "(campanas)" 
-        \bar "[|:-||"
+        \bar ":|][|:"
         cymc4 \rs \rs \rs  | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \rs \rs \drag timh8^> timh8^> \rs | \comp #4 | \bar "||"
         \bar ":|]"
@@ -86,9 +88,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \textEndMark "x8"
         \bar ":|]"
 
-        \sect-no-break "Coda" "(plato)" 
+        \sect "Coda" "(plato)" 
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \break
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | <<cb4 timh>> <<cb8 timh>> <<cb8 timh>> r8 <<cb8 timh>> <<cb4 timl>> | <<cb4 timl>> <<cb4 timl>> <<cb8 timl>> <<cymc8^. timh>> r4
 
