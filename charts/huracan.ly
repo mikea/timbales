@@ -6,7 +6,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 \header {
   title = "Huracan"
   subsubtitle = "(Salsa 2-3)"
-  composer = "as pf Bobby Valentin"
+  composer = "perf Bobby Valentin"
   instrument = "Timbales"
   tagline = \markup { "Huracan - https://mikea.github.io/timbales/ - " \date }
 }
