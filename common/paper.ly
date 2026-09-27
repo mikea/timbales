@@ -1,5 +1,6 @@
 
 \paper {
+    #(set-paper-size "letter")
     indent = 0
     ragged-bottom = ##t
 
