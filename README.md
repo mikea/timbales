@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Noche Como Boca Lobo](pdf/noche-como-boca-lobo.pdf)
 - [Huracan](pdf/huracan.pdf)
 - [A La Hora Que Me Llamen Voy](pdf/a-la-hora-que-me-llamen-voy.pdf)
 - [¡Quieren Salsa!](pdf/quieren-salsa.pdf)
