@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Sin Salsa No Hay Paraiso](pdf/sin-salsa-no-hay-paraiso.pdf)
 - [Bonita Y Mentirosa](pdf/bonita-y-mentirosa.pdf)
 - [Noche Como Boca Lobo](pdf/noche-como-boca-lobo.pdf)
 - [Huracan](pdf/huracan.pdf)
