@@ -21,6 +21,7 @@ Contents:
 
 Charts from the band and my own transcriptions:
 
+- [Lo Que Traigo Es Sabroso](pdf/lo-que-traigo-es-sabroso.pdf)
 - [Sin Salsa No Hay Paraiso](pdf/sin-salsa-no-hay-paraiso.pdf)
 - [Bonita Y Mentirosa](pdf/bonita-y-mentirosa.pdf)
 - [Noche Como Boca Lobo](pdf/noche-como-boca-lobo.pdf)
