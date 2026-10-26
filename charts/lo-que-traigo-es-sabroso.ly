@@ -23,7 +23,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":|]"
         \comp #4 | \comp #4 | timl4 timl8 timl8 r8 timl8 r8 timl8 | r4 r8 timh8^> r2 | \bar "||"
 
-        \sect "A" "Coro (cascara 2-3)"
+        \sect "A" "Coro (campana 2-3)"
     \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
     \bar ":|]"
@@ -39,7 +39,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":|]"
 
         \comp #4 | \comp #4 | \clave-shift \comp #4 |
-        \sect "D" "Coro (cascara 2-3)"
+        \sect "D" "Coro (campana 2-3)"
     \bar ":|][|:"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "x4" | \bar "||"
     \bar ":|]"
@@ -73,8 +73,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":|][|:"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
     \bar ":|]"
-        \comp #4 | \comp #4 |
-        r8 timl8 r8 timl8 timl4 timl4 | timh4^> 
+        \textMark"horns" tomh4. \startTextSpan tomh4. tomh4~| tomh8 tomh4. \stopTextSpan timh8 timh8 timl4 |
+        r8 timl8 r8 timl8 timl4^>    timl4 | timh4^> 
 
         \fine
     }

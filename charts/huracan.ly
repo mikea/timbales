@@ -44,7 +44,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         
         \break
-        \sectionLabel "Pregon/Coro"
+        \sectionLabel "Pregon/Coro (campana)"
     \repeat volta 4 {
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
@@ -55,7 +55,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         }
     }
 
-        \sect "Mambo" "" 
+        \sect "Mambo" "(cha-cha-cha)" 
     \repeat volta 3 {
         \bar "[|:-||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"

@@ -16,12 +16,12 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \tempo 4 = 185
 
         r4 r8 \textMark "tutti" timh8 r8 timl8 r8 timh8 | timl4 \textMark "piano" r4 r2 | r1 | \bar "||"
-        \sectionLabel "(cascara 2-3 ?)"
+        \sectionLabel "(cascara 3-2)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         r8 cymc8 \rs \rs \rs| r8 cymc8 \rs \rs \rs | r8 cymc8 \rs \rs \rs | r8 cymc8 \rs \rs \rs | \bar "||"
         \break
         \rs \rs \rs r8 cymc8~ | cymc4 r8 cymc8~ cymc4 r8 cymc8 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | \clave-break r8 cymc8 r8 cymc8~ cymc2 |
+        \comp #4 | \comp #4 | \clave-shift r8 cymc8 r8 cymc8~ cymc2 |
         
         
         \sect "A" "Voz (cascara 2-3)" 
@@ -57,7 +57,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \comp #4 | \comp #4 | \rs \rs \rs r8 cb8 | cb4 cb4 r8 cb8 r8 cb8 | \bar "||"
     \bar "[|:-||"
         \sectionLabel "Pregon/Coro (campana 2-3)"
-        \only-first cb4 cb4 \rs \rs | \comp #4 | \comp #4 | \comp #4 \textEndMark "piano cue" | \bar "||"
+        \only-first cb4 cb4 \rs \rs | \comp #4 | \comp #4 | \rs \rs \rs \only-last timh4^> | \bar "||"
     \bar ":|]"
         r4 timl r4 timl | r8 timl r8 timl r2 |
         \break
@@ -91,10 +91,10 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
     \bar ":|][|:"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 \textEndMark "open" | \bar "||"
     \bar ":|]"
-        \textMark "last Coro"
-        \comp #4 | \comp #4 | <<cb4 timl>> <<cb4 timl>> <<cb4 timh>> <<cb4 timh>> | \textMark "piano" r1 | \bar "||" \clave-break r1 |
+        \textMark "(boca lobo)"
+        \comp #4 | \comp #4 | <<cb4 timl>> <<cb4 timl>> <<cb4 timh>> <<cb4 timh>> | \textMark "piano" r1 | \bar "||" \clave-shift r1 |
 
-        \sect "G" "(cascara 2-3 ?)"
+        \sect "G" "(cascara 3-2)"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         r8 cymc8 \rs \rs \rs| r8 cymc8 \rs \rs \rs | r8 cymc8 \rs \rs \rs | r8 cymc8 \rs \rs \rs | \bar "||"
         \break

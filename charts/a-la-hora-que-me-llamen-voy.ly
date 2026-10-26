@@ -72,7 +72,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
 
         \sect "Coro/Pregon" "(campanas)" 
         \bar ":|][|:"
-        \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
+        \comp #4 | \comp #4 | \comp #4 | \only-first <<timl4. timh>> cymc8^. r2 | \bar "||"
         \textEndMark "x6"
 
         \sect "Mona" "(campanas)" 
@@ -91,7 +91,8 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \sect "Coda" "(plato)" 
         cymc4 \rs \rs \rs | \comp #4 | \comp #4 | \comp #4 | \bar "||"
         \comp #4 | \comp #4 | \comp #4 | \comp #4 | \bar "||"
-        \comp #4 | \comp #4 | <<cb4 timh>> <<cb8 timh>> <<cb8 timh>> r8 <<cb8 timh>> <<cb4 timl>> | <<cb4 timl>> <<cb4 timl>> <<cb8 timl>> <<cymc8^. timh>> r4
+        \textMark"horns" tomh8^> \startTextSpan tomh8 r8 tomh8 tomh8^> tomh8 r8 tomh8 \stopTextSpan |
+         <<cb4^> timh>> <<cb8 timh>> <<cb8^> timh>> r8 <<cb8 timh>> <<cb4^> timl>> | <<cb4 timl>> <<cb4 timl>> <<cb8^> timl>> <<cymc8^. timh>> r4
 
         \bar "|."
     }
